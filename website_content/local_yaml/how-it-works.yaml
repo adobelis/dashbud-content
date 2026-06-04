@@ -1,0 +1,378 @@
+# How It Works - Full Content Structure
+
+hero:
+  title: "Dashbud: how it works"
+  subtitle: "How Dashbud transforms your data analytics workflow from fragmented and time-consuming to streamlined and efficient."
+
+sections:
+  intro:
+    title: "Foundational Questions"
+    blocks:
+      - type: heading
+        level: 3
+        content: "What is \"data analytics\" – aka \"business intelligence\"?"
+            
+      - type: paragraph
+        content: "\"Data analytics\" usually refers to the analysis of structured data – most commonly tables of text and numbers, such as a customer list or an earnings report – to answer questions about business performance or business opportunities. Unstructured data, such as full documents, images, audio recordings, and video, are increasingly entering the analytical fold, but in order to be analyzed in a 'data analytics' or BI process, they are usually rendered into some uniform structure."
+      
+      - type: paragraph
+        content: "Businesspeople of all kinds very often need to do some sort of data analysis: for planning and/or evaluation of efforts and programs. And you often have access to a wide variety of data sources, living in all sorts of places."
+      
+      - type: paragraph
+        content: "Currently this is often a fraught and difficult process: problems ranging from access to expertise to data consistency to time-intensiveness interfere with you getting the answers you need, when you need them."
+      
+      - type: paragraph
+        content: "Dashbud is an AI-enabled data platform that overcomes these problems. To see how it does this, read on."
+
+      - type: heading
+        level: 3
+        content: "Where does your data live?"
+    
+      - type: paragraph
+        content: "Here are the common places, or types of places, where your data is located:"
+
+
+  dataTypes:
+    
+    types:
+      - icon: "📄"
+        title: "Flat Files"
+        description: "Spreadsheets, CSV exports, homegrown lists maintained in Excel or Google Sheets."
+        examples: "Customer lists, inventory tracking, manual campaign logs, exported reports from business systems (including legacy systems lacking APIs)."
+      
+      - icon: "🗄️"
+        title: "Raw Databases"
+        description: "SQL databases, data warehouses, or data lakes your team has access to but lacks the SQL expertise to query effectively."
+        examples: "PostgreSQL, MySQL, SQL Server, Snowflake, BigQuery."
+      
+      - icon: "🔒"
+        title: "Siloed Databases"
+        description: "Databases controlled by IT or data teams where business users must submit requests and wait for exports."
+        examples: "Production databases, ERP systems, legacy enterprise platforms."
+      
+      - icon: "🔌"
+        title: "SaaS APIs"
+        description: "Modern cloud platforms with programmatic access but requiring technical know-how to use."
+        examples: "Salesforce, Stripe, QuickBooks, Google Analytics, HubSpot, Shopify."
+    
+    outro:
+      - type: paragraph
+        content: "Dashbud isn't trying to change this. Instead, Dashbud improves how you go from these diverse data sources to useful, actionable answers."
+
+  traditionalWorkflow:
+    title: "Traditional BI and its Problems"
+    intro:
+      - type: paragraph
+        content: "Here is a brief picture of what many people go through to get answers from their data. It's a little different for everyone, depending on the sources, the business goals, and the skills and human resources of the person and company. But if you have questions that need to be answered by data, you will probably see yourself in some of the description below."
+    
+    steps:
+      - stepNumber: 1
+        title: "Accessing Data"
+        icon: "✗"
+        blocks:
+          - type: visualization
+            id: "DataSourcesBefore.png"
+            img: true
+            float: right
+            description: "Flow chart with each data type in a box, an arrow to the words 'Analysis Location', and each arrow labeled with the method of acquisition (1-2 words) above"
+          - type: paragraph
+            content: "Your data needs to get from the above listed places to one location – either on your desktop or in the cloud, in order for you to analyze it and get actionable insights. Let's look at how this traditionally works."
+          
+          - type: list
+            items:
+              - label: "Flat files"
+                content: "Download from one or more locations, copy from local files, append to existing data, with careful attention to data format."
+              - label: "Raw databases"
+                content: "Write SQL queries or ask someone do this for you"
+              - label: "Siloed databases"
+                content: "Submit ticket to data team and wait hours or days for an export"
+              - label: "SaaS APIs"
+                content: "Write integration scripts, manage authentication, handle pagination and rate limits"
+          
+          - type: paragraph
+            style: italic
+            content: "Hours are often spent gathering data before analysis even begins."
+          
+
+      - stepNumber: 2
+        title: "Data Preparation/Cleaning"
+        icon: "✗"
+        blocks:
+          - type: visualization
+            id: "DataCleaning.png"
+            float: right
+            img: true
+            description: "From Raw Data, a flow chart showing each of the steps above in a row, leading to Clean Data"
+          - type: paragraph
+            content: "If you're collecting data from different sources, you may need to 'massage' it to make it all work together. Even data from one source may need some human-readable translation."
+          
+          - type: list
+            items:
+              - label: "Reconciling"
+                content: "accounting for different naming (is 'customer_id' the same as 'client_number'?) and other conventions (timezone, week-start, currency)"
+              - label: "Normalizing"
+                content: "Matching records across systems (connecting the same customer in Salesforce, Stripe, and QuickBooks)"
+              - label: "Filtering"
+                content: "excluding data that you don't need or is sensitive and should not be shared."
+              - label: "Deciphering"
+                content: "translating native naming conventions into intuitive, human-readable words."
+          
+          - type: paragraph
+            content: "This could take a few minutes, or could entail hours of spreadsheet wrangling and/or notebook coding. Data cleaning is a crucial and famously arduous process even for dedicated data scientists."
+          
+
+      - stepNumber: 3
+        title: "Analysis & Iteration"
+        icon: "✗"
+        blocks:
+          - type: visualization
+            id: "AnalysisBefore.png"
+            img: true
+            float: right
+            description: "Split screen - Left side shows a complex spreadsheet with SUMIFS and INDIRECT formulas and multiple tabs; Right side shows Jupyter notebook with Pandas code"
+          - type: paragraph
+            content: "After data preparation, answering business questions requires:"          
+          - type: list
+            items:
+              - "Figuring out how the question you have maps onto your data set."
+              - "Writing code (such as Python or SQL) or learning to use the proprietary visual interface of your BI tool (point-and-click controls or spreadsheet function syntax)"
+              - "Building visualizations using the chart-building functionality of your BI system, spreadsheet, or code-based system (e.g. matplotlib)"
+              - "Re-running the entire process, or carefully modifying a complex spreadsheet or notebook, when you need new or updated information."
+              - "OR: open a ticket and hand the entire thing off to the data team. And wait…"
+          
+          - type: paragraph
+            content: "This is a slow, heavy process, which many business users don't have the skills to complete successfully. And those that do get sucked into an 'expertise trap' – they feel like because they can do the analysis themselves they should do it. Even worse, they may get pigeonholed as the 'numbers person' and asked to do technical work that isn't the best use of their time."
+          
+          - type: paragraph
+            content: "The alternative at some companies is to open a ticket with the data team for a custom report. But a one-off report for an individual or small team is unlikely to receive a high priority. And this isn't wrong – the data team should have bigger fish to fry!"
+          
+
+      - stepNumber: 4
+        title: "Sharing Results"
+        icon: "✗"
+        blocks:
+          - type: visualization
+            id: "SummaryBefore.png"
+            img: true
+            float: right
+            description: "Data access → Fraught; Data preparation → Intense drudgery; Data analysis → High skills + learning curves; Report sharing → More work + a trap"
+          - type: paragraph
+            content: "When you finally have answers:"
+          
+          - type: list
+            items:
+              - "Spreadsheets are messy—full of hidden tabs, broken formulas, and unclear provenance"
+              - "Notebooks require post-processing to hide calculation cells and export to PDF."
+              - "Static exports must be re-sent to update, putting a burden on the author"
+              - "Shared spreadsheets likewise burdens the author unless updates are automatically"
+          
+          - type: paragraph
+            content: "As thanks for your skills and initiative, you become a data service, fielding the same questions repeatedly."
+          
+
+  dashbudSolution:
+    title: "How Dashbud Transforms This Workflow"
+    
+    steps:
+      - stepNumber: 1
+        title: "Connect Your Data Sources Once"
+        icon: "✓"
+        blocks:
+          - type: visualization
+            id: "DashbudDataSources.png"
+            img: true
+            float: right
+            description: "Four connection paths flowing into Dashbud hub"
+          - type: paragraph
+            content: "Dashbud eases data acquisition by enabling one-time access for persistent data resources, and by facilitating file uploads intelligently."          
+          - type: list
+            items:
+              - label: "Flat Files → Upload"
+                content: "Drag and drop CSV, Excel, or Google Sheets files. Smart handling of updates and built-in format change detection."
+              - label: "Raw Databases → Direct Connection"
+                content: "Simple connection string setup (hostname, database name, credentials)."
+              - label: "Siloed Databases → Managed Access"
+                content: "Data team grants Dashbud read access once with governed permissions."
+              - label: "SaaS APIs → Native Integrations"
+                content: "Point-and-click connection to popular platforms; automatic schema discovery and data refresh."          
+          - type: paragraph
+            content: "In all cases:"          
+          - type: list
+            items:
+              - "Governance can be handled within the resource, via Dashbud, or a combination"
+              - "All queries logged and auditable for compliance"
+          
+
+      - stepNumber: 2
+        title: "Teach Dashbud About Your Data"
+        icon: "✓"
+        blocks:
+          - type: visualization
+            float: right
+            id: BlueprintConv.png
+            img: true
+            description: "Conversational UI mockup showing Dashbud asking 'I see you have 12 locations in your practice management system. What are their names in the billing system?' with user responding"
+          - type: paragraph
+            content: "Instead of manually writing join logic and mapping fields, you have a conversation with Dashbud to create semantic 'blueprints' of your data."
+          
+          - type: heading
+            level: 4
+            content: "The Semantic Setup Flow:"
+          
+          - type: list
+            style: numbered
+            items:
+              - "Dashbud reads your schema (table names, column names, data types) without accessing the actual data"
+              - "Dashbud asks clarifying questions where it needs your expertise:"
+              - "Dashbud learns your business context:"
+              - "Dashbud creates reusable definitions that power all future queries"
+          
+          - type: callout
+            title: "Example questions:"
+            items:
+              - "\"I see 'customer_id' in your Stripe data and 'client_number' in QuickBooks. Are these the same?\""
+              - "\"What currency is the 'revenue' column in?\""
+              - "\"What timezone should we use for date calculations?\""
+          
+          - type: callout
+            title: "Business context examples:"
+            items:
+              - "How many office locations you have"
+              - "What your fiscal year looks like"
+              - "Which fields represent the same concept across different systems"
+          
+          - type: paragraph
+            style: italic
+            content: "This happens once per data source. After that, Dashbud understands your data model and can intelligently query across all your resources."
+          
+
+      - stepNumber: 3
+        title: "Ask Data Questions in Plain English"
+        icon: "✓"
+        blocks:
+          - type: visualization
+            id: "AnalyticsConv.png"
+            img: true
+            float: right
+            description: "Chat interface showing natural language query → instant chart result, with 'Generated in 8 seconds' timestamp. Include a 'View SQL' button showing Dashbud can show its work for power users"
+          - type: paragraph
+            content: "With your data connected and blueprinted, getting answers is as simple as typing what you want to know:"
+          
+          - type: list
+            items:
+              - "\"Show me revenue by metro area for Q1\""
+              - "\"Which marketing channels drove the most customer signups last month?\""
+              - "\"Compare inventory turnover rates across all warehouses\""
+              - "\"What's our average collection time by insurance provider?\""
+          
+          - type: paragraph
+            content: "Behind the scenes, Dashbud 1) interprets your question, 2) generates the appropriate queries across your data sources, 3) joins data correctly using your semantic blueprints, and 4) returns results as tables, charts, or both"
+          
+          - type: callout
+            title: "Refine on the fly:"
+            items:
+              - "\"Now break that down by product category\""
+              - "\"Show me just the top 10\""
+              - "\"Add year-over-year comparison\""
+          
+          - type: paragraph
+            content: "No new syntax to learn. No BI tool interface to master. Just conversation."
+          
+
+      - stepNumber: 4
+        title: "Save & Share Professional Outputs"
+        icon: "✓"
+        blocks:
+          - type: visualization
+            id: "DashbudSharing.png"
+            img: true
+            float: right
+            description: "Split view showing same data in multiple formats - PDF report on left, interactive dashboard in middle, scheduled email on right"
+          - type: paragraph
+            content: "Charts and tables answer individual questions, but often you'll want to group them into a report or dashboard, whether for your own reference for sharing. Dashbud facilitates both with flexible grouping, organizing, and sharing options."
+          
+          - type: heading
+            level: 4
+            content: "Well-organized artifacts, reports, and dashboards"
+          
+          - type: list
+            items:
+              - "Group charts and tables into customizable reports and dashboards"
+              - "Work is organized into workspaces by default; charts and tables can be tagged for further organization"
+          
+          - type: heading
+            level: 4
+            content: "Presentation-ready outputs"
+          
+          - type: list
+            items:
+              - "Professional-quality charts and tables with customizable colors, labels, and styling"
+              - "Export to PNG, PDF, or interactive formats"
+          
+          - type: heading
+            level: 4
+            content: "Flexible Sharing Options"
+          
+          - type: list
+            items:
+              - label: "Workspaces"
+                content: "can be shared for in-depth collaboration"
+              - label: "Individual artifacts"
+                content: "share or export for incorporation in presentations"
+              - label: "Live dashboards and scheduled reports"
+                content: "share interactive views and send email notifications"
+              - label: "Share outside Dashbud"
+                content: "share static or live views with clients and stakeholders"
+          
+          - type: heading
+            level: 4
+            content: "Governance baked in:"
+          
+          - type: list
+            items:
+              - "Control who sees what data"
+              - "Track who accessed which reports"
+              - "Maintain audit trail for compliance"
+          
+
+  difference:
+    title: "The Dashbud Difference"
+    subtitle: "From Question to Answer in Minutes, Not Days"
+    blocks:
+      - type: paragraph
+        content: "Where you might spend a few days putting together a report using a mix of data sources – even just flat file exports – with Dashbud, you will find yourself doing the same work in minutes."
+      
+      - type: paragraph
+        content: "Once you have set up the data sources, the same report can be recreated with confidence periodically, and modified as needed. Even if you have to upload an additional month of data, Dashbud makes the workflow easy."
+      
+      - type: paragraph
+        content: "Instead, you can spend more time thinking about the reporting itself, and asking Dashbud additional questions: the Houston office had the biggest increase in sales last quarter, but which product line drove that increase? How did that compare to other offices? All answered in conversation."    
+    benefits:
+      - icon: "⚡"
+        title: "Speed Without Shortcuts"
+        description: "Answer questions as they arise, not after they're no longer relevant. Iterate quickly without rebuilding from scratch."
+      
+      - icon: "🔒"
+        title: "Governed Self-Service"
+        description: "Business users get answers independently while IT maintains control. Schema-based approach means sensitive data never leaves your systems."
+      
+      - icon: "🎯"
+        title: "Accurate & Consistent"
+        description: "Semantic blueprints ensure everyone uses the same definitions. No more conflicting 'sources of truth' from different spreadsheets."
+      
+      - icon: "🤝"
+        title: "True Collaboration"
+        description: "Shared workspaces mean teams build on each other's work instead of duplicating effort. Analysts spend time on strategy instead of one-off requests."
+      
+      - icon: "📈"
+        title: "Presentation-Ready Output"
+        description: "Every chart, table, and dashboard looks professional from the first run. Share with confidence whether it's an internal Slack message or an investor presentation."
+
+cta:
+  title: "Ready to Transform Your Analytics Workflow?"
+  subtitle: "See how Dashbud adapts to your specific industry, data sources, and use cases."
+  buttons:
+    - text: "Explore Use Cases"
+      url: "/use-cases"
+    - text: "Book a Demo"
+      url: "/book-demo"

@@ -1,0 +1,146 @@
+[
+  {
+    "_createdAt": "2025-07-13T23:27:51Z",
+    "_id": "174e1089-13fd-4577-b006-dfff7498348e",
+    "_rev": "sCOa9P6aAPNK6IKk5tPAoD",
+    "_system": {
+      "base": {
+        "id": "174e1089-13fd-4577-b006-dfff7498348e",
+        "rev": "9ap1Lzxy4zaUphGW1FH6CL"
+      }
+    },
+    "_type": "howItWorksStep",
+    "_updatedAt": "2025-08-11T14:19:15Z",
+    "description": [
+      {
+        "_key": "243d351c2d70",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "a8228557f487",
+            "_type": "span",
+            "marks": [],
+            "text": "Instead of writing functions and queries, use plain language to ask the most pressing questions for your business. Dashbud helps you get mission-critical information out of your data."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "89a49358a156",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "8e1177865225",
+            "_type": "span",
+            "marks": [],
+            "text": "\n"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "icon": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-f5ec11cf023614e0bcd40a00cc7dc44b98483ec1-1024x1024-png",
+        "_type": "reference"
+      }
+    },
+    "title": "Customize"
+  },
+  {
+    "_createdAt": "2025-07-13T23:26:42Z",
+    "_id": "3eb3122a-9764-46da-8705-6e010bfd3f52",
+    "_rev": "CamHzSyS1JT3ENpT8DdxKg",
+    "_type": "howItWorksStep",
+    "_updatedAt": "2025-07-13T23:27:16Z",
+    "description": [
+      {
+        "_key": "4d6adf11fe64",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "cb7ed17a505d",
+            "_type": "span",
+            "marks": [],
+            "text": "Dashbud understands your data and recommends charts, reports, and dashboards you might want; you don't have to reinvent the wheel, but you can create custom outputs based on your owns needs."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "icon": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-5df76fc5e384c4192dad4a35da42e790e8e7ce16-1024x1024-png",
+        "_type": "reference"
+      }
+    },
+    "title": "Analyze"
+  },
+  {
+    "_createdAt": "2025-07-13T23:28:25Z",
+    "_id": "5d4d0536-8054-4c2c-89dc-9ea995d83c82",
+    "_rev": "vCfOT9yCEZ5e5C73QRg6Jg",
+    "_type": "howItWorksStep",
+    "_updatedAt": "2025-07-13T23:29:02Z",
+    "description": [
+      {
+        "_key": "2ab7b9a6dbab",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "32a95c79629a",
+            "_type": "span",
+            "marks": [],
+            "text": "Create high-quality reports and dashboards focused on\u00a0the information you want. Use for yourself and share with teammates and\u00a0clients."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "icon": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-18c61493f3656fd4cb24f84fced4ce59025b34bb-1024x1024-png",
+        "_type": "reference"
+      }
+    },
+    "title": "Share"
+  },
+  {
+    "_createdAt": "2025-07-13T23:01:52Z",
+    "_id": "7ebfaddd-29d1-47ea-9429-614c4463f715",
+    "_rev": "CamHzSyS1JT3ENpT8Ddk9Y",
+    "_type": "howItWorksStep",
+    "_updatedAt": "2025-07-13T23:02:18Z",
+    "description": [
+      {
+        "_key": "da815227f3d7",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "0210732eb949",
+            "_type": "span",
+            "marks": [],
+            "text": "Import and connect your data sources in project groupings and shared workspaces. Combat data sprawl and spreadsheet overload with the power of organization."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "icon": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-40f5abd3f08c24a3251cd8280dff6ed91122160f-1024x1024-png",
+        "_type": "reference"
+      }
+    },
+    "title": "Organize"
+  }
+]

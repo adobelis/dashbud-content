@@ -1,0 +1,27 @@
+[
+  {
+    "_createdAt": "2025-09-09T18:03:11Z",
+    "_id": "06c87e63-b6e1-4acb-a7ce-33f2fc02fd5f",
+    "_rev": "x55OSItMbFx92tINDZQT7I",
+    "_type": "author",
+    "_updatedAt": "2025-09-09T18:05:05Z",
+    "description": "Creating the future of BI, and hopefully a few insightful blog posts along the way.",
+    "name": "The Dashbud Team",
+    "photo": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-659a84790714dc18d1dad415a1dc73b2a433e3c2-3300x2550-png",
+        "_type": "reference"
+      }
+    }
+  },
+  {
+    "_createdAt": "2025-07-11T16:34:10Z",
+    "_id": "518ebd4f-81b9-4513-b96e-839c2983abac",
+    "_rev": "VYus6nyHpjKB0SEJ05nbgE",
+    "_type": "author",
+    "_updatedAt": "2025-07-11T16:34:53Z",
+    "description": "Arthur is head of growth for Dashbud. ",
+    "name": "Arthur Dobelis"
+  }
+]

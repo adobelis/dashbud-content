@@ -1,0 +1,131 @@
+hero:
+  title: "See Dashbud in action"
+  subtitle: "From database to insight in minutes. No SQL required."
+  context: "This demo uses a relational database. Dashbud also works with file uploads (CSV, Excel) — same experience, different starting point."
+
+sections:
+  - id: connect
+    label: Connect
+    type: sticky
+    headline: "Connect your database"
+    steps:
+      - text: >
+          Let's say you have a relational database with 9 tables. You connect it
+          to Dashbud: name it, enter your credentials, click Connect.
+        callout: "Credentials are encrypted at rest and never leave your environment."
+        image: demo-connect-1-form.png
+        imageAlt: "Data source connection form with name and credentials"
+
+      - text: >
+          Select the schemas and tables you want to work with — or just Select All.
+          You decide what Dashbud sees.
+
+          That's it. You're in.
+        image: demo-connect-2-tables.png
+        imageAlt: "Table selection step with Select All checkbox and 9 tables listed"
+
+  - id: understand
+    label: Understand
+    type: sticky
+    headline: "Dashbud learns your data"
+    steps:
+      - text: >
+          The Blueprint Agent reads your schema and describes what it sees — the
+          entity groups, how tables relate to each other, and what stands out. It's
+          a conversation, not a loading screen.
+        image: demo-understand-1-orientation.png
+        imageAlt: "Blueprint conversation showing the agent's orientation response"
+
+      - text: >
+          Foreign key relationships are detected automatically from the database.
+          The sidebar shows each table's columns with FK indicators — no manual
+          relationship setup required.
+        callout: "The Blueprint Agent knows orders.customer_id references customers.id without being told."
+        image: demo-understand-2-fks.png
+        imageAlt: "Blueprint sidebar showing tables with FK icons on columns"
+
+      - text: >
+          Some column names are obvious. Others aren't — "pcf1" could mean anything.
+          The Blueprint Agent flags ambiguous names and works with you to clarify
+          what the data means.
+        image: demo-understand-3-clarify.png
+        imageAlt: "Blueprint conversation asking about an opaque column name"
+
+      - text: >
+          For columns with a small number of distinct values — like status, channel,
+          or region — the agent asks to inspect actual values. This is how the Query
+          Agent will later match your questions to real data.
+        callout: "The agent found 2 values for channel: dtc and wholesale."
+        image: demo-understand-4-inspect.png
+        imageAlt: "Blueprint sidebar showing inspected column values: dtc, wholesale"
+
+  - id: ask
+    label: Ask
+    headline: "Ask a question. Get an answer."
+    body: >
+      "Who are our biggest customers?"
+
+      No SQL. No schema lookups. No JOIN syntax. Dashbud's Query Agent writes the
+      query — joining across three tables — aggregates by customer, and returns the
+      top 10 with a chart ready to go.
+    callout: "3-table JOIN written automatically from the relationships the Blueprint Agent detected."
+    image: demo-ask.png
+    imageAlt: "Horizontal bar chart showing top 10 customers by total order value"
+
+  - id: deeper
+    label: Go Deeper
+    headline: "Ask harder questions"
+    body: >
+      "Show me monthly revenue and margin percentage."
+
+      Two different units — dollars and percentages — on the same chart. Dashbud
+      detects the mismatch and splits them: dollar values on the left axis, margin
+      percentage on the right.
+
+      36 months of data, readable at a glance.
+    callout: "Dual y-axis detected automatically from the column metadata."
+    image: demo-deeper.png
+    imageAlt: "Dual-axis line chart with revenue, margin, and margin percentage"
+
+  - id: compare
+    label: Compare
+    headline: "Compare across time"
+    body: >
+      "Compare 2024 to 2025, by month, for the southeast."
+
+      Year-over-year on the same axis. Both years aligned by month so you can see
+      where 2025 is ahead, where it's behind, and by how much.
+
+      The story emerges from the data. March and April 2025 drop sharply. Something
+      happened in the southeast — and now you can see it.
+    callout: "The Query Agent aligns both years on the same axis automatically. No pivot tables."
+    image: demo-compare.png
+    imageAlt: "Year-over-year line chart comparing 2024 and 2025 monthly order counts"
+
+  - id: discover
+    label: Discover
+    headline: "Discover what you didn't know to ask"
+    body: >
+      "Which customers are seeing margin compression?"
+
+      This requires computing per-customer margin by quarter, identifying the top
+      customers, and tracking their margin percentage over time. The Query Agent
+      writes the SQL — a multi-step query that would take an analyst 20 minutes to
+      build by hand.
+
+      The result: one customer's margins dropped from ~59% to ~50%. A negotiated
+      discount traded margin for volume. You asked a business question and got a
+      business answer.
+    callout: "Multi-step query generated from natural language. Time range is parameterized — adjust it without touching SQL."
+    image: demo-discover.png
+    imageAlt: "Line chart showing quarterly margin percentage for top 5 customers"
+
+closing:
+  headline: "Your database. Your questions. Your answers."
+  body: >
+    Every query shown here was generated from natural language. Every chart was
+    auto-configured from the data. The Blueprint Agent understood the schema, the
+    Query Agent wrote correct SQL, and the right visualization appeared — because
+    Dashbud started by understanding your data.
+  ctaText: "Try it with your data"
+  ctaUrl: "/signup"

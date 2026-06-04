@@ -1,0 +1,60 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Partners from '../components/Partners.astro';
+import Features from '../components/Features.astro';
+import HowItWorks from '../components/HowItWorks.astro';
+import Testimonials from '../components/Testimonials.astro';
+import CTASection from '../components/CTASection.astro';
+import WhyDashbud from '@/components/WhyDashbud.astro';
+import Conversation from '@/components/Conversation.astro';
+import Logos from '../components/Logos.astro';
+import Explanation from '../components/Explanation.astro';
+import FAQ from '../components/FAQ.astro';
+
+// import { homepageQuery } from '../lib/sanity/queries';
+import type { ACTION_ERROR_CODES, ACTION_QUERY_PARAMS } from 'astro:actions';
+
+import { client } from '../utils/sanityClient'
+
+const query = `*[_type == "homepage"][0]{
+  title,
+  hero->{
+    headline,
+    subheadLine,
+    primaryCtaText,
+    primaryCtaUrl,
+    secondaryCtaText,
+    secondaryCtaUrl,
+    heroImage
+  },
+  features[]->{
+    _id,
+    title,
+    shortDescription,
+    icon,
+    image,
+    imageAlt
+  },
+  howItWorksSteps[]->{
+    title,
+    description,
+    icon
+  }
+}`
+
+const homepage = await client.fetch(query)
+const features = homepage.features;
+const hero = homepage.hero;
+const steps = homepage.howItWorksSteps;
+---
+
+<Layout title="Dashbud: data reporting for humans">
+  <Hero {...hero} />
+  <Explanation />
+  <Features features={features} />
+  <HowItWorks steps={steps} />
+  <!-- <Testimonials />
+  <FAQ /> -->
+  <CTASection />
+</Layout>

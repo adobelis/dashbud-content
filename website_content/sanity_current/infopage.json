@@ -1,0 +1,1975 @@
+[
+  {
+    "_createdAt": "2025-09-12T20:28:10Z",
+    "_id": "3c4bf370-559c-453a-b429-de0e5248bd50",
+    "_rev": "x7AKQdsMTT5RY3O5Cdx0WE",
+    "_system": {
+      "base": {
+        "id": "3c4bf370-559c-453a-b429-de0e5248bd50",
+        "rev": "x7AKQdsMTT5RY3O5CdwjHn"
+      }
+    },
+    "_type": "infopage",
+    "_updatedAt": "2025-09-12T20:44:03Z",
+    "body": [
+      {
+        "_key": "fc84a56c7edd",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "ff051a053d60",
+            "_type": "span",
+            "marks": [],
+            "text": "Dashbud -- Privacy Policy"
+          }
+        ],
+        "markDefs": [],
+        "style": "h1"
+      },
+      {
+        "_key": "516b593db7ff",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "d11df781cf90",
+            "_type": "span",
+            "marks": [],
+            "text": "1. Overview"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "3cb9c57d1947",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "c7345ea3972d",
+            "_type": "span",
+            "marks": [],
+            "text": "Evolytix, Inc. (\u201cEvolytix\u201d, \u201cwe\u201d, \u201cour\u201d, or \u201cus\u201d) is committed to protecting your privacy and your data. This Privacy Policy describes how Dashbud collects, uses, and safeguards information when you use our platform. It also explains what we do not do \u2014 most importantly, that Dashbud does not ingest or store any of your underlying data."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "0f0b62d40bc6",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "9fc889999e99",
+            "_type": "span",
+            "marks": [],
+            "text": "2. What We Collect"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "d822b95b22af",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "5303b3336bd1",
+            "_type": "span",
+            "marks": [],
+            "text": "When you use Dashbud, we collect only the information necessary to provide and improve our services. This includes:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "5eed1b6c20ea",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "231142735469",
+            "_type": "span",
+            "marks": [],
+            "text": "User Account Information: Name, email address, organization name, and authentication credentials."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "8aa5ff365af5",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "8af01bd40e7b",
+            "_type": "span",
+            "marks": [],
+            "text": "Connection Metadata: Information about the type of database you connect (e.g., SQL Server, Snowflake), including the schema, table names, column names, and data types."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "431ee3480d45",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "d8db64b82d1c",
+            "_type": "span",
+            "marks": [],
+            "text": "Usage Logs: Activity logs related to feature usage, error reporting, and system diagnostics (all anonymized or pseudonymized wherever possible)."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "65d3d0031b58",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "5e6a3474e7c6",
+            "_type": "span",
+            "marks": [],
+            "text": "3. What We Do Not Collect or Store"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "1c0b56a8748d",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "e5ada9601908",
+            "_type": "span",
+            "marks": [],
+            "text": "This is important:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "e617841e8841",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "264f19993d0b",
+            "_type": "span",
+            "marks": [],
+            "text": "Dashbud does NOT ingest or store your actual business data (i.e., the records, values, or contents in your database tables)."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "5519f92deafc",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "420abbb5bdef",
+            "_type": "span",
+            "marks": [],
+            "text": "Our platform only accesses database structure and metadata, such as:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "f49f845433fa",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "8c2e93f4bf6b",
+            "_type": "span",
+            "marks": [],
+            "text": "Table names"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "80779371685a",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "3fe4587a5ec2",
+            "_type": "span",
+            "marks": [],
+            "text": "Column names"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "21a517df63a0",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b4fb69a42016",
+            "_type": "span",
+            "marks": [],
+            "text": "Column types"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "7828fea0369f",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "bbb65099943b",
+            "_type": "span",
+            "marks": [],
+            "text": "Relationships between tables (e.g., foreign keys)"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "418ead8abd70",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "a9e4f0ce097f",
+            "_type": "span",
+            "marks": [],
+            "text": "This metadata allows Dashbud to intelligently construct SQL queries based on your natural language questions \u2014 without ever exposing the underlying data to our systems or any third-party AI models."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "1b5a6fe939aa",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "d7a304e8e867",
+            "_type": "span",
+            "marks": [],
+            "text": "You maintain full control of your data. Dashbud acts as a query-generation layer on top of your existing data infrastructure."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "0c44d4877437",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "92f046ffda72",
+            "_type": "span",
+            "marks": [],
+            "text": "4. How We Use the Information"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "66e0296fa082",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "c5381388ce84",
+            "_type": "span",
+            "marks": [],
+            "text": "We use the information we collect strictly to:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "9678946cd60f",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "217e0ab0c3ea",
+            "_type": "span",
+            "marks": [],
+            "text": "Authenticate users and provide access to the Dashbud platform"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "d517a50d2416",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "9437e8b35968",
+            "_type": "span",
+            "marks": [],
+            "text": "Generate AI-assisted queries using your schema metadata"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c43ed53f01f3",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "8c47b80cb3e8",
+            "_type": "span",
+            "marks": [],
+            "text": "Improve platform performance and reliability"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "266901eb1c4e",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "333f417b3e0d",
+            "_type": "span",
+            "marks": [],
+            "text": "Provide support and troubleshoot issues"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "acf213f70737",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "51558dbdfe17",
+            "_type": "span",
+            "marks": [],
+            "text": "Enforce our terms and protect against abuse"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "31795a3eb508",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "2badba457b5b",
+            "_type": "span",
+            "marks": [],
+            "text": "We do not use your information for advertising, resell it to third parties, or allow any third-party AI models (including LLMs) to access your schema or data."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "e1f0764cee94",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "9dc71f156fe9",
+            "_type": "span",
+            "marks": [],
+            "text": "5. Security and Data Access"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "93b9cd0315e4",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "c09eb0e2e3dd",
+            "_type": "span",
+            "marks": [],
+            "text": "We implement strong technical and organizational security measures, including:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "7186f4435958",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "4d598e92b744",
+            "_type": "span",
+            "marks": [],
+            "text": "Role-based access control"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "5febbf1c2049",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "4436c3acf800",
+            "_type": "span",
+            "marks": [],
+            "text": "Encrypted connections (TLS/SSL) for all data in transit"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "e869a682c681",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "22f12e080928",
+            "_type": "span",
+            "marks": [],
+            "text": "Logging and monitoring of access activity"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "666712441330",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "54aed41266f7",
+            "_type": "span",
+            "marks": [],
+            "text": "Only authorized personnel may access customer-specific metadata, and only for purposes directly related to support or diagnostics."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "ceb09b9f72b2",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "4de397fffca5",
+            "_type": "span",
+            "marks": [],
+            "text": "6. Third-Party Services"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "955c3a7e2ce5",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "70492cc4fc6b",
+            "_type": "span",
+            "marks": [],
+            "text": "Dashbud does not share any customer schema or metadata with external third-party services unless explicitly authorized by you, the customer. No analytics, ad platforms, or AI APIs process your data behind the scenes."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "fa36253f9bb2",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "5d02c8c4e635",
+            "_type": "span",
+            "marks": [],
+            "text": "7. Data Retention"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "118a5bf2141c",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "924edce48e1f",
+            "_type": "span",
+            "marks": [],
+            "text": "We retain user account data only for as long as your account remains active."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "d70add07c6fa",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "6cc963d80c9d",
+            "_type": "span",
+            "marks": [],
+            "text": "Schema metadata is retained temporarily to allow query generation but is never stored permanently unless you choose to save a dashboard or report."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "4ccbbb99e660",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "5109ffd3adae",
+            "_type": "span",
+            "marks": [],
+            "text": "You may request deletion of your account or any retained metadata at any time by contacting us."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "df968d52b8a2",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "a9ba20bd4249",
+            "_type": "span",
+            "marks": [],
+            "text": "8. Your Rights"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "d1d2b6f0f4e0",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b7cb068c6c6e",
+            "_type": "span",
+            "marks": [],
+            "text": "You have the right to:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "de638b4ae670",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "64e05f962b1a",
+            "_type": "span",
+            "marks": [],
+            "text": "Request access to your user profile data"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c45534d3c2f0",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "21a08c10a1c9",
+            "_type": "span",
+            "marks": [],
+            "text": "Request correction or deletion of your account information"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c5830f98f296",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "cfa4f6e4d1ac",
+            "_type": "span",
+            "marks": [],
+            "text": "Withdraw consent for optional data processing (e.g., usage analytics)"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "48b1b04dfa16",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "70df741b2981",
+            "_type": "span",
+            "marks": [],
+            "text": "File a complaint with a regulatory authority, if applicable in your jurisdiction"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "37244d232f5b",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "87a41910abd6",
+            "_type": "span",
+            "marks": [],
+            "text": "9. Children\u2019s Privacy"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "783670a8fad3",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "a19207110a62",
+            "_type": "span",
+            "marks": [],
+            "text": "Dashbud is not intended for use by individuals under the age of 18. We do not knowingly collect personal information from children."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "a140822977e8",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "4a6ae2d390e1",
+            "_type": "span",
+            "marks": [],
+            "text": "10. Changes to This Policy"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "ea8590efd2b3",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "770771974ca7",
+            "_type": "span",
+            "marks": [],
+            "text": "We may update this Privacy Policy from time to time. When we do, we will revise the \"Last Updated\" date. Material changes will be communicated via email or dashboard notification."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "a3c67fc7b22f",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "d34d19486641",
+            "_type": "span",
+            "marks": [],
+            "text": "11. Contact Us"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "261f7b2874fa",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "f20842d4a1e0",
+            "_type": "span",
+            "marks": [],
+            "text": "For any questions or concerns about this Privacy Policy, please contact us at: hello@mail.getdashbud.com"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "7c4b4090d5ff",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "cee937e35acc",
+            "_type": "span",
+            "marks": [],
+            "text": ""
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "ffa6b920c66c",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b78e629eab32",
+            "_type": "span",
+            "marks": [],
+            "text": "Dashbud lets you create reports and dashboards from your own data with a conversational UI."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "0384961146c8",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "2229ec304cb8",
+            "_type": "span",
+            "marks": [],
+            "text": ""
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "slug": {
+      "_type": "slug",
+      "current": "privacy"
+    },
+    "title": "Dashbud | Privacy Policy",
+    "updated": "2025-09-12T20:30:00.000Z"
+  },
+  {
+    "_createdAt": "2025-09-12T20:32:21Z",
+    "_id": "b2ae84e7-c16f-4564-9bfe-eef5e7d45dc4",
+    "_rev": "4EsnmHxtGcg1AUUINO3Ds0",
+    "_system": {
+      "base": {
+        "id": "b2ae84e7-c16f-4564-9bfe-eef5e7d45dc4",
+        "rev": "x7AKQdsMTT5RY3O5CdxApE"
+      }
+    },
+    "_type": "infopage",
+    "_updatedAt": "2025-09-12T20:53:23Z",
+    "body": [
+      {
+        "_key": "a93e4b0d553d",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "99a608bd2739",
+            "_type": "span",
+            "marks": [
+              "strong"
+            ],
+            "text": "Important"
+          },
+          {
+            "_key": "181e4d23242d",
+            "_type": "span",
+            "marks": [],
+            "text": " \u2014 Please read this carefully."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "bf39f0056302",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "84375fdc4d29",
+            "_type": "span",
+            "marks": [],
+            "text": "This End User License Agreement (\u201cAgreement\u201d) is a legal agreement between you (either an individual or a single entity) and Evolytix, Inc. (\"Licensor\") for the use of the Dashbud software platform and any associated services, documentation, and updates (\"Dashbud\")."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "0d37cce7be74",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "458e6429382f",
+            "_type": "span",
+            "marks": [],
+            "text": "By accessing or using Dashbud's website and services, you agree to be bound by this Agreement. If you do not agree with any part of this Agreement, you must not use Dashbud."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "6d0b6ee85570",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "2e22d0cbce7d",
+            "_type": "span",
+            "marks": [],
+            "text": "1. License Grant"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "b63d03d05a44",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "aeaf0970f0be",
+            "_type": "span",
+            "marks": [],
+            "text": "Licensor grants you a limited, non-exclusive, non-transferable, revocable license to access and use Dashbud solely for your internal business purposes and in accordance with this Agreement."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "816a00058fef",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "7551560ea9bd",
+            "_type": "span",
+            "marks": [],
+            "text": "2. Ownership and Restrictions"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "65ea41dbc69e",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "5cc13179b912",
+            "_type": "span",
+            "marks": [],
+            "text": "Ownership: Dashbud is licensed, not sold. All rights, title, and interest in Dashbud (including all software, documentation, and intellectual property) remain with Evolytix, Inc."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "6da6144de377",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "fc144c75b102",
+            "_type": "span",
+            "marks": [],
+            "text": "Restrictions: You may not:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "8929cfbab760",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "e860f9054060",
+            "_type": "span",
+            "marks": [],
+            "text": "Modify, reverse engineer, decompile, or disassemble Dashbud;"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "491839ed9688",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "7bbe13bdefa9",
+            "_type": "span",
+            "marks": [],
+            "text": "Copy, distribute, or sublicense Dashbud;"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "db15b0db458a",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "169affde60f8",
+            "_type": "span",
+            "marks": [],
+            "text": "Use Dashbud to build a competing product or service;"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b759e820cc17",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "94bcef6cf0fc",
+            "_type": "span",
+            "marks": [],
+            "text": "Circumvent any user limits or access restrictions."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "0f10a890c55d",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "5f12710e9e60",
+            "_type": "span",
+            "marks": [],
+            "text": "3. User Data and Privacy"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "a900fce260d9",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "e08885298e1b",
+            "_type": "span",
+            "marks": [],
+            "text": "Data Ownership: You retain all rights to the data you upload or connect to Dashbud."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "913ec7288667",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "e1aa6eea64c7",
+            "_type": "span",
+            "marks": [],
+            "text": "Privacy: Dashbud does not expose your data to third-party AI models or use your data to train AI."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "868809a464eb",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "74da8a034e16",
+            "_type": "span",
+            "marks": [],
+            "text": "Security: Evolytix uses commercially reasonable measures to secure your data, but you are responsible for safeguarding access credentials."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "9732ef3566d9",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "f434c9d2a41f",
+            "_type": "span",
+            "marks": [],
+            "text": "4. Service Levels and Availability"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "f86d725351b1",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "7a60b71ea042",
+            "_type": "span",
+            "marks": [],
+            "text": "Dashbud is provided on an \u201cas is\u201d and \u201cas available\u201d basis. Evolytix will make commercially reasonable efforts to ensure uptime and support but does not guarantee uninterrupted service."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "385a074e7ce3",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "9ec9b86732da",
+            "_type": "span",
+            "marks": [],
+            "text": "5. Fees and Payment"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "31b6ad27988f",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b669e4fea86c",
+            "_type": "span",
+            "marks": [],
+            "text": "Use of Dashbud is subject to payment of applicable subscription fees. Failure to pay may result in suspension or termination of access."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "4c3b4512ff83",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "64264ee4da62",
+            "_type": "span",
+            "marks": [],
+            "text": "6. Term and Termination"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "db1649ab63f7",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "4bde01f77fdc",
+            "_type": "span",
+            "marks": [],
+            "text": "This Agreement remains in effect until terminated. You may terminate at any time by ceasing use. Evolytix may suspend or terminate your license for violation of this Agreement. Upon termination, you must cease all use of Dashbud."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c23a900c0ea2",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "44e31cc718e4",
+            "_type": "span",
+            "marks": [],
+            "text": "7. Disclaimers and Limitation of Liability"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "f1f3dd826790",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1b55f662a1d0",
+            "_type": "span",
+            "marks": [],
+            "text": "Disclaimer: Dashbud is provided \u201cas is\u201d without warranties of any kind, express or implied."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "281c4202f205",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "07c3e2a24284",
+            "_type": "span",
+            "marks": [],
+            "text": "Limitation: Evolytix shall not be liable for indirect, incidental, or consequential damages. Total liability shall not exceed the amount paid for the most recent three months of Dashbud services."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "3d6d0e191908",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "96adff42ce2f",
+            "_type": "span",
+            "marks": [],
+            "text": "8. Indemnification"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "5c3aa6f626af",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "f291adbeb64d",
+            "_type": "span",
+            "marks": [],
+            "text": "You agree to indemnify and hold Evolytix harmless from any claims, losses, or damages arising from your misuse of Dashbud or violation of this Agreement."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "88f32cd938b5",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1fc1c4c28fbd",
+            "_type": "span",
+            "marks": [],
+            "text": "9. Governing Law"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "be5a332fd4dc",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "e11f42aca64f",
+            "_type": "span",
+            "marks": [],
+            "text": "This Agreement shall be governed by the laws of the State of New York, without regard to its conflict of law provisions."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b548489bac64",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b8276e1bd9a1",
+            "_type": "span",
+            "marks": [],
+            "text": "10. Miscellaneous"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "18887f42c3f2",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "44099a35f8ad",
+            "_type": "span",
+            "marks": [],
+            "text": "Entire Agreement: This is the entire agreement between you and Evolytix concerning Dashbud."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "ba60d3c125a6",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "03feebdc6eae",
+            "_type": "span",
+            "marks": [],
+            "text": "No Waiver: The failure to enforce any provision shall not be deemed a waiver."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "ea3d5b5bdeb3",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "2d360abc7307",
+            "_type": "span",
+            "marks": [],
+            "text": "Severability: If any provision is found unenforceable, the rest shall remain in full force and effect."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "07b577043c56",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b3df8bb103fb",
+            "_type": "span",
+            "marks": [],
+            "text": "Dashbud lets you create reports and dashboards from your own data with a conversational UI."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c32915f32df6",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "9d43fa337c15",
+            "_type": "span",
+            "marks": [],
+            "text": "Links"
+          }
+        ],
+        "markDefs": [],
+        "style": "h3"
+      },
+      {
+        "_key": "5322560a5542",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "e62b91ec8d95",
+            "_type": "span",
+            "marks": [
+              "673239b8448e"
+            ],
+            "text": "Privacy Policy"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [
+          {
+            "_key": "673239b8448e",
+            "_type": "link",
+            "href": "https://www.getdashbud.com/privacy"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "bafaa3024051",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "736edae4b3fc",
+            "_type": "span",
+            "marks": [
+              "f024e878646c"
+            ],
+            "text": "Terms of Use"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [
+          {
+            "_key": "f024e878646c",
+            "_type": "link",
+            "href": "https://www.getdashbud.com/terms-of-use"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "c33be4984434",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "d13d3c5146af",
+            "_type": "span",
+            "marks": [
+              "345aa465055a"
+            ],
+            "text": "Cookie Policy"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [
+          {
+            "_key": "345aa465055a",
+            "_type": "link",
+            "href": "https://www.getdashbud.com/cookie-policy"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "e876699724ae",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "2f7a91507566",
+            "_type": "span",
+            "marks": [],
+            "text": "\u00a9 2025 Dashbud LLC. All rights reserved."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b7769421b0e6",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "6553ecc49ae7",
+            "_type": "span",
+            "marks": [],
+            "text": "We use cookies \ud83c\udf6a"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "c600b5bd6089",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "54a5fbaed769",
+            "_type": "span",
+            "marks": [],
+            "text": "Dashbud uses cookies for analytics and marketing. You can manage your preferences anytime. For more information: "
+          },
+          {
+            "_key": "2e1166fa220d",
+            "_type": "span",
+            "marks": [
+              "f598438e95a4"
+            ],
+            "text": "see here"
+          },
+          {
+            "_key": "b9b8f24c7a5c",
+            "_type": "span",
+            "marks": [],
+            "text": "."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "f598438e95a4",
+            "_type": "link",
+            "href": "/info/cookie-policy"
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "slug": {
+      "_type": "slug",
+      "current": "terms-of-use"
+    },
+    "title": "Dashbud | Terms of Use/End-User License Agreement",
+    "updated": "2025-09-12T20:35:00.000Z"
+  },
+  {
+    "_createdAt": "2025-09-12T20:36:13Z",
+    "_id": "f6d8c998-1653-44f6-95d7-ab483a085e3b",
+    "_rev": "4EsnmHxtGcg1AUUINO3KWO",
+    "_system": {
+      "base": {
+        "id": "f6d8c998-1653-44f6-95d7-ab483a085e3b",
+        "rev": "x7AKQdsMTT5RY3O5CdwqUP"
+      }
+    },
+    "_type": "infopage",
+    "_updatedAt": "2025-09-12T20:57:26Z",
+    "body": [
+      {
+        "_key": "6dd0299dcd77",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "190cb0130698",
+            "_type": "span",
+            "marks": [],
+            "text": "Cookie Policy"
+          }
+        ],
+        "markDefs": [],
+        "style": "h1"
+      },
+      {
+        "_key": "f9661ceffee1",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1fed2e120f75",
+            "_type": "span",
+            "marks": [],
+            "text": "1. Introduction"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "ea8ec79f9aa3",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "f064404f5840",
+            "_type": "span",
+            "marks": [],
+            "text": "This Cookie Policy explains how "
+          },
+          {
+            "_key": "d274631b57db",
+            "_type": "span",
+            "marks": [
+              "strong"
+            ],
+            "text": "Dashbud"
+          },
+          {
+            "_key": "492d2ae0d5d2",
+            "_type": "span",
+            "marks": [],
+            "text": " (\u201cwe\u201d, \u201cour\u201d, \u201cus\u201d) uses cookies and similar technologies on our website and platform.\nIt describes what these technologies are, why we use them, and how you can manage your preferences."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "4e4ab97fdd9c",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1e1e027d262d",
+            "_type": "span",
+            "marks": [],
+            "text": "2. What Are Cookies?"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "739a52a9b519",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "ebd287a2cda8",
+            "_type": "span",
+            "marks": [],
+            "text": "Cookies are small text files stored on your device by your browser.\nThey allow websites to remember information about your visit, such as login status, preferences, or analytics data."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "d5a08977c100",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "9db41b894c0c",
+            "_type": "span",
+            "marks": [],
+            "text": "We also use similar technologies (e.g., localStorage) where needed for functionality."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "840a8a45ba36",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "3d3c4f40c210",
+            "_type": "span",
+            "marks": [],
+            "text": "3. How We Use Cookies"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "5660c5fa38c2",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "cb63e6b8a22a",
+            "_type": "span",
+            "marks": [],
+            "text": "We group cookies into the same categories you see in our consent banner:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "a76125e38939",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "3b7810950f34",
+            "_type": "span",
+            "marks": [
+              "strong"
+            ],
+            "text": "Strictly Necessary"
+          },
+          {
+            "_key": "95ccf1dfc9a8",
+            "_type": "span",
+            "marks": [],
+            "text": "\nRequired for core site functions (e.g., security, session management). They are always enabled."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "a70bd2bf9771",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "90617cfec293",
+            "_type": "span",
+            "marks": [
+              "strong"
+            ],
+            "text": "Analytics"
+          },
+          {
+            "_key": "38a37853b255",
+            "_type": "span",
+            "marks": [],
+            "text": "\nHelp us understand how visitors use Dashbud so we can improve performance and usability.\nFor example: Google Analytics (through Google Tag Manager)."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "4b2face59908",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "987365f3af38",
+            "_type": "span",
+            "marks": [
+              "strong"
+            ],
+            "text": "Ads & Tracking"
+          },
+          {
+            "_key": "cd7ecf7f2307",
+            "_type": "span",
+            "marks": [],
+            "text": "\nUsed to measure ad performance or remarketing campaigns (e.g., Google Ads, LinkedIn).\nWe don\u2019t currently run large-scale ad tracking, but we keep this category for future use."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "bf749000285c",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "45c59c4d19cc",
+            "_type": "span",
+            "marks": [],
+            "text": "We don\u2019t sell your data or use third-party advertising networks without consent."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "fee6477565c8",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "5030eb523e70",
+            "_type": "span",
+            "marks": [],
+            "text": "4. Your Choices"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "7f2dbf31e035",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "3d8f821886e8",
+            "_type": "span",
+            "marks": [],
+            "text": "When you first visit Dashbud, you\u2019ll see a banner allowing you to:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "bc45684eaceb",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "248976ad889a",
+            "_type": "span",
+            "marks": [
+              "strong"
+            ],
+            "text": "Accept all cookies"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "30cb5f1c059b",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "e0613a33b19c",
+            "_type": "span",
+            "marks": [
+              "strong"
+            ],
+            "text": "Reject non-essential cookies"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "72e116bbb014",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "77c213c348bb",
+            "_type": "span",
+            "marks": [
+              "strong"
+            ],
+            "text": "Manage preferences"
+          },
+          {
+            "_key": "b1fe6bc5f2f8",
+            "_type": "span",
+            "marks": [],
+            "text": " (choose Analytics and/or Ads individually)"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "3b025450fa9b",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "5b209d5f1c4b",
+            "_type": "span",
+            "marks": [],
+            "text": "You can update your preferences anytime by selecting "
+          },
+          {
+            "_key": "d8d51f84fc19",
+            "_type": "span",
+            "marks": [
+              "strong"
+            ],
+            "text": "\u201cUpdate cookie preferences\u201d"
+          },
+          {
+            "_key": "a2bc6e523023",
+            "_type": "span",
+            "marks": [],
+            "text": " in our site footer.\nYour choices are remembered in your browser until you clear them or reset via that link."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "46513164845c",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "dbc98bbddf7f",
+            "_type": "span",
+            "marks": [],
+            "text": "5. Managing Cookies in Your Browser"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "0b255a517922",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "70a84da72c40",
+            "_type": "span",
+            "marks": [],
+            "text": "Most browsers let you block or delete cookies entirely.\nIf you do so, essential site functions may stop working (e.g., login sessions)."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "4e3c30e3eb0a",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "f676387236bf",
+            "_type": "span",
+            "marks": [],
+            "text": "See browser help pages for instructions:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "480d2ad09ef6",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "2b8fa52680a4",
+            "_type": "span",
+            "marks": [],
+            "text": "Chrome"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "77b4026d5ff4",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "cb99608caaeb",
+            "_type": "span",
+            "marks": [],
+            "text": "Firefox"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "ca1c519c582b",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "7e69d1ab6998",
+            "_type": "span",
+            "marks": [],
+            "text": "Safari"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "039085690b75",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "3d393fe01366",
+            "_type": "span",
+            "marks": [],
+            "text": "Edge"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "cda00c335b69",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b5ec8ba71355",
+            "_type": "span",
+            "marks": [],
+            "text": "6. Updates to This Policy"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "aca4b734ac93",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "87028b18a1e8",
+            "_type": "span",
+            "marks": [],
+            "text": "We may update this Cookie Policy to reflect changes in technology, regulation, or our practices.\nMaterial updates will be highlighted in the banner or via a notice on this page."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "064cae9ebbd1",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "601ccb311054",
+            "_type": "span",
+            "marks": [],
+            "text": "7. Contact Us"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "16ed9b784b36",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "6715bcc9f247",
+            "_type": "span",
+            "marks": [],
+            "text": "If you have questions about our use of cookies or how to manage them, contact us at: hello [at] mail.getdashbud.com"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "slug": {
+      "_type": "slug",
+      "current": "cookie-policy"
+    },
+    "title": "Dashbud | Cookie Policy",
+    "updated": "2025-09-12T20:36:00.000Z"
+  }
+]

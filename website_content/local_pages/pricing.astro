@@ -1,0 +1,222 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Icon } from 'astro-icon/components';
+import CTASection from '../components/CTASection.astro';
+import { links } from '../utils/links';
+
+const { login, bookDemo, freeTrial } = links;
+
+const tiers = [
+  {
+    name: "Starter",
+    price: {monthly: "$49", annual: "$39"},
+    description: "For small businesses and startups.",
+    features: [
+      "One individual license",
+      "Up to 5 active workspaces",
+      "Teams up to 3 people",
+      "Unlimited access to AI data builder and conversations",
+      "Unlimited customizable charts and graphs",
+      "Unlimited custom dashboards",
+    ],
+    cta: {
+      text: "Start Free Trial",
+      href: freeTrial,
+    }
+  },
+  {
+    name: "Scale",
+    price: {monthly: "$99", annual: "$79"},
+    description: "For larger teams, agencies, and consultants.",
+    features: [
+      "One individual license",
+      "All Starter features",
+      "Up to 20 active workspaces to start",
+      "Teams up to 10 people", 
+    ],
+    cta: {
+      text: "Book a Demo",
+      href: bookDemo
+    }
+  }
+];
+
+const enterpriseFeatures = [
+  "All Scale features",
+  "Unlimited active workspaces",
+  "Unlimited team members",
+  "Additional APIs and integrations on demand",
+];
+---
+
+<Layout 
+  title="Dashbud - Pricing" 
+  description="Transparent pricing for individuals and teams of all sizes. Start with a free trial and scale as you grow."
+>
+  <section class="pt-20 pb-8 md:pt-16 md:pb-16">
+    <div class="container-custom">
+      <div class="text-center max-w-3xl mx-auto">
+        <h1 class="animate-on-scroll delay-0 text-4xl md:text-5xl font-bold leading-tight">
+          <span class="gradient-text">Dashbud</span> Pricing
+        </h1>
+        <p class="animate-on-scroll delay-1 mt-6 text-xl text-gray-600">
+          Start with a free trial and scale as your use grows.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-dashbud-gray">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {tiers.map((tier, index) => (
+          <div class={`flex flex-col bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 relative animate-on-scroll delay-${index + 2}`}>
+            {/* tier.name === "Scale" && (
+              <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-dashbud-teal to-dashbud-blue text-white px-4 py-1 rounded-full text-sm font-medium">
+                Most Popular
+              </div>
+            )*/}
+            <h3 class="text-2xl font-semibold">{tier.name}</h3>
+            <div class="mt-4">
+              <span class="text-4xl font-bold">{tier.price.annual}</span>
+              <span class="text-gray-600">/month · annual plan*</span>
+            </div>
+            <p class="mt-4 text-gray-600">{tier.description}</p>
+            <ul class="mt-8 space-y-4">
+              {tier.features.map(feature => (
+                <li class="flex items-center text-gray-700 flex gap-1">
+                  <div><Icon name="ph:check-circle-duotone" size={30} class="text-dashbud-teal mr-2" /></div>
+                  <div>{feature}</div>
+                </li>
+              ))}
+            </ul>
+            <div class="mt-auto pt-8">
+            <div class="mt-auto py-4 text-sm text-gray-600">
+              * or <span class="font-bold">{tier.price.monthly}</span>/month billed monthly
+            </div>
+              <a href={tier.cta.href} data-astro-reload target="_blank" class="btn btn-primary w-full text-center">
+                {tier.cta.text}
+              </a>
+            </div>
+          </div>
+        ))}
+
+        <!-- Enterprise Tier -->
+        <div class="flex flex-col bg-gradient-to-br from-dashbud-teal to-dashbud-blue rounded-xl p-8 text-white animate-on-scroll delay-4">
+          <h3 class="text-2xl font-semibold">Enterprise</h3>
+          <div class="mt-4">
+            <span class="text-2xl font-medium">Custom Pricing</span>
+          </div>
+          <p class="mt-4 text-white/90">
+            For organizations with custom requirements and enterprise-grade needs.
+          </p>
+          <ul class="mt-8 space-y-4">
+            {enterpriseFeatures.map(feature => (
+              <li class="flex items-center">
+                <Icon name="ph:check-circle-duotone" class="h-5 w-5 text-white mr-2" />
+                {feature}
+              </li>
+            ))}
+          </ul>
+          <div class="mt-auto pt-8">
+            <a href="mailto:hello@mail.dashbud.com" class="btn bg-white text-dashbud-teal hover:bg-white/90 w-full text-center">
+              Contact the Team
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Table
+  <section class="py-20">
+    <div class="container-custom">
+      <div class="text-center max-w-3xl mx-auto mb-12 animate-on-scroll">
+        <h2 class="text-3xl md:text-4xl font-bold">
+          Compare Plans
+        </h2>
+        <p class="mt-4 text-xl text-gray-600">
+          Find the perfect plan for your platform's needs
+        </p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse animate-on-scroll">
+          <thead>
+            <tr class="border-b border-gray-200">
+              <th class="py-4 px-6 text-left">Features</th>
+              <th class="py-4 px-6 text-center">Starter</th>
+              <th class="py-4 px-6 text-center">Scale</th>
+              <th class="py-4 px-6 text-center">Enterprise</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-200">
+              <td class="py-4 px-6">Employee Limit</td>
+              <td class="py-4 px-6 text-center">500</td>
+              <td class="py-4 px-6 text-center">2,000</td>
+              <td class="py-4 px-6 text-center">Unlimited</td>
+            </tr>
+            <tr class="border-b border-gray-200">
+              <td class="py-4 px-6">Support Level</td>
+              <td class="py-4 px-6 text-center">Standard</td>
+              <td class="py-4 px-6 text-center">Priority</td>
+              <td class="py-4 px-6 text-center">24/7 Dedicated</td>
+            </tr>
+            <tr class="border-b border-gray-200">
+              <td class="py-4 px-6">API Access</td>
+              <td class="py-4 px-6 text-center">Basic</td>
+              <td class="py-4 px-6 text-center">Advanced</td>
+              <td class="py-4 px-6 text-center">Custom</td>
+            </tr>
+            <tr class="border-b border-gray-200">
+              <td class="py-4 px-6">White Labeling</td>
+              <td class="py-4 px-6 text-center">
+                <Icon name="ph:x-circle-duotone" class="h-5 w-5 text-gray-400 mx-auto" />
+              </td>
+              <td class="py-4 px-6 text-center">
+                <Icon name="ph:check-circle-duotone" class="h-5 w-5 text-dashbud-teal mx-auto" />
+              </td>
+              <td class="py-4 px-6 text-center">
+                <Icon name="ph:check-circle-duotone" class="h-5 w-5 text-dashbud-teal mx-auto" />
+              </td>
+            </tr>
+            <tr class="border-b border-gray-200">
+              <td class="py-4 px-6">Custom Development</td>
+              <td class="py-4 px-6 text-center">
+                <Icon name="ph:x-circle-duotone" class="h-5 w-5 text-gray-400 mx-auto" />
+              </td>
+              <td class="py-4 px-6 text-center">
+                <Icon name="ph:x-circle-duotone" class="h-5 w-5 text-gray-400 mx-auto" />
+              </td>
+              <td class="py-4 px-6 text-center">
+                <Icon name="ph:check-circle-duotone" class="h-5 w-5 text-dashbud-teal mx-auto" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <section class="py-20 bg-dashbud-gray">
+    <div class="container-custom">
+      <div class="text-center max-w-3xl mx-auto animate-on-scroll">
+        <h2 class="text-3xl md:text-4xl font-bold">
+          Frequently Asked Questions
+        </h2>
+        <p class="mt-4 text-xl text-gray-600">
+          Have questions about our pricing? Check out our FAQ or contact us for more details.
+        </p>
+        <div class="mt-8">
+          <a href="/contact" class="btn btn-secondary">
+            Get in Touch
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+ -->
+
+
+  <CTASection />
+</Layout>

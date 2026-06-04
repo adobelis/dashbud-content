@@ -1,0 +1,694 @@
+[
+  {
+    "_createdAt": "2025-09-10T16:27:05Z",
+    "_id": "3a369860-a13a-468f-9370-0abf58128fce",
+    "_rev": "oqDz2HiADcPbvNokRGRB1G",
+    "_system": {
+      "base": {
+        "id": "3a369860-a13a-468f-9370-0abf58128fce",
+        "rev": "x55OSItMbFx92tINDkqUFs"
+      }
+    },
+    "_type": "blogpost",
+    "_updatedAt": "2025-09-17T21:23:07Z",
+    "author": {
+      "_ref": "06c87e63-b6e1-4acb-a7ce-33f2fc02fd5f",
+      "_type": "reference"
+    },
+    "body": [
+      {
+        "_key": "154103f14a8a",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "04ad03a4b6af",
+            "_type": "span",
+            "marks": [],
+            "text": "Test post"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "isFeatured": false,
+    "leadImage": {
+      "_type": "image",
+      "alt": "A businessperson faces a maze to the promised land of Business Insights",
+      "asset": {
+        "_ref": "image-70d049ff300858ab7a04a96249fdcf1d6cab2972-1024x1024-png",
+        "_type": "reference"
+      }
+    },
+    "published": "2135-09-17T20:30:00.000Z",
+    "section": {
+      "_ref": "59278252-8b63-4a6a-a432-3df1994e1d3f",
+      "_type": "reference"
+    },
+    "slug": {
+      "_type": "slug",
+      "current": "test-post-1"
+    },
+    "snippet": "Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum?",
+    "subTitle": "Lorem ipsum lorem impsum.Lorem ipsum lorem impsum.Lorem ipsum lorem impsum.Lorem ipsum lorem impsum.",
+    "title": "Test Post 1"
+  },
+  {
+    "_createdAt": "2025-09-09T18:00:49Z",
+    "_id": "e5d65bd8-1c4c-49bc-97c4-d61a87f703cf",
+    "_rev": "8zOK5U5ScprlNDd8izjzBK",
+    "_system": {
+      "base": {
+        "id": "e5d65bd8-1c4c-49bc-97c4-d61a87f703cf",
+        "rev": "4EsnmHxtGcg1AUUINO5TlI"
+      }
+    },
+    "_type": "blogpost",
+    "_updatedAt": "2025-09-19T21:26:52Z",
+    "author": {
+      "_ref": "06c87e63-b6e1-4acb-a7ce-33f2fc02fd5f",
+      "_type": "reference"
+    },
+    "body": [
+      {
+        "_key": "cf112ca4a7bb",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "d22e3c567fb0",
+            "_type": "span",
+            "marks": [],
+            "text": "Some years ago, Business Intelligence platforms made a bold promise: connect your data, build out a shared set of reports and dashboards, and everyone in your organization would be able to make decisions based on facts instead of hunches."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "2426997cacab",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1d12fdaa4113",
+            "_type": "span",
+            "marks": [],
+            "text": "It was a compelling vision. No more guessing about which marketing channels drive revenue. No more flying blind into board meetings without knowing your churn numbers. No more waiting weeks for IT to pull together reports."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "14f76e6564e5",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "f0dc2f3626d8",
+            "_type": "span",
+            "marks": [],
+            "text": "The tools arrived. The dashboards multiplied. Budgets were approved and implementation proceeded."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "85287a074f3e",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "dee37412a8a1",
+            "_type": "span",
+            "marks": [],
+            "text": "But "
+          },
+          {
+            "_key": "ea1633290d0e",
+            "_type": "span",
+            "marks": [
+              "em"
+            ],
+            "text": "Ad Hoc "
+          },
+          {
+            "_key": "2f0f4128fc5a",
+            "_type": "span",
+            "marks": [],
+            "text": "Reporting Persists"
+          }
+        ],
+        "markDefs": [],
+        "style": "h3"
+      },
+      {
+        "_key": "e044e59e9ada",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "4a68b435d10b",
+            "_type": "span",
+            "marks": [],
+            "text": "Many years have passed, and parts of the promise have been fulfilled: many companies now have a shared set of business data in some areas. And yet, many businesspeople are still doing much of the heavy lifting themselves: sales managers rebuilding the same analysis in Excel every month; finance stitching together exports from an account platform, a CRM, and an ERP in order to make pro forma projections for budgeting; all sorts of staff waiting for analyst time or doing hours of manual data wrangling to answer pressing new business questions."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "0db1296a765e",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "7f75dd90e395",
+            "_type": "span",
+            "marks": [],
+            "text": "Why? The answer varies from company to company and department to department, but there are a few common reasons:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "f7895811ebaf",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "de2045690d14",
+            "_type": "span",
+            "marks": [
+              "strong"
+            ],
+            "text": "Incomplete centralization: "
+          },
+          {
+            "_key": "6383fe39507d",
+            "_type": "span",
+            "marks": [],
+            "text": "integrating new data sources takes time and money."
+          }
+        ],
+        "level": 1,
+        "listItem": "number",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "030d56acfa56",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1b8752f21971",
+            "_type": "span",
+            "marks": [
+              "strong"
+            ],
+            "text": "Expert-focused BI interfaces: "
+          },
+          {
+            "_key": "04bdece679b8",
+            "_type": "span",
+            "marks": [],
+            "text": "even if the data is available, most non-experts don\u2019t have the skills to query it and may not have access."
+          }
+        ],
+        "level": 1,
+        "listItem": "number",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "96eeda28d96d",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "fdc7121978d7",
+            "_type": "span",
+            "marks": [
+              "strong"
+            ],
+            "text": "SaaS platforms\u2019 limited reporting capabilities: "
+          },
+          {
+            "_key": "4113203268e9",
+            "_type": "span",
+            "marks": [],
+            "text": "SaaS platforms offer their own reports and dashboards, usually clunky to configure and inherently siloed."
+          }
+        ],
+        "level": 1,
+        "listItem": "number",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "5031ea9edc58",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "8ea66eac20cc",
+            "_type": "span",
+            "marks": [],
+            "text": "This has the following unfortunate results:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "7f2638af04bf",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "5e46c3ecf0f8",
+            "_type": "span",
+            "marks": [
+              "strong"
+            ],
+            "text": "Valuable time wasted: "
+          },
+          {
+            "_key": "7487fbff9c7a",
+            "_type": "span",
+            "marks": [],
+            "text": "sharp people who have an analytical mindset end up spending too much time fiddling with spreadsheets."
+          }
+        ],
+        "level": 1,
+        "listItem": "number",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "381627bd4dd4",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "feb55be81ab9",
+            "_type": "span",
+            "marks": [
+              "strong"
+            ],
+            "text": "Limited sharing of insights: "
+          },
+          {
+            "_key": "0760c39df754",
+            "_type": "span",
+            "marks": [],
+            "text": "spreadsheets are natively static, messy, and not really built for sharing. Sharing a spreadsheet is like inviting a colleague over for dinner\u2014you don\u2019t just have to feed them but also clean the house."
+          }
+        ],
+        "level": 1,
+        "listItem": "number",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "351c13faed0d",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "164f4fb07a67",
+            "_type": "span",
+            "marks": [
+              "strong"
+            ],
+            "text": "Lack of governance: "
+          },
+          {
+            "_key": "40601f07e92a",
+            "_type": "span",
+            "marks": [],
+            "text": "data is copied around, and sourcing isn\u2019t tracked."
+          }
+        ],
+        "level": 1,
+        "listItem": "number",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "20b9b01f424a",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "6f4dc8e1703f",
+            "_type": "span",
+            "marks": [],
+            "text": "Thus ad hoc reporting results in loss of productivity, collaboration, and alignment."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b9a552935db3",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "0e08bc5dddf6",
+            "_type": "span",
+            "marks": [],
+            "text": "Centralization Presents Pitfalls"
+          }
+        ],
+        "markDefs": [],
+        "style": "h3"
+      },
+      {
+        "_key": "8279f596603d",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "18b4ea95689c",
+            "_type": "span",
+            "marks": [],
+            "text": "The answer has often been more centralization, pulling more data into the fold. But for companies that have invested in centralized BI, a different problem has emerged: the tools that promise to democratize data access often don\u2019t come through."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "92b4a41d507e",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "5be56c1e0fe2",
+            "_type": "span",
+            "marks": [],
+            "text": "These centralized systems solve some problems: data quality and governance improves and everyone can trust that they're looking at the same source of truth. But the centralized resource is now often gate-kept by the analytics team, for reasons that can range from licensing costs to lack of training for the BI reporting tools."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "26af7750e122",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "507b940dc1c7",
+            "_type": "span",
+            "marks": [],
+            "text": "Analytics teams are then required to:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "2284d768ff1e",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "e3bc0c0569ba",
+            "_type": "span",
+            "marks": [],
+            "text": "Create standardized reports and dashboards that often don\u2019t answer the business users\u2019 most pressing questions, "
+          },
+          {
+            "_key": "14afad11a649",
+            "_type": "span",
+            "marks": [
+              "strong"
+            ],
+            "text": "and/or"
+          }
+        ],
+        "level": 1,
+        "listItem": "number",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "3ee468cb9f78",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "33e668d56922",
+            "_type": "span",
+            "marks": [],
+            "text": "Run a ticket-based service organization, where every new custom report becomes a one-off project. A queue forms, and some tickets may take days to fulfill\u2026 until the corporate strategy team co-opts the entire analytics group for a critical project, in which case everyone else has to wait indefinitely."
+          }
+        ],
+        "level": 1,
+        "listItem": "number",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "e5f94a9aed6c",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "e28c2206dee3",
+            "_type": "span",
+            "marks": [],
+            "text": "And so, the fundamental challenge remains: getting answers to specific, timely business questions requires either technical skills many users don't have, days waiting in line for someone who does, or skilled professionals spending long hours generating the answers for themselves."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "5fa986bcc279",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "2d97c987783f",
+            "_type": "span",
+            "marks": [],
+            "text": "AI Creates New Possibilities"
+          }
+        ],
+        "markDefs": [],
+        "style": "h3"
+      },
+      {
+        "_key": "a2f8aa0f2c7c",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "910277e92a19",
+            "_type": "span",
+            "marks": [],
+            "text": "We believe a new day is dawning in BI: the technology environment has evolved in ways that put effective BI within reach of many more organizations. Modern technology can deliver on approaches that were previously only accessible to companies with significant analytics resources."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "8cf5aa0361c5",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "31aedcefa1fb",
+            "_type": "span",
+            "marks": [],
+            "text": "Many sophisticated data organizations have implemented a model called "
+          },
+          {
+            "_key": "8c997b935188",
+            "_type": "span",
+            "marks": [
+              "em"
+            ],
+            "text": "managed self-service"
+          },
+          {
+            "_key": "9dc4f0d87e5d",
+            "_type": "span",
+            "marks": [],
+            "text": "\u2014separating data storage and governance (centralized) from analysis and reporting (self-service) so business users can generate insights on top of a well-organized foundation. This approach has often been touted as a best practice, but it requires extensive data engineering resources and user training that most organizations can't justify or afford."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "37f39ecc5d75",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "0f36a07e03b7",
+            "_type": "span",
+            "marks": [],
+            "text": "New technologies can make managed self-service achievable by tackling both sides of the equation. On the user side, AI agents can interpret natural language queries and generate analysis across disparate sources, making sophisticated analytics and report configuration accessible without technical training."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "194e11068a75",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "e1e0ea58408e",
+            "_type": "span",
+            "marks": [],
+            "text": "On the foundational side, AI can assist with much of the semantic mapping and normalization that traditionally required significant manual effort. This is still precise setup work that requires human oversight. But AI assistance makes it feasible for organizations that previously lacked the resources to build and manage this kind of data foundation."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "4951a0887b9b",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "151d43e21bf2",
+            "_type": "span",
+            "marks": [],
+            "text": "The Path Forward"
+          }
+        ],
+        "markDefs": [],
+        "style": "h3"
+      },
+      {
+        "_key": "f1120475750e",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "e0c429ebac58",
+            "_type": "span",
+            "marks": [],
+            "text": "A shift toward accessible analytics is underway. People see the potential when they ask GPT to write a query for them or drop a CSV file into Claude for analysis. They may also see the limitations when Gemini offers to analyze a spreadsheet and seems to understand very little about their analysis."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "4edd06705082",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "cafdb76e3018",
+            "_type": "span",
+            "marks": [],
+            "text": "For AI to fulfill the promise of business intelligence requires more than just an agent, but a system that embeds the agent in an ecosystem of shared resources and outputs. It requires thoughtful application of not only AI, but business functionality, UX design, and cloud infrastructure."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "0715c752d9e3",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "5af660d621bb",
+            "_type": "span",
+            "marks": [],
+            "text": "At Dashbud, we're building an AI-powered platform designed specifically to make efficient, well-governed data analytics and business intelligence accessible to all. Our goal is to empower business users, increase collaboration, improve governance, and eliminate the cost of competence imposed on those with data skills. Our approach prioritizes "
+          },
+          {
+            "_key": "531657d002f1",
+            "_type": "span",
+            "marks": [
+              "strong"
+            ],
+            "text": "security"
+          },
+          {
+            "_key": "46dd10b8b7a8",
+            "_type": "span",
+            "marks": [],
+            "text": " and "
+          },
+          {
+            "_key": "dd274c56a533",
+            "_type": "span",
+            "marks": [
+              "strong"
+            ],
+            "text": "privacy"
+          },
+          {
+            "_key": "225790fb55f0",
+            "_type": "span",
+            "marks": [],
+            "text": " and avoids giving AI direct access to data sources."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "ed9b868fedad",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "d34df0f94d3a",
+            "_type": "span",
+            "marks": [],
+            "text": "Over the coming weeks, we'll be exploring what this transformation looks like in practice: the specific organizational patterns that keep teams trapped in manual reporting cycles, how companies are successfully removing friction from their analytics workflows, and the practical steps that make the difference between having data and actually using it to drive decisions."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "9a1b924fc2f8",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "39d78ab34180",
+            "_type": "span",
+            "marks": [],
+            "text": "If you're wrestling with these challenges or have something to say about them, we welcome the conversation. Understanding how these problems manifest in different organizations and contexts is what shapes everything we're building."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "7544248eff93",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "ccdc11eb537b",
+            "_type": "span",
+            "marks": [],
+            "text": "The promise of business intelligence was never wrong. We're here to help deliver it."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "isFeatured": true,
+    "leadImage": {
+      "_type": "image",
+      "alt": "A businessperson faces a maze to the promised land of Business Insights",
+      "asset": {
+        "_ref": "image-70d049ff300858ab7a04a96249fdcf1d6cab2972-1024x1024-png",
+        "_type": "reference"
+      }
+    },
+    "published": "2025-09-12T20:30:00.000Z",
+    "section": {
+      "_ref": "59278252-8b63-4a6a-a432-3df1994e1d3f",
+      "_type": "reference"
+    },
+    "seo": {
+      "title": "The Lost Promise of Business Intelligence (BI)"
+    },
+    "slug": {
+      "_type": "slug",
+      "current": "the-lost-promise-of-bi"
+    },
+    "snippet": "Business intelligence promised to democratize data access and empower every team member to make fact-based decisions. Years later, organizations are still wrestling with fragmented data, analytics bottlenecks, and widespread manual reporting. Can advances in AI finally deliver on BI's original promise?\n",
+    "subTitle": "For two decades, business intelligence has promised to democratize data access. Can AI finally deliver accessible analytics to every business user?",
+    "title": "The Lost Promise of Business Intelligence",
+    "topics": [
+      "BI",
+      "Business Intelligence",
+      "Data Analytics"
+    ]
+  }
+]

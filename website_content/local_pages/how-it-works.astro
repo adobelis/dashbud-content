@@ -1,0 +1,182 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CTASection from '../components/CTASection.astro';
+import BlockRenderer from '../components/BlockRenderer.astro';
+import PageNav from '../components/PageNav.astro';
+import { Image } from 'astro:assets';
+import heroImage from '../assets/DashbudGears.png';
+import yaml from 'js-yaml';
+import { readFileSync } from 'fs';
+
+const content = yaml.load(readFileSync('./src/content/how-it-works.yaml', 'utf8'));
+
+const navLinks = [
+  { href: '#how-dashbud-works', label: 'How Dashbud Works', isActive: true },
+  { href: '/traditional-workflow', label: 'Traditional BI and its Problems' },
+  { href: '/foundational-questions#where-data-lives', label: 'Where does your data live?' },
+  { href: '/foundational-questions#what-is-bi', label: 'What is Business Intelligence?' },
+];
+
+---
+
+<Layout title="How Dashbud Works" description={content.hero.subtitle}>
+  
+  <!-- Hero Section -->
+  <section class="pt-28 pb-16 md:py-12 bg-gradient-to-r from-white to-dashbud-teal">
+    <div class="container-custom">
+      <div class="flex flex-col lg:flex-row gap-12 items-center">
+        <div class="order-2 lg:order-1 animate-on-scroll max-w-[660px]">
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight" set:html={content.hero.title.replace('how it works', '<span class="gradient-text">how it works</span>')}></h1>
+          <p class="mt-6 text-xl text-gray-600 max-w-lg">
+            {content.hero.subtitle}
+          </p>
+        </div>
+        
+        <div class="order-1 lg:order-2 animate-on-scroll pt-6" style="animation-delay: 0.2s;">
+          <div class="relative">
+            <Image  
+              src={heroImage}
+              alt="Dashbud Puzzle Pieces" 
+              class="drop-shadow-lg h-100 w-auto"
+              width={300}
+              height={300}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-custom flex gap-8 mt-12">
+    <!-- Sticky Navigation (Desktop) -->
+    <PageNav links={navLinks} />
+    <!-- Main Content -->
+    <article class="flex-1 max-w-4xl pb-16">
+      
+      <!-- Dashbud Solution -->
+      <section id="top" class="pt-2 scroll-mt-12">
+      <!-- Traditional Workflow (brief) -->
+       <p class="text-gray-700 mb-4">
+         It's important to understand the situation Dashbud address and the problem it solves.
+       </p>
+        <p class="text-gray-700 mb-4">
+            <span class="font-semibold">The problems of traditional BI: </span>
+          BI is about getting answers from your data, which usually means: gathering data from multiple sources, learning complex tools, managing fragile processes, and repeating yourself. It's slow, creates bottlenecks, and frustrates and burdens business users.
+        <a href="/traditional-workflow" class="text-dashbud-blue hover:underline font-medium">
+          This process presents quite a few problems. →
+        </a>
+        </p>
+      <!-- Where Data Lives (brief) -->
+        <p class="text-gray-700 mb-4">
+          <span class="font-semibold">Your data lives in many places: </span>flat files (Excel, CSVs), databases (PostgreSQL, MySQL), siloed systems (ERPs, CRMs), and SaaS platforms (Stripe, QuickBooks, Google Analytics). 
+        <a href="/foundational-questions#where-data-lives" class="text-dashbud-blue hover:underline font-medium">
+          Dashbud connects to all of these data sources. →
+        </a>
+        </p>
+      <!-- What is BI -->
+        <p class="text-gray-700 mb-4">
+          <span class="font-semibold">What is BI? </span> 
+        <a href="/foundational-questions#what-is-bi" class="text-dashbud-blue hover:underline font-medium">
+          A deeper dive with some foundational questions and answers. →
+        </a>
+        </p>
+      </section>
+      <section id="how-dashbud-works" class="pt-8 scroll-mt-24">
+
+        <h2 class="text-3xl font-bold mb-8">How Dashbud Works: AI-Powered BI</h2>
+        <p class="text-gray-700 mb-4">Dashbud addresses the challenges of traditional BI by automating data integration, analysis, and visualization. Our AI-powered platform simplifies the process, enabling users to get insights faster and with less effort. </p>
+
+        
+        {content.sections.dashbudSolution.steps.map((step) => (
+          <div class="mb-12 last:mb-0 animate-on-scroll">
+            <h3 class="text-2xl font-bold mb-6">
+              Step {step.stepNumber}: {step.title}
+            </h3>
+            <div class="clear-both">
+              <BlockRenderer blocks={step.blocks} />
+              <div class="clear-both"></div>
+            </div>
+          </div>
+        ))}
+      </section>
+
+      <!-- The Dashbud Difference -->
+      <section class="pt-16 scroll-mt-24">
+        <div class="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent mb-12"></div>
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold mb-4">{content.sections.difference.title}</h2>
+          <p class="text-xl text-gray-600">{content.sections.difference.subtitle}</p>
+        </div>
+
+        <BlockRenderer blocks={content.sections.difference.blocks} />
+
+        <div class="space-y-6 mt-12">
+          {content.sections.difference.benefits.map((benefit, index) => (
+            <div class="bg-white p-6 rounded-lg border shadow-sm">
+              <div class="flex items-start gap-4">
+                <div class="text-3xl flex-shrink-0">{benefit.icon}</div>
+                <div>
+                  <h3 class="text-xl font-bold mb-2">{benefit.title}</h3>
+                  <p class="text-gray-700">{benefit.description}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </article>
+  </div>
+
+  <!-- CTA Section -->
+  <CTASection 
+  />
+
+</Layout>
+
+<style>
+  .gradient-text {
+    background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #6b7280;
+    text-decoration: none;
+    border-left: 3px solid transparent;
+    transition: all 0.2s;
+  }
+
+  .nav-link:hover {
+    color: #111827;
+    background: #f9fafb;
+  }
+
+  .nav-link.active {
+    color: #0ea5e9;
+    border-left-color: #0ea5e9;
+    background: #f0f9ff;
+    font-weight: 600;
+  }
+</style>
+
+<script>
+  // Intersection Observer for nav highlighting
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(link => link.classList.remove('active'));
+        const activeLink = document.querySelector(`a[href="#${entry.target.id}"]`);
+        if (activeLink) activeLink.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-100px 0px -66%' });
+
+  sections.forEach(section => observer.observe(section));
+</script>

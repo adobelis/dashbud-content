@@ -1,0 +1,34 @@
+[
+  {
+    "_createdAt": "2025-09-10T12:52:01Z",
+    "_id": "59278252-8b63-4a6a-a432-3df1994e1d3f",
+    "_rev": "x7AKQdsMTT5RY3O5CQ7WZX",
+    "_type": "section",
+    "_updatedAt": "2025-09-10T12:53:56Z",
+    "description": "Thoughts, ideas, and investigations on data analytics and business intelligence in general.",
+    "name": "Data Analytics",
+    "slug": {
+      "_type": "slug",
+      "current": "data-analytics"
+    }
+  },
+  {
+    "_createdAt": "2025-07-11T16:37:19Z",
+    "_id": "ad20c512-f7ab-419c-9769-30a312b04a9d",
+    "_rev": "CamHzSyS1JT3ENpT8Bttjy",
+    "_system": {
+      "base": {
+        "id": "ad20c512-f7ab-419c-9769-30a312b04a9d",
+        "rev": "vCfOT9yCEZ5e5C73QQywia"
+      }
+    },
+    "_type": "section",
+    "_updatedAt": "2025-07-11T16:39:23Z",
+    "description": "Our catch-all, general blog post section. Items will be published under /blog/",
+    "name": "Dashbud Blog",
+    "slug": {
+      "_type": "slug",
+      "current": "blog"
+    }
+  }
+]

@@ -1,0 +1,68 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageNav from '../components/PageNav.astro';
+import BlockRenderer from '../components/BlockRenderer.astro';
+import yaml from 'js-yaml';
+import { readFileSync } from 'fs';
+
+const content = yaml.load(readFileSync('./src/content/how-it-works.yaml', 'utf8'));
+
+const navLinks = [
+  { href: '/how-it-works#how-dashbud-works', label: 'How Dashbud Works' },
+  { href: '/traditional-workflow', label: 'Traditional BI and its Problems' },
+  { href: '#where-data-lives', label: 'Where does your data live?', isActive: true },
+  { href: '#what-is-bi', label: 'What is Business Intelligence?' },
+];
+---
+
+<Layout title="Foundational Questions - Dashbud" description="Understanding business intelligence and where your data lives">
+
+  <div class="container-custom flex gap-8 mt-12 pt-20">
+    <PageNav links={navLinks} />
+
+    <article class="flex-1 max-w-4xl pb-20 min-w-0">
+      
+      <!-- Intro -->
+      <section id="what-is-bi" class="pt-4 scroll-mt-12">
+        <h1 class="text-4xl font-bold mb-6">{content.sections.intro.title}</h1>
+        <BlockRenderer blocks={content.sections.intro.blocks} />
+      </section>
+
+      <!-- Data Types Section -->
+      <section id="where-data-lives" class="pt-12 scroll-mt-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          {content.sections.dataTypes.types.map((type, index) => (
+            <div class="animate-on-scroll bg-gray-50 p-6 rounded-lg border relative" style={`animation-delay: ${index * 0.1}s;`}>
+              <div class="text-2xl absolute top-6 right-6">{type.icon}</div>
+              <h4 class="text-xl font-bold mb-3">{type.title}</h4>
+              <p class="text-gray-700 mb-3">{type.description}</p>
+              <p class="text-sm text-gray-600">
+                <span class="font-semibold">Examples:</span> {type.examples}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <BlockRenderer blocks={content.sections.dataTypes.outro} />
+
+        <div class="mt-8 p-6 bg-blue-50 rounded-lg border border-blue-200">
+          <p class="text-gray-700">
+            <strong>Ready to see how Dashbud connects to all these sources?</strong>
+          </p>
+          <a href="/how-it-works#how-dashbud-works" class="text-dashbud-blue hover:underline font-medium mt-2 inline-block">
+            See how Dashbud transforms your workflow →
+          </a>
+        </div>
+      </section>
+    </article>
+  </div>
+</Layout>
+
+<style>
+  .gradient-text {
+    background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+</style>

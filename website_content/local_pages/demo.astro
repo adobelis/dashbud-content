@@ -1,0 +1,156 @@
+---
+import DemoLayout from '../layouts/DemoLayout.astro';
+import DemoSection from '../components/DemoSection.astro';
+import DemoStickySection from '../components/DemoStickySection.astro';
+import DemoNav from '../components/DemoNav.astro';
+import yaml from 'js-yaml';
+import { readFileSync } from 'fs';
+
+const content = yaml.load(readFileSync('./src/content/demo.yaml', 'utf8'));
+---
+
+<DemoLayout
+  title="Dashbud Demo — From Database to Insight"
+  description="See how Dashbud turns natural language into SQL queries and visualizations. No coding required."
+>
+
+  <!-- Hero -->
+  <section class="pt-20 pb-12 md:pt-28 md:pb-20 bg-gradient-to-b from-white to-gray-50">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 text-center max-w-3xl mx-auto">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-on-scroll">
+        {content.hero.title}
+      </h1>
+      <p class="mt-6 text-xl md:text-2xl text-gray-600 animate-on-scroll" style="animation-delay: 0.15s;">
+        {content.hero.subtitle}
+      </p>
+      <div class="mt-8 animate-on-scroll" style="animation-delay: 0.3s;">
+        <a href="#connect" class="inline-flex items-center gap-2 text-dashbud-blue hover:underline font-medium text-lg">
+          Scroll to explore
+          <svg class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky section nav -->
+  <DemoNav sections={content.sections.map((s) => ({ id: s.id, label: s.label }))} />
+
+  <!-- Demo sections -->
+  <div class="demo-sections">
+    {content.sections.map((section, index) => (
+      <div class={index % 2 === 1 ? 'bg-gray-50' : ''}>
+        {section.type === 'sticky' ? (
+          <DemoStickySection
+            id={section.id}
+            headline={section.headline}
+            steps={section.steps}
+            reverse={index % 2 === 1}
+          />
+        ) : (
+          <DemoSection
+            id={section.id}
+            headline={section.headline}
+            body={section.body}
+            callout={section.callout}
+            image={section.image}
+            imageAlt={section.imageAlt}
+            index={index}
+          />
+        )}
+      </div>
+    ))}
+  </div>
+
+  <!-- Closing -->
+  <section class="py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 text-center max-w-2xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">{content.closing.headline}</h2>
+      <p class="text-lg text-gray-600 mb-10">{content.closing.body}</p>
+      <a
+        href={content.closing.ctaUrl}
+        class="inline-block px-8 py-4 bg-dashbud-blue text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5 text-lg"
+      >
+        {content.closing.ctaText}
+      </a>
+    </div>
+  </section>
+
+</DemoLayout>
+
+<script>
+  // --- Scroll-triggered reveal for demo sections ---
+  {
+    const textEls = document.querySelectorAll('.demo-text');
+    const imageEls = document.querySelectorAll('.demo-image');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove('opacity-0', 'translate-y-8');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    textEls.forEach(el => revealObserver.observe(el));
+    imageEls.forEach(el => revealObserver.observe(el));
+
+    // --- Active nav link tracking ---
+    const sections = document.querySelectorAll('.demo-section');
+    const navLinks = document.querySelectorAll('.demo-nav-link');
+
+    const navObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          navLinks.forEach(link => {
+            const isActive = link.getAttribute('data-section') === id;
+            link.classList.toggle('text-dashbud-blue', isActive);
+            link.classList.toggle('bg-blue-50', isActive);
+            link.classList.toggle('text-gray-500', !isActive);
+          });
+        }
+      });
+    }, { rootMargin: '-20% 0px -60% 0px' });
+
+    sections.forEach(section => navObserver.observe(section));
+
+    // --- Sticky section image swapping ---
+    const scrollSteps = document.querySelectorAll('.scroll-step[data-sticky-section]');
+
+    const stickyObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+
+        const sectionId = entry.target.getAttribute('data-sticky-section');
+        const stepIndex = entry.target.getAttribute('data-step-index');
+        if (!sectionId || stepIndex === null) return;
+
+        // Swap images: hide all, show the matching one
+        const images = document.querySelectorAll(
+          `.sticky-image[data-sticky-section="${sectionId}"]`
+        );
+        images.forEach(img => {
+          const idx = img.getAttribute('data-image-index');
+          if (idx === stepIndex) {
+            img.classList.remove('opacity-0', 'absolute', 'inset-0');
+            img.classList.add('opacity-100', 'relative');
+          } else {
+            img.classList.remove('opacity-100', 'relative');
+            img.classList.add('opacity-0', 'absolute', 'inset-0');
+          }
+        });
+      });
+    }, { rootMargin: '-35% 0px -45% 0px' });
+
+    scrollSteps.forEach(step => stickyObserver.observe(step));
+  }
+</script>
+
+<style>
+  .demo-text, .demo-image {
+    will-change: opacity, transform;
+  }
+</style>

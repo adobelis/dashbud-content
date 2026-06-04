@@ -1,0 +1,803 @@
+[
+  {
+    "_createdAt": "2025-07-14T12:33:39Z",
+    "_id": "11e6db09-82cb-4188-a008-4d43ea907672",
+    "_rev": "CamHzSyS1JT3ENpT8Gn4p4",
+    "_system": {
+      "base": {
+        "id": "11e6db09-82cb-4188-a008-4d43ea907672",
+        "rev": "VYus6nyHpjKB0SEJ06xWJa"
+      }
+    },
+    "_type": "feature",
+    "_updatedAt": "2025-07-16T22:06:46Z",
+    "image": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-5d723eaa7abbf74eaf91ec7f9a6cee8ca1264b7a-1296x698-png",
+        "_type": "reference"
+      }
+    },
+    "imageAlt": "Data source tiles including Google Sheets, Stripe, Postgres, and CSVs",
+    "longDescription": [
+      {
+        "_key": "5b7447898a52",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "0206eda50581",
+            "_type": "span",
+            "marks": [],
+            "text": "Your data is everywhere \u2014 scattered across spreadsheets, SaaS tools, cloud platforms, and legacy databases. Most reporting tools make you jump through hoops just to bring it all together."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "1e0635d30460",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "8ebe51d5ed58",
+            "_type": "span",
+            "marks": [],
+            "text": "Dashbud makes it easy to plug in whatever you're working with:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "bbbe55242b00",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "217ab87a213d",
+            "_type": "span",
+            "marks": [],
+            "text": "Upload CSVs or Excel sheets"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "928f87a79ac1",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "69c6af8afbd7",
+            "_type": "span",
+            "marks": [],
+            "text": "Connect to Google Sheets or Airtable"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "d89e649b0c37",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "8322a5090336",
+            "_type": "span",
+            "marks": [],
+            "text": "Sync directly with databases like PostgreSQL, MySQL, or Snowflake"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "bc9faa27ebb8",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "7fa2cf53f3c9",
+            "_type": "span",
+            "marks": [],
+            "text": "Integrate with APIs or platforms like HubSpot, Stripe, and Google Ads"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "a2dad057d4ce",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "e200085c949d",
+            "_type": "span",
+            "marks": [],
+            "text": "Whether you're a founder with one dashboard or a data lead wrangling six sources, Dashbud adapts. No lock-in, no special formats \u2014 just clean, flexible inputs that support real work."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "order": 5,
+    "shortDescription": [
+      {
+        "_key": "bed669a0f5fd",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "6bc0bf54a1d5",
+            "_type": "span",
+            "marks": [],
+            "text": "Dashbud connects to spreadsheets, databases, APIs, and cloud services \u2014 no data left behind."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "slug": {
+      "_type": "slug",
+      "current": "connect-anything-use-anywhere"
+    },
+    "title": "Connect Anything, Use Anywhere"
+  },
+  {
+    "_createdAt": "2025-07-14T12:21:18Z",
+    "_id": "353166e1-2171-4557-a9f1-2c5186e8e312",
+    "_rev": "CamHzSyS1JT3ENpT8GZfnC",
+    "_system": {
+      "base": {
+        "id": "353166e1-2171-4557-a9f1-2c5186e8e312",
+        "rev": "VYus6nyHpjKB0SEJ07euXi"
+      }
+    },
+    "_type": "feature",
+    "_updatedAt": "2025-07-16T18:52:36Z",
+    "image": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-da2fe2d5939a26ad41225169b1132145b3fae557-1428x706-png",
+        "_type": "reference"
+      }
+    },
+    "imageAlt": "Dashbud's conversational UI suggesting a list of relevant report types based on available data",
+    "longDescription": [
+      {
+        "_key": "3f0d24faf599",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b7a5122754f2",
+            "_type": "span",
+            "marks": [],
+            "text": "Creating reports from a blank screen is slow and intimidating \u2014 especially if you don\u2019t know what\u2019s possible or where to start."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "43901cfa225d",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "75f47cba6047",
+            "_type": "span",
+            "marks": [],
+            "text": "Dashbud helps by offering smart report suggestions based on the structure of your data. It understands common use cases \u2014 like marketing attribution, product performance, or financial summaries \u2014 and suggests reports that businesses like yours typically need."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "ddadde023893",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "58a7bc16c7a9",
+            "_type": "span",
+            "marks": [],
+            "text": "But unlike \u201ccanned\u201d dashboards, these aren\u2019t one-size-fits-all templates. You stay in the driver\u2019s seat."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "f0675b50d3c9",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "17a778bcfb4a",
+            "_type": "span",
+            "marks": [],
+            "text": "Want a P&L by business unit for Q1? Just ask."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "6068cee25fff",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "a613bcaaa9a6",
+            "_type": "span",
+            "marks": [],
+            "text": "Curious how revenue broke down across ad campaigns? We\u2019ve seen that before \u2014 and we can help."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "f891245bfa72",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1efbf0aad63f",
+            "_type": "span",
+            "marks": [],
+            "text": "Need a customer retention snapshot for your board deck? You\u2019re one step away."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "d5e0e50309a2",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "deb8be5bba14",
+            "_type": "span",
+            "marks": [],
+            "text": "Dashbud brings its reporting experience to your unique data \u2014 and works with you, conversationally, to shape the exact report or dashboard you need."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "order": 2,
+    "shortDescription": [
+      {
+        "_key": "8792f3d3fe8c",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "c396e9c5f67d",
+            "_type": "span",
+            "marks": [],
+            "text": "Dashbud suggests useful reports based on your data structure \u2014 so you don\u2019t have to start from scratch."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "slug": {
+      "_type": "slug",
+      "current": "smart-report-recommendations"
+    },
+    "title": "Smart Report Recommendations"
+  },
+  {
+    "_createdAt": "2025-07-14T12:30:26Z",
+    "_id": "3e0abf06-4e77-4fdc-aae7-58db5b439c26",
+    "_rev": "rJHL4a4dJtlEfGqgaeRoiZ",
+    "_system": {
+      "base": {
+        "id": "3e0abf06-4e77-4fdc-aae7-58db5b439c26",
+        "rev": "rJHL4a4dJtlEfGqgaeMKeB"
+      }
+    },
+    "_type": "feature",
+    "_updatedAt": "2025-07-17T14:01:00Z",
+    "image": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-e2d3f51b7c1ae1046325ddcadab2f6ad9d684d43-400x400-jpg",
+        "_type": "reference"
+      }
+    },
+    "imageAlt": "A dropdown showing multiple workspaces: Marketing, Financials, XYZ Partnership, Sales Ops, and Scratchpad",
+    "longDescription": [
+      {
+        "_key": "c7906c6101e1",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "ee7f887b41af",
+            "_type": "span",
+            "marks": [],
+            "text": "Sprawling folders. Dozens of versions. Confusing filenames like "
+          },
+          {
+            "_key": "d00943f571f2",
+            "_type": "span",
+            "marks": [
+              "code"
+            ],
+            "text": "final_FINAL_v2.xlsx"
+          },
+          {
+            "_key": "6ed8e696bdc4",
+            "_type": "span",
+            "marks": [],
+            "text": "."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "a175f9efda3b",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "f67a9f824393",
+            "_type": "span",
+            "marks": [],
+            "text": "Dashbud replaces the mess with organized, collaborative workspaces where your team can build, browse, and reuse reporting assets with confidence."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b21225d5239c",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "a2fcb452225e",
+            "_type": "span",
+            "marks": [],
+            "text": "Group reports, dashboards, and data sources by project, team, or client"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "56b1a1761a35",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "0340ee78a0af",
+            "_type": "span",
+            "marks": [],
+            "text": "Share workspaces with collaborators \u2014 no file juggling or permissions confusion"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "381f564cd9d0",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "3a454f510a07",
+            "_type": "span",
+            "marks": [],
+            "text": "Keep track of your most important metrics in one place"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "ebcda4100842",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "ec00d0a4da31",
+            "_type": "span",
+            "marks": [],
+            "text": "Use templates and previous work as a starting point for new requests"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "f7914c5f0e98",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "f2af48a8303f",
+            "_type": "span",
+            "marks": [],
+            "text": "It\u2019s reporting infrastructure that actually scales as your team grows."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "order": 4,
+    "shortDescription": [
+      {
+        "_key": "c898e96d6f28",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "93bb4e4442a0",
+            "_type": "span",
+            "marks": [],
+            "text": "Keep your data, reports, and dashboards tidy and accessible with shared workspaces and project folders."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "slug": {
+      "_type": "slug",
+      "current": "organized-workspaces-and-shared-projects"
+    },
+    "title": "Organized Workspaces & Shared Projects"
+  },
+  {
+    "_createdAt": "2025-07-14T12:28:19Z",
+    "_id": "aada85c2-bedf-4f07-9e7c-55d004241700",
+    "_rev": "ctJcyS5elEBpU5esnw7lBB",
+    "_system": {
+      "base": {
+        "id": "aada85c2-bedf-4f07-9e7c-55d004241700",
+        "rev": "CamHzSyS1JT3ENpT8DuR4C"
+      }
+    },
+    "_type": "feature",
+    "_updatedAt": "2025-07-15T22:39:54Z",
+    "image": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-eb639dea12f32e169e182b1f095c1e0524baa72b-1775x872-webp",
+        "_type": "reference"
+      }
+    },
+    "imageAlt": "A sleek dashboard with charts and KPIs laid out cleanly, ready to share",
+    "longDescription": [
+      {
+        "_key": "47fc2c4ac318",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "dd49bdd176af",
+            "_type": "span",
+            "marks": [],
+            "text": "You\u2019ve probably seen this before: a valuable insight buried in a janky chart or an Excel sheet copied into a slide deck."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "05a75e7f07d4",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "01aebe62420c",
+            "_type": "span",
+            "marks": [],
+            "text": "Dashbud helps you move beyond that. Every report or dashboard you generate is clean, clear, and presentation-ready by default \u2014 whether it\u2019s for internal planning, investor updates, or client-facing delivery."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "95e59f9b02d6",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "80ef6e4e7ba3",
+            "_type": "span",
+            "marks": [],
+            "text": "No extra formatting, no tweaking colors, no rebuilding charts in PowerPoint. You get:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "4c88b9b1c128",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "873d7e26024f",
+            "_type": "span",
+            "marks": [],
+            "text": "Modern, responsive dashboards you can customize and share"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "30a6e3ded89e",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "d3a866c46597",
+            "_type": "span",
+            "marks": [],
+            "text": "Beautiful, readable reports that fit your brand"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "526bbf498db9",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "7b79d5a17688",
+            "_type": "span",
+            "marks": [],
+            "text": "PDF and link-based sharing options that just work"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "3fc5a1c416aa",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "7bd1953d0a1f",
+            "_type": "span",
+            "marks": [],
+            "text": "It\u2019s fast, flexible, and easy to make high-quality reporting a routine part of how your team communicates."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "order": 3,
+    "shortDescription": [
+      {
+        "_key": "0702e7e1b97c",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "0605ed8c30d8",
+            "_type": "span",
+            "marks": [],
+            "text": "Dashbud makes it easy to create presentation-ready dashboards and reports without design work."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "slug": {
+      "_type": "slug",
+      "current": "clean-professional-outputs"
+    },
+    "title": "Clean, Professional Outputs"
+  },
+  {
+    "_createdAt": "2025-07-14T12:12:17Z",
+    "_id": "f511cdf6-cfb1-4906-a82d-e404844d808e",
+    "_rev": "CamHzSyS1JT3ENpT8Ey5Yc",
+    "_system": {
+      "base": {
+        "id": "f511cdf6-cfb1-4906-a82d-e404844d808e",
+        "rev": "VYus6nyHpjKB0SEJ06xKPS"
+      }
+    },
+    "_type": "feature",
+    "_updatedAt": "2025-07-15T22:12:54Z",
+    "image": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-63cc579c43747507e9005dbecdd90f0d89b96fe2-2054x1590-png",
+        "_type": "reference"
+      }
+    },
+    "imageAlt": "The user types \"In-app conversion by screen\" and sees a bar chart with conversion percentages.",
+    "longDescription": [
+      {
+        "_key": "30529ffc3cae",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "25c3f092ec15",
+            "_type": "span",
+            "marks": [],
+            "text": "Dashbud lets you query your data like you're talking to a teammate. No technical syntax, no waiting in line for a report \u2014 just clear answers, fast."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "bb02faccc4e1",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "583ce53bdd44",
+            "_type": "span",
+            "marks": [],
+            "text": "Traditionally, creating a report means one of two things:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c4c30a4f6d3d",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "244957db7b3e",
+            "_type": "span",
+            "marks": [],
+            "text": "Writing SQL \u2014 which requires significant technical skill"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "57101d5ce4bf",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "ceba9bf29ca6",
+            "_type": "span",
+            "marks": [],
+            "text": "Or slogging through a point-and-click interface in a BI tool \u2014 which is often slow, glitchy, and confusing"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "ba0058001e6f",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "2cca821755a0",
+            "_type": "span",
+            "marks": [],
+            "text": "Dashbud removes both barriers. You simply ask a question \u2014 and Dashbud generates accurate, visual answers on the fly. For example:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "a811ac857e89",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "a469292dfabd",
+            "_type": "span",
+            "marks": [
+              "em"
+            ],
+            "text": "\u201cWhat were our top-selling products last week?\u201d"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "39fbe38de273",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "51165d773aa4",
+            "_type": "span",
+            "marks": [
+              "em"
+            ],
+            "text": "\u201cShow me revenue by ad campaign for Q2.\u201d"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "a629f451a3ab",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "a9539e31f8fe",
+            "_type": "span",
+            "marks": [
+              "em"
+            ],
+            "text": "\u201cWhat\u2019s our gross margin for last month compared to the same month last year?\u201d"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "d6476ad5dc1d",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "c0565910f479",
+            "_type": "span",
+            "marks": [],
+            "text": "By making reporting conversational, Dashbud gives business teams instant access to the answers they need \u2014 and frees up analysts to focus on deeper work."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "order": 1,
+    "shortDescription": [
+      {
+        "_key": "7d2695c47938",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "a93a67ee1798",
+            "_type": "span",
+            "marks": [],
+            "text": "Ask questions in natural language and get answers in real time \u2014 no SQL, no middleman."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "slug": {
+      "_type": "slug",
+      "current": "plain-language-queries"
+    },
+    "title": "Plain Language Queries"
+  }
+]
