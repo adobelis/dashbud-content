@@ -1,0 +1,12 @@
+Login Date,IP Address,User Agent,Login Type
+Fri Aug 16 04:53:08 UTC 2024,185.225.234.245,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",Login
+Fri Aug 16 04:53:53 UTC 2024,185.225.234.245,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",Login
+Fri Aug 16 04:58:07 UTC 2024,58.187.78.106,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",Login
+Fri Aug 16 09:19:06 UTC 2024,2607:fb91:3022:9b:cfd:7231:f31d:9dd4,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",Login
+Fri Aug 16 09:40:05 UTC 2024,2607:fb91:3022:9b:cfd:7231:f31d:9dd4,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",Login
+Fri Aug 16 15:47:19 UTC 2024,2603:7000:873d:f15c:64b7:f003:10f5:9643,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",Login
+Fri Aug 16 18:21:40 UTC 2024,2600:1017:b4b9:c7b3:c380:e3e1:f0e6:1180,LIAuthLibrary:0.0.3 com.linkedin.android:4.1.969 Google_Pixel 6 Pro:android_14,Login
+Fri Aug 16 18:21:40 UTC 2024,2600:1017:b4b9:c7b3:c380:e3e1:f0e6:1180,LIAuthLibrary:0.0.3 com.linkedin.android:4.1.969 Google_Pixel 6 Pro:android_14,Login
+Sat Aug 24 01:04:02 UTC 2024,2600:4808:8054:bd00:a823:bb1e:1b2d:b33e,LIAuthLibrary:0.0.3 com.linkedin.android:4.1.974 Google_Pixel 6 Pro:android_14,Login
+Sat Mar 01 02:28:03 UTC 2025,2600:1017:b4b9:bade:f735:aa93:61e6:98db,LIAuthLibrary:0.0.3 com.linkedin.android:4.1.1039 Google_Pixel 8 Pro:android_14,Login
+Sat Sep 27 13:08:45 UTC 2025,24.90.117.63,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",Login
