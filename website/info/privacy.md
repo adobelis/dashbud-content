@@ -84,6 +84,29 @@ Only authorized personnel may access customer-specific metadata, and only for pu
 
 Dashbud does not share any customer schema or metadata with external third-party services unless explicitly authorized by you, the customer. No analytics, ad platforms, or AI APIs process your data behind the scenes.
 
+## 6a. Third-Party Integrations
+
+### Google Sheets & Google Drive
+
+Dashbud allows you to connect your Google account to import spreadsheet data as a data source. When you connect, Dashbud requests read-only access to your Google Sheets and Google Drive through Google's OAuth 2.0 authorization flow.
+
+**What we access:**
+- A list of your Google Sheets spreadsheet names, owners, and modification dates (to display the spreadsheet picker)
+- The contents of spreadsheets you explicitly select for import
+
+**What we store:**
+- An encrypted OAuth refresh token, used to re-access your selected spreadsheets for data updates. This token is encrypted at rest and never exposed to other users or third parties.
+- A copy of the spreadsheet data you import, materialized into your Dashbud workspace for querying
+
+**What we do not do:**
+- We do not access spreadsheets you have not selected
+- We do not modify, write to, or delete any Google Sheets or Drive files
+- We do not share your Google data with third parties
+- We do not use your Google data for advertising or profiling
+
+**Revoking access:**
+You can disconnect your Google account at any time by removing the data source from your Dashbud workspace. You can also revoke Dashbud's access directly from your [Google Account Permissions](https://myaccount.google.com/permissions).
+
 ## 7. Data Retention
 
 We retain user account data only for as long as your account remains active.
