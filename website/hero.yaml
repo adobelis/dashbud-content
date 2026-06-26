@@ -1,0 +1,18 @@
+# Website hero content — source of truth
+# Push to Sanity via scripts/sanity/push_hero.py
+
+sanity_id: "b8feb522-f902-4fa6-bbc1-92724e3df508"
+
+headline: "AI-powered analytics for <br> *all your data*"
+
+subheadline: >
+  From a single spreadsheet to your company's entire data ecosystem,
+  give everyone access to trusted, modern data tools.
+
+primary_cta:
+  text: "Try Dashbud free"
+  url: "/signup"
+
+secondary_cta:
+  text: "Book a demo"
+  url: "https://calendly.com/arthur-evolytix/dashbud-demo-and-setup"

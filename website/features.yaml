@@ -1,0 +1,57 @@
+# Website feature content — source of truth
+# Push to Sanity via scripts/sanity/push_features.py
+
+features:
+  - order: 1
+    title: "Connect Any Data Source"
+    slug: "connect-any-data-source"
+    sanity_id: "f511cdf6-cfb1-4906-a82d-e404844d808e"
+    image_alt: "Data source connection interface showing upload and database options"
+    short: >
+      Upload spreadsheets, connect directly to databases, or sync from
+      cloud sources like Google Sheets. No data warehouse required.
+    long: |
+      Dashbud's smart data loading handles the messy parts automatically — type casting, date parsing, currency formatting — so your data is clean and queryable from the start. Every import is versioned and can be rolled back.
+
+      No data lake. No ETL pipeline. No migration project. Just connect what you have and start working.
+
+      **Works with:** CSV uploads, PostgreSQL, MySQL, IBM Informix, Google Sheets, and more.
+
+  - order: 2
+    title: "Model Your Data Through Conversation"
+    slug: "model-your-data"
+    sanity_id: "353166e1-2171-4557-a9f1-2c5186e8e312"
+    image_alt: "Semantic model conversation showing data context being defined through natural language"
+    short: >
+      Set up a Semantic Model by telling Dashbud about your data in plain
+      language. No code, no configuration files, no query language.
+    long: |
+      Tell Dashbud what your columns mean, how your tables relate, and what the business rules are. The AI asks questions, you answer them. Your semantic model becomes the foundation for every query — grounding the AI in your business context.
+
+      Model once, then clone and customize for different teams or projects. Your sales team gets their view. Finance gets theirs. Each workspace carries only the context it needs — no clutter, no confusion.
+
+  - order: 3
+    title: "Ask Questions, Get Real Answers"
+    slug: "explore-and-analyze"
+    sanity_id: "aada85c2-bedf-4f07-9e7c-55d004241700"
+    image_alt: "Data Explorer showing a natural language question producing a professional chart"
+    short: >
+      Type a question in plain English and get back tables, charts, and
+      insights — grounded in your semantic model, accurate every time.
+    long: |
+      Dashbud's Data Explorer writes the query, then produces a traditional, deterministic report — stable, accurate, and repeatable. Smart chart formatting automatically picks the right visualization, handles time series, and keeps legends readable.
+
+      Need interactive controls? Just ask Dashbud to parametrize any dimension — region, product line, date range — and your report becomes a live tool your team can use without touching a query.
+
+  - order: 4
+    title: "Share With Your Whole Team"
+    slug: "share-with-your-team"
+    sanity_id: "3e0abf06-4e77-4fdc-aae7-58db5b439c26"
+    image_alt: "A shared dashboard with charts, KPIs, and interactive controls"
+    short: >
+      Save outputs to dashboards, control who sees what, and share
+      live-updating reports with stakeholders who never need to touch a query.
+    long: |
+      Drag and drop saved reports into dashboards. Share with stakeholders who may never use the conversational interface — they just see polished, live-updating results. Control access at every level: who sees which data sources, which workspaces, which dashboards.
+
+      Some users build. Some users explore. Some users just read the dashboard every Monday morning. Dashbud works for all of them.
