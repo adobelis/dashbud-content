@@ -120,11 +120,51 @@ def push_hero(dataset, token):
     print(f"  OK: {result['results'][0]['operation']}")
 
 
+def parse_feature_md(path):
+    """Parse a feature markdown file with YAML frontmatter + ## Short / ## Long sections."""
+    text = path.read_text()
+
+    # Split frontmatter
+    parts = text.split("---", 2)
+    if len(parts) < 3:
+        raise ValueError(f"No frontmatter found in {path}")
+    meta = yaml.safe_load(parts[1])
+    body = parts[2].strip()
+
+    # Split on ## Short and ## Long
+    short = ""
+    long = ""
+    current = None
+    for line in body.split("\n"):
+        if line.strip().lower() == "## short":
+            current = "short"
+            continue
+        elif line.strip().lower() == "## long":
+            current = "long"
+            continue
+        if current == "short":
+            short += line + "\n"
+        elif current == "long":
+            long += line + "\n"
+
+    meta["short"] = short.strip()
+    meta["long"] = long.strip()
+    return meta
+
+
 def push_features(dataset, token):
-    config = yaml.safe_load((CONTENT_DIR / "features.yaml").read_text())
+    features_dir = CONTENT_DIR / "features"
+    feature_files = sorted(features_dir.glob("*.md"))
+
+    if not feature_files:
+        print("No feature markdown files found in website/features/")
+        return
 
     mutations = []
-    for feature in config["features"]:
+    features = []
+    for path in feature_files:
+        feature = parse_feature_md(path)
+        features.append(feature)
         mutations.append({
             "patch": {
                 "id": feature["sanity_id"],
@@ -142,7 +182,7 @@ def push_features(dataset, token):
     print(f"Pushing {len(mutations)} features to {dataset}...")
     result = sanity_mutate(mutations, dataset, token)
     for i, r in enumerate(result["results"]):
-        print(f"  {config['features'][i]['order']}. {config['features'][i]['title']}: {r['operation']}")
+        print(f"  {features[i]['order']}. {features[i]['title']}: {r['operation']}")
 
 
 def main():

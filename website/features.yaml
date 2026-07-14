@@ -39,19 +39,20 @@ features:
       Type a question in plain English and get back tables, charts, and
       insights — grounded in your semantic model, accurate every time.
     long: |
-      Dashbud's Data Explorer writes the query, then produces a traditional, deterministic report — stable, accurate, and repeatable. Smart chart formatting automatically picks the right visualization, handles time series, and keeps legends readable.
+      Dashbud's Data Explorer writes the query, then produces a deterministic report — stable, accurate, and repeatable. Smart chart formatting automatically picks the right visualization, handles time series, and keeps legends readable.
 
       Need interactive controls? Just ask Dashbud to parametrize any dimension — region, product line, date range — and your report becomes a live tool your team can use without touching a query.
 
   - order: 4
-    title: "Share With Your Whole Team"
-    slug: "share-with-your-team"
+    title: "The Right Tools for Every Role"
+    slug: "right-tools-every-role"
     sanity_id: "3e0abf06-4e77-4fdc-aae7-58db5b439c26"
-    image_alt: "A shared dashboard with charts, KPIs, and interactive controls"
+    image_alt: "Team access matrix showing different roles with different workspace access levels"
     short: >
-      Save outputs to dashboards, control who sees what, and share
-      live-updating reports with stakeholders who never need to touch a query.
+      Some users build. Some users explore. Some users review dashboards and
+      reports. Data analyst, ops specialist, CEO: Dashbud gives all your users
+      the access they need and the functionality they want.
     long: |
-      Drag and drop saved reports into dashboards. Share with stakeholders who may never use the conversational interface — they just see polished, live-updating results. Control access at every level: who sees which data sources, which workspaces, which dashboards.
+      Your data team models the data once. From there, clone workspaces for different functions — sales sees their pipeline, ops sees fulfillment, finance sees margins. Each team gets only the context they need, and the AI stays focused on their domain.
 
-      Some users build. Some users explore. Some users just read the dashboard every Monday morning. Dashbud works for all of them.
+      Control access at every level: who sees which data sources, which workspaces, which dashboards. From a single shared data foundation, everyone gets the right view.

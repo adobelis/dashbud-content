@@ -57,6 +57,7 @@ function makeBarGradient(color) {
 }
 
 // ── Build ECharts option from content_struct ──
+// opts.seriesOrder: array of series names in desired order, e.g. ['Northeast','Southeast','Midwest','West','Pacific NW']
 function buildOption(struct, opts = {}) {
   const { data, chartSuggestion, column_metadata } = struct;
   if (!data || !chartSuggestion) return null;
@@ -84,15 +85,30 @@ function buildOption(struct, opts = {}) {
     xLabels = xData.map((v, i) => `${v} Q${data['quarter'][i]}`);
   }
 
-  // Determine unique x values (preserving order)
-  const uniqueX = [...new Set(xLabels)];
+  // Determine unique x values, sorted chronologically
+  const uniqueX = [...new Set(xLabels)].sort((a, b) => {
+    // Try date parsing first
+    const da = new Date(a), db = new Date(b);
+    if (!isNaN(da.getTime()) && !isNaN(db.getTime())) return da - db;
+    // Fall back to string sort (handles "2024 Q1" etc.)
+    return String(a).localeCompare(String(b));
+  });
+  // Formatted labels for display
+  const displayX = uniqueX.map(formatDateLabel);
 
   let series = [];
   let legend = undefined;
 
   if (seriesField && data[seriesField]) {
     // Grouped/series chart
-    const seriesValues = [...new Set(data[seriesField])];
+    let seriesValues = [...new Set(data[seriesField])];
+    if (opts.seriesOrder) {
+      seriesValues = opts.seriesOrder.filter(s => seriesValues.includes(s));
+      // Append any values not in the custom order
+      for (const sv of [...new Set(data[seriesField])]) {
+        if (!seriesValues.includes(sv)) seriesValues.push(sv);
+      }
+    }
     legend = {
       top: 0,
       left: 'center',
@@ -181,16 +197,17 @@ function buildOption(struct, opts = {}) {
       left: 80,
       right: 24,
       top: gridTop,
-      bottom: uniqueX.length > 8 ? 60 : 32,
+      bottom: displayX.length > 12 ? 70 : displayX.length > 8 ? 60 : 32,
       containLabel: false,
     },
     xAxis: {
       type: 'category',
-      data: uniqueX,
+      data: displayX,
       axisLabel: {
-        fontSize: 11,
+        fontSize: 10,
         color: '#6b7280',
-        rotate: uniqueX.length > 8 ? 30 : 0,
+        rotate: displayX.length > 12 ? 45 : displayX.length > 8 ? 30 : 0,
+        interval: displayX.length > 24 ? 2 : displayX.length > 12 ? 1 : 0,
       },
       axisLine: { lineStyle: { color: '#e5e7eb' } },
       axisTick: { show: false },
@@ -218,6 +235,17 @@ function buildOption(struct, opts = {}) {
 
 function capitalize(s) {
   return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+const MONTH_ABBR = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+function formatDateLabel(val) {
+  // Handle ISO dates like "2023-01-01T00:00:00"
+  if (typeof val === 'string' && val.match(/^\d{4}-\d{2}/)) {
+    const d = new Date(val);
+    return `${MONTH_ABBR[d.getMonth()]} ${d.getFullYear()}`;
+  }
+  return String(val);
 }
 
 // ── Render to SVG ──
@@ -279,7 +307,7 @@ async function main() {
   const args = process.argv.slice(2);
 
   if (args.length === 0) {
-    console.log('Usage: node render_hss_chart.mjs <conv_id> [--list] [--message <idx>] [--output <name.svg>] [--width <px>] [--height <px>]');
+    console.log('Usage: node render_hss_chart.mjs <conv_id> [--list] [--message <idx>] [--output <name.svg>] [--width <px>] [--height <px>] [--series-order "A,B,C"]');
     process.exit(0);
   }
 
@@ -304,7 +332,8 @@ async function main() {
   console.log(`  X: ${struct.chartSuggestion?.xField}, Y: ${struct.chartSuggestion?.yField}, Series: ${struct.chartSuggestion?.seriesField}`);
   console.log(`  Rows: ${struct.data?.[struct.columns?.[0]]?.length || '?'}`);
 
-  const option = buildOption(struct);
+  const seriesOrder = args.includes('--series-order') ? args[args.indexOf('--series-order') + 1].split(',') : null;
+  const option = buildOption(struct, { seriesOrder });
   if (!option) {
     console.error('Could not build chart option');
     process.exit(1);

@@ -29,7 +29,7 @@ def sanity_mutate(mutations):
     with urllib.request.urlopen(req) as resp:
         return json.loads(resp.read())
 
-new_headline = "AI-powered analytics for <br> *all your data*"
+new_headline = "AI-powered analytics for *all your data*"
 
 mutations = [{
     "patch": {
