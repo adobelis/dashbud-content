@@ -3,3 +3,4 @@ psycopg2-binary
 pyyaml
 requests
 zyte-api
+python-pptx

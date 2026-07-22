@@ -1,0 +1,170 @@
+Dashbud
+AI-powered analytics for all your data
+getdashbud.com
+
+Let's start with you
+How do you work with data today?
+
+What data tools do you use?
+📊  Spreadsheets — Excel, Google Sheets
+📈  Application dashboards — QuickBooks, Google Analytics, Meta Ads, Shopify
+🔬  BI / analysis platforms — Tableau, Power BI, Looker
+🤖  AI-based workflows — Claude, ChatGPT, Gemini
+💻  Code — Python, Jupyter Notebooks
+
+What do you track?
+Sales, revenue, pipeline
+Expenses, budgets, profitability
+Marketing performance
+Operations, inventory, fulfillment
+Customer behavior, retention
+Compliance, stakeholder reporting
+How often?
+Multiple times per day
+Daily
+Weekly
+Monthly / quarterly
+"When someone asks me for a number"
+
+The problem
+Data is valuable. Getting answers from it is painful.
+
+Every approach has trade-offs
+Approach
+Positives
+Negatives
+
+SaaS dashboards
+(QuickBooks, Google Analytics, etc.)
+Built in, no setup
+Clunky interfaces
+Siloed, can't cross data sources
+
+BI tools
+(Power BI, Tableau)
+Powerful, enterprise-grade
+Finicky, hard to learn, expensive
+Often: need a data team or dedicated resource
+
+Spreadsheets
+(Excel, Google Sheets)
+Flexible, you control it
+Fragile, time-consuming to update 
+Hard to share, competence penalty
+
+AI workflows
+(Claude, ChatGPT)
+Fast for one-off analysis and periodic reports
+Surprisingly capable
+Doesn’t scale - multiple one-offs
+You become the infrastructure
+Calculations → COMPLICATIONS (who audits?)
+The vibe-coding problem (tech debt)
+
+Drilldown: the AI workflow trap(s)
+You can absolutely build a reporting workflow in Claude or ChatGPT. Get it to write a Python script, hook up a cron job, pipe the output to email. It works!
+
+Question 1: what happens next?
+Who maintains the script, modifies it when it needs updating?
+What happens when you share it, and someone wants a different view of the data, e.g. filtered?
+This is the competence penalty – anyone who has created a great spreadsheet knows the perils of becoming the owner of “the spreadsheet.” 
+But different and worse: now it’s code, and code you didn’t write yourself.
+
+You can build yourself a report. But now you're the data team, the DevOps team, and the support desk – none of which is your actual job.
+
+Drilldown: the AI workflow trap(s)
+You can absolutely build a reporting workflow in Claude or ChatGPT. Get it to write a Python script, hook up a cron job, pipe the output to email. It works!
+
+Question 2: flexibility, scope, and accuracy
+AI workflows are is fine for simple reports: “pull these 6 numbers out of these two SaaS APIs.”
+Complications arise when you make a calculation – even just to combine two numbers. 
+Calculations involve assumptions and need to be audited. Who checks the calculations and confirms the sources and assumptions are correct?
+AI wrote you a Python script. Can you read it and guarantee it’s coded correctly?
+This is the dueling reports problem: Candace’s report says x, Mike’s says y. Except worse, because AI makes the reports more opaque and difficult to audit.
+
+You can build yourself a report. But even the least complexity requires you to audit and justify the calculations, and AI workflows make this more difficult.
+
+
+Where Dashbud fits
+AI-powered analytics for all your data and your team
+
+NOT SURE FROM HERE ON
+
+Start simple. Scale when ready.
+Start with one analysis
+Upload a spreadsheet, ask a question, get a chart.Five minutes from signup to your first insight.
+Share your work — free
+Read-only dashboard access is free. Your stakeholdersdon't need to learn the tool — they just see the results.
+Scale with your team
+Add data sources. Build workspaces for different teams.Clone a data model without starting over.Everyone gets the right access.
+Non-technical people get real answers
+Dashbud's semantic model means the AI understands yourbusiness context. Anyone can ask questions in plain Englishand get accurate, trustworthy answers.
+
+What you're NOT giving up
+❌  You're NOT replacing your ERP, CRM, or any existing system
+❌  You're NOT learning SQL or a new query language
+❌  You're NOT hiring a data team
+❌  You're NOT building a data warehouse
+❌  You're NOT committing to a six-month implementation
+Most teams are up and running in days.
+
+How it works
+Connect → Model → Explore → Share
+
+1. Connect your data
+Upload spreadsheets, connect directly to databases, or sync from cloud sources.Smart data loading cleans messy formats automatically.
+[PRODUCT SCREENSHOT]
+
+2. Model through conversation
+Tell Dashbud what your data means — in plain language.The AI asks questions, you answer. No code, no config files.
+[PRODUCT SCREENSHOT]
+
+3. Ask questions, get answers
+Type a question in the Data Explorer. Get tables, charts, and insights.Smart formatting. Parametrized controls. Same answer every time.
+[PRODUCT SCREENSHOT]
+
+4. Share with your team
+Save to dashboards. Share with stakeholders.Everyone gets the right access — from analysts to executives.
+[PRODUCT SCREENSHOT]
+
+Built for trust. Designed for privacy.
+🔒  AI never sees your raw data
+The AI only sees field names and schema — never the actual values in your database.
+📐  Deterministic reports
+The AI writes a SQL query once. After that, it's a traditional report.Same question, same answer, every time.
+📋  Full audit trail
+Every data import is tracked and can be rolled back.Your data stays in your database or in Dashbud's managed infrastructure.
+🚫  No third-party sharing
+We don't share your data with third parties.We don't use it for AI training.
+
+Live demo
+Let's see it in action
+
+[LIVE DEMO HERE]Follow the Demo Playbook
+
+Use cases
+How businesses like yours use Dashbud
+
+Who is Dashbud for?
+Product-based business
+Sales trends by channel, inventory tracking,customer purchasing behavior, rep performance
+Service-based business
+Profitability by client, utilization,marketing ROI, monthly stakeholder reports
+Healthcare / regulated
+Operational reports from EMR datawithout exposing sensitive data to AI platforms
+
+Q&A
+What questions do you have?
+
+Get started today
+getdashbud.com
+rocket_launch
+Free Trial
+getdashbud.com/signup
+calendar_today
+Book a Demo
+calendly.com/arthur-evolytix/dashbud-demo-and-setup
+mail
+Contact
+hello@mail.getdashbud.com
+"If you've got data and you're spending too much time wrangling it into answers — that's what we built Dashbud for."
