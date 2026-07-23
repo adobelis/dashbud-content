@@ -1,0 +1,112 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { client } from '../utils/sanityClient';
+import { homepageQuery } from '../utils/sanityQueries';
+import { urlFor } from '../utils/sanityClient';
+import { renderPortableText } from '../utils/portableTextToHtml';
+import type { Feature } from '../utils/interfaces';
+import SanImg from '../utils/SanImg.astro';
+import { Image } from 'astro:assets';
+import heroImage from '../assets/puzzle-pieces-2.png';
+import CTASection from '../components/CTASection.astro';
+
+
+const query = `*[_type == "homepage"][0]{
+  title,
+  hero->{
+    headline,
+    subheadLine,
+    primaryCtaText,
+    primaryCtaUrl,
+    secondaryCtaText,
+    secondaryCtaUrl,
+    "imageUrl": heroImage.asset->url
+  },
+  features[]->{
+    _id,
+    title,
+    shortDescription,
+    longDescription,
+    icon,
+    image,
+    imageAlt
+  }
+}`
+// type HomepageResult = {
+//   title: string;
+//   features: Feature[];
+// };
+
+// const homepageData = await client.fetch<HomepageResult>(homepageQuery);
+const homepageData = await client.fetch(query);
+const features: Feature[] = homepageData.features || [];
+// const features = homepageData.features.sort((a, b) => a.order - b.order);
+---
+
+<Layout title="Dashbud - Product" description="Dashbud’s powerful features explained.">
+   <section class="pt-20 pb-16 md:py-8 bg-gradient-to-r from-white to-dashbud-teal">
+    <div class="container-custom">
+      <div class="flex flex-col lg:flex-row gap-12 items-center">
+        <div class="order-2 lg:order-1 animate-on-scroll max-w-[660px]">
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+            Dashbud: a <span class="gradient-text">coherent system</span> for data insights
+          </h1>
+          <p class="mt-6 text-xl text-gray-600 max-w-lg">
+            Dashbud's AI-enhanced features work together to create a seamless experience: 
+            from connecting to data sources, to exploring your needs, to authoring dashboards, everything is designed to help you get the most from your data.
+          </p>
+          <!-- <div class="mt-8 flex flex-col sm:flex-row gap-4">
+            <a href="/book-demo" class="btn btn-primary">Book a Demo</a>
+            <a href="/documentation" class="btn btn-secondary">View API Docs</a>
+          </div> -->
+        </div>
+        
+        <div class="order-1 lg:order-2 animate-on-scroll" style="animation-delay: 0.2s;">
+          <div class="relative">
+              <Image  
+                src={heroImage}
+                alt="Dashbud Puzzle Pieces" 
+                class="drop-shadow-lg h-100 w-auto"
+                width={500}
+                height={500}
+              />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {features.map((feature, index) => {
+    const isEven = index % 2 === 0;
+    const bgColor = isEven ? 'bg-white' : 'bg-gradient-to-t md:bg-gradient-to-r from-white to-dashbud-lteal';
+    const imageUrl = feature.image?.asset?.url ? urlFor(feature.image).width(700).height(500).url() : undefined;
+    
+    return (
+      <section class={`${bgColor} py-12`}>
+        <div class="container-custom grid grid-cols-1 md:grid-cols-12 gap-16 items-start ">
+          <div class={`${isEven ? 'lg:order-1 bg-dashbud-vvlteal' : 'lg:order-2 bg-gray-50'} md:col-span-6 px-12 py-8 border rounded-lg shadow-lg`}>
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">{feature.title}</h2>
+            {feature.shortDescription && (
+              <div class="text-xl text-gray-600 mb-4 pb-4" set:html={renderPortableText(feature.shortDescription)}></div>
+            )}
+            <SanImg 
+              image={feature.image} 
+              alt={feature.imageAlt}
+              className="w-full h-auto rounded-lg transition-all duration-500 max-h-[300px] object-contain"
+              width={1200}
+              height={800}
+              require={false}
+              crop="top"
+            />
+          </div>
+          <div class={`${isEven ? 'lg:order-2' : 'lg:order-1'} animate-on-scroll md:col-span-6 py-4 px-8`}>
+            {feature.longDescription && (
+              <div class="prose prose-lg text-gray-700 max-w-none" set:html={renderPortableText(feature.longDescription)}>
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
+    );
+  })}
+  <CTASection ctaTitle="Ready to see how it all fits together?" />
+</Layout>
