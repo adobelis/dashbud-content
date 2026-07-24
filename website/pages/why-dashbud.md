@@ -46,6 +46,7 @@ So how do you *use* that data? How do you *grab the data you need* and turn it i
 * You become the infrastructure
 * Calculations → COMPLICATIONS (who audits?)
 * The vibe-coding problem (tech debt)
+* Privacy + security (your data → AI agent)
 
 ##  AI workflows: here to save the day!
 
@@ -53,16 +54,16 @@ At first an AI workflow you built yourself with AI (say Claude Code or ChatGPT) 
 
 You can build a reporting workflow in Claude or ChatGPT. Get it to write a Python script, hook up a cron job, pipe the output to email. It works!
 
-### What happens next?
+### Question 1: what happens next?
 
 Who maintains the script, modifies it when it needs updating?
-What happens when you share it, and someone wants a different view of the data? 
-This is the competence penalty — anyone who has created a great spreadsheet knows the perils of becoming the owner of "the spreadsheet." 
+What happens when you share it, and someone wants a different view of the data, e.g. filtered? 
+This is the competence penalty – anyone who has created a great spreadsheet knows the perils of becoming the owner of "the spreadsheet." 
 But different and worse: now it's code, and code you didn't write yourself.
 
 **You can build yourself a report. But now you're the data team, the DevOps team, and the support desk — none of which is your actual job.**
 
-### Flexibility, scope, and accuracy
+### Question 2: flexibility, scope, and accuracy
 
 * AI workflows are fine for simple reports: "pull these 6 numbers out of these two SaaS APIs and them to me in a daily email." Complications arise when you make a calculation — even just to combine two numbers. Calculations involve assumptions and need to be audited. 
 * Who checks the calculations and confirms the sources and assumptions are correct? AI wrote you a Python script. Can you read it and guarantee it's coded correctly? 
@@ -71,14 +72,13 @@ But different and worse: now it's code, and code you didn't write yourself.
 
 **You can build yourself a report. But even the least complexity requires you to audit and justify the calculations, and AI workflows make this more difficult.**
 
-### Privacy and security
+### Question 3: privacy and security
 
-It is possible to build secure data workflows with AI, but giving generalist AI tools access to private and sensitive data is a recipe for disaster.
+It is possible to build secure data workflows with AI, but giving generalist AI tools such as GPT or Claude Code access to private and/or sensitive data is a recipe for disaster.
 
-* General-purpose AI tools (Claude, ChatGPT) require you to upload or provide access to your raw data.
-* Your data may be stored, logged, or used for model training — even with opt-outs, the risk is real.
-* Regulatory environments (HIPAA, financial compliance) make this a non-starter.
-* Building your own security layer around an AI workflow is another job you didn't sign up for.
+* Generalist AI tools such as Claude Code aren't private or secure by default. When you invite them to look at your data, they will inspect sensitive data and may train on it.
+* You can build a workflow that is secure, but it requires knowledge, discipline, and auditing.
+* For any regulated industry, such as finance or healthcare, allowing your team to use generalist AI tools with your data is a terrible idea and may in fact be illegal.
 
 **AI can power your analytics without seeing your data. That's what Dashbud does.**
 
@@ -102,7 +102,7 @@ It is possible to build secure data workflows with AI, but giving generalist AI 
 * Calculations are auditable SQL.
 * Business rules and assumptions are shared: decided by agreement, not an AI script.
 
-## Switching is easy
+## Switching to Dashbud is easy
 
 ### Your spreadsheets →
 Upload them. Ask questions in plain English. Replace complex, fragile tables with stable reports.
@@ -115,20 +115,6 @@ Connect directly. No exports, no ETL. Reports update live.
 
 ### Your AI workflow →
 Keep the intelligence. Lose the maintenance. Share the results with your whole team.
-
-## How it works
-
-### 1. Connect your data
-Upload spreadsheets, connect directly to databases, or sync from cloud sources. Smart data loading cleans messy formats automatically.
-
-### 2. Model through conversation
-Tell Dashbud what your data means — in plain language. The AI asks questions, you answer. No code, no config files.
-
-### 3. Ask questions, get answers
-Type questions in the Data Explorer. Refine through conversation. Dashbud produces the KPIs, tables, and charts you need. Smart formatting. Parametrized controls. Same answer every time.
-
-### 4. Create reports and share
-Output anything from individual KPIs to sophisticated charts and tables. Drag and drop outputs into dashboards. Share self-service interactive dashboards; email one-off and periodic reports.
 
 ## Designed for privacy, security, and trust
 

@@ -24,12 +24,11 @@ You *can* build a reporting workflow in Claude or ChatGPT. Get it to write a Pyt
 
 ## Privacy and security
 
-It is possible to build secure data workflows with AI, but giving generalist AI tools access to private and sensitive data is a recipe for disaster.
+It is possible to build secure data workflows with AI, but giving generalist AI tools such as GPT or Claude Code access to private and/or sensitive data is a recipe for disaster.
 
-* General-purpose AI tools (Claude, ChatGPT) require you to upload or provide access to your raw data.
-* Your data may be stored, logged, or used for model training — even with opt-outs, the risk is real.
-* Regulatory environments (HIPAA, financial compliance) make this a non-starter.
-* Building your own security layer around an AI workflow is another job you didn't sign up for.
+* Generalist AI tools such as Claude Code aren't private or secure by default. When you invite them to look at your data, they will inspect sensitive data and may train on it.
+* You can build a workflow that is secure, but it requires knowledge, discipline, and auditing.
+* For any regulated industry, such as finance or healthcare, allowing your team to use generalist AI tools with your data is a terrible idea and may in fact be illegal.
 
 **AI can power your analytics without seeing your data. That's what Dashbud does.**
 
