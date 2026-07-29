@@ -30,7 +30,8 @@ So how do you *use* that data? How do you *grab the data you need* and turn it i
 
 ### Spreadsheets (Excel, Google Sheets)
 **Positives:**
-* Flexible, you control it
+* Flexible
+* Existing expertise
 
 **Negatives:**
 * Fragile, time-consuming to update
@@ -42,11 +43,10 @@ So how do you *use* that data? How do you *grab the data you need* and turn it i
 * Surprisingly capable
 
 **Negatives:**
-* Doesn't scale - multiple one-offs
-* You become the infrastructure
-* Calculations → COMPLICATIONS (who audits?)
+* Calculations opaque, difficult to audit (see more)
+* Doesn't scale (see more) 
 * The vibe-coding problem (tech debt)
-* Privacy + security (your data → AI agent)
+* Serious privacy and security concerns
 
 ##  AI workflows: here to save the day!
 
