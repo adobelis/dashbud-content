@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Push updated hero headline to Sanity STAGING dataset."""
+"""Update blog post publish date in Sanity STAGING."""
 import json
 import urllib.request
 from pathlib import Path
 
 PROJECT_ID = "89a9k63v"
 DATASET = "staging"
-DOC_ID = "b8feb522-f902-4fa6-bbc1-92724e3df508"
+DOC_ID = "e5d65bd8-1c4c-49bc-97c4-d61a87f703cf"
 
 env_path = Path("/Users/arthur/www/dashbud/content/.env")
 token = None
@@ -29,19 +29,17 @@ def sanity_mutate(mutations):
     with urllib.request.urlopen(req) as resp:
         return json.loads(resp.read())
 
-new_headline = "AI-powered analytics for *all your data*"
-new_cta = "Try Dashbud"
+new_date = "2026-07-07T12:00:00.000Z"
 
 mutations = [{
     "patch": {
         "id": DOC_ID,
         "set": {
-            "headline": new_headline,
-            "primaryCtaText": new_cta
+            "published": new_date
         }
     }
 }]
 
-print(f"Pushing to STAGING: headline = '{new_headline}', CTA = '{new_cta}'")
+print(f"Pushing to STAGING: published = '{new_date}'")
 result = sanity_mutate(mutations)
 print(f"Result: {json.dumps(result, indent=2)}")
