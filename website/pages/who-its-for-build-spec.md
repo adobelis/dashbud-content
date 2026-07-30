@@ -10,31 +10,56 @@ New page showing prospects who Dashbud is built for, organized by their situatio
 ## Page Flow
 
 ```
-1. Hero / opening hook
-2. Companies running on legacy systems
-3. Healthcare and regulated industries
-4. Teams buried in spreadsheets
-5. Businesses with data scattered across platforms
+1. Hero
+2. Your answers are bottlenecked (Who)
+3. Your sources are scattered (Where)
+4. Your reporting is _ad hoc_ (How)
+5. Your data is sensitive (What)
 6. How Dashbud is different (4 differentiators)
 7. CTA
 ```
 
 ---
 
-## Section 1: Hero / Opening Hook
+## Section 1: Hero
 
-**Layout:** Centered text, similar to the Why Dashbud page hero. No image.
+**Layout:** Two-column flex (same pattern as Why Dashbud / How It Works hero). Title + subtitle on the left, segment menu on the right. Gradient background `bg-gradient-to-r from-white to-dashbud-teal`.
 
-**Content:**
-- Headline: "Who It's For"
-- Subheadline hook: "You have the data. You just can't get at it."
-- Two short paragraphs establishing the problem landscape (ERP, spreadsheets, SaaS, AI tools)
-- Closing line: "Dashbud is built for companies in exactly this position."
+**Left side:**
+- Headline: "Self-service analytics that works"
+- Body: "Dashbud gives you access to data and reporting to support every member of your team. Everyone gets the access they need, with an AI analyst that answers their questions in plain English. Dashbud's targeted features overcome the many challenges teams face: from bottlenecked data sources to privacy and security concerns."
+
+**Right side — Segment menu cards:**
+Four cards, each linking to the corresponding anchor below. Each card has an illustration, title, and short description.
+
+Image | Title 
+Description 
+
+`wif-images/clipping-locks.png` | Your answers are bottlenecked 
+* One person or team knows each system. Everyone else waits for the export, the report, or the analysis. 
+* Dashbud connects to or imports all your sources, giving everyone the access they need. 
+
+`wif-images/playing-jacks.png` | Your sources are scattered 
+* You have multiple critical platforms: CRM, accounting, inventory, POS — each has a piece of the picture. 
+* Dashbud brings them together into a single environment so you can create reports from multiple sources. 
+
+`wif-images/herding-cats.png` | Your reporting is _ad hoc_ 
+* Everyone builds their own reports and analyses with their own assumptions. 
+* Dashbud internalizes the business rules — every report uses the same definitions. 
+
+`wif-images/spying-eyes.png` | Your data is sensitive 
+* Most AI tools want access to your raw data. 
+* Dashbud writes accurate, auditable queries and calculations based on your schema and provides governed access to data.
 
 **Design notes:**
-- Same hero treatment as Why Dashbud for visual consistency across the two pages
-- The subheadline hook should be larger/bolder than the paragraphs — it's the core message
-- Consider using the gradient text treatment on "get at it" if it fits
+- Cards should be visually substantial — these are the primary visual element of the hero, not a thin list
+- Each card: illustration (small, ~60-80px) left or top, title + description right or below
+- Use a 2x2 grid instead of a vertical stack to give the cards more visual weight
+- Cards link to `#bottlenecked`, `#scattered`, `#broken`, `#sensitive` anchors
+- Hover: subtle shadow or teal border accent
+- The illustrations are playful/humorous — let them breathe, don't shrink them to icons
+
+**Image files:** `content/website/pages/wif-images/` — copy to `src/assets/` or `public/` as appropriate for the Astro build.
 
 ---
 
@@ -47,12 +72,12 @@ Each segment follows the same structure: headline → 2–3 paragraphs describin
 - Body text at comfortable reading width (max-w-3xl or similar)
 - Example block at the bottom: slightly inset, with a subtle left border or background tint to distinguish it from the body copy
 
-| # | Headline | Key message | Example |
-|---|----------|-------------|---------|
-| 2 | Companies running on legacy systems | Dashbud connects to the databases behind ERPs (SQL Server, Oracle) or imports your existing CSV exports. Semantic model translates cryptic schemas. | $50M manufacturer, 20-year ERP, daily CSV exports, dashboards for finance/sales/ops |
-| 3 | Healthcare and regulated industries | AI never sees data values — schema only. Connects to Epic Clarity/Caboodle. | Healthcare practice, thousands of encounters, operational reporting without PHI exposure |
-| 4 | Teams buried in spreadsheets | Replace the spreadsheet pipeline. Define business rules once, no more dueling reports. | Services firm, 3 platforms, monthly report: 2 days → 20 minutes |
-| 5 | Businesses with data scattered across platforms | Bring multiple sources under one semantic model. Query across them as one system. | E-commerce, 9 tables, analyst sets up in 30 minutes, team self-serves |
+| # | Headline | Image | Frame | Key message | Example | Specifics |
+|---|----------|-------|-------|-------------|---------|-----------|
+| 2 | Your answers are bottlenecked | `clipping-locks.png` | Who | One person can get at the data, everyone else waits. Dashbud connects to underlying DBs + semantic model translates cryptic schemas → self-serve. | $80M/yr manufacturer, 20-year ERP, daily CSV exports, dashboards per team, bottleneck person freed up | Legacy ERPs, production databases, locked-down systems, single-person dependencies |
+| 3 | Your sources are scattered | `playing-jacks.png` | Where | Data spread across platforms, locations, formats. Semantic model joins them, query as one. | E-commerce, 9 tables, analyst sets up in 30 min, team self-serves across full picture | Multi-system, multi-location, mixed cloud/on-prem, databases alongside spreadsheets |
+| 4 | Your reporting is broken | `herding-cats.png` | How | DIY culture, dueling reports, tribal knowledge. Define rules once, everyone uses the same definitions. | Services firm, 3 platforms, monthly report: 2 days → 20 minutes, consistent numbers | Spreadsheet overload, ad hoc AI scripts, competence penalty, dueling reports |
+| 5 | Your data is sensitive | `spying-eyes.png` | What | AI never sees raw values — schema only. Query runs against your data, results go to your screen. | Healthcare practice, thousands of encounters, operational reporting without PHI exposure | Healthcare/PHI, financial services, legal, HR/payroll, any regulated industry |
 
 **Design notes:**
 - Each section should feel like a self-contained story — a prospect could land directly on their section via anchor link and get the full pitch
@@ -60,7 +85,9 @@ Each segment follows the same structure: headline → 2–3 paragraphs describin
   - Light teal-tinted background (`#E0F4F9` or similar) with a left border in teal
   - Bold "Example:" label
   - Or a subtle card treatment
-- The sections are intentionally ordered: legacy systems first (PE portfolio companies, our strongest differentiator), healthcare second (regulated = privacy story), spreadsheets third (broadest audience), scattered platforms fourth (most data-mature audience)
+- Each segment can optionally display its illustration as a small visual accent (e.g., floated right or in the section header area). Images are in `content/website/pages/wif-images/`
+- Each segment ends with a line of specifics in italics — these are the concrete instances (ERPs, healthcare, spreadsheets) that ground the abstract headline
+- The sections are intentionally ordered from broadest/most relatable (bottlenecked) to most differentiated (sensitive data)
 - Horizontal rule or generous spacing between sections
 
 ---
