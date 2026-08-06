@@ -1,0 +1,165 @@
+{
+  "_createdAt": "2025-07-14T12:30:26Z",
+  "_id": "3e0abf06-4e77-4fdc-aae7-58db5b439c26",
+  "_rev": "rJHL4a4dJtlEfGqgaeRoiZ",
+  "_system": {
+    "base": {
+      "id": "3e0abf06-4e77-4fdc-aae7-58db5b439c26",
+      "rev": "rJHL4a4dJtlEfGqgaeMKeB"
+    }
+  },
+  "_type": "feature",
+  "_updatedAt": "2025-07-17T14:01:00Z",
+  "image": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-e2d3f51b7c1ae1046325ddcadab2f6ad9d684d43-400x400-jpg",
+      "_type": "reference"
+    }
+  },
+  "imageAlt": "A dropdown showing multiple workspaces: Marketing, Financials, XYZ Partnership, Sales Ops, and Scratchpad",
+  "longDescription": [
+    {
+      "_key": "c7906c6101e1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ee7f887b41af",
+          "_type": "span",
+          "marks": [],
+          "text": "Sprawling folders. Dozens of versions. Confusing filenames like "
+        },
+        {
+          "_key": "d00943f571f2",
+          "_type": "span",
+          "marks": [
+            "code"
+          ],
+          "text": "final_FINAL_v2.xlsx"
+        },
+        {
+          "_key": "6ed8e696bdc4",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "a175f9efda3b",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "f67a9f824393",
+          "_type": "span",
+          "marks": [],
+          "text": "Dashbud replaces the mess with organized, collaborative workspaces where your team can build, browse, and reuse reporting assets with confidence."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "b21225d5239c",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a2fcb452225e",
+          "_type": "span",
+          "marks": [],
+          "text": "Group reports, dashboards, and data sources by project, team, or client"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "56b1a1761a35",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "0340ee78a0af",
+          "_type": "span",
+          "marks": [],
+          "text": "Share workspaces with collaborators \u2014 no file juggling or permissions confusion"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "381f564cd9d0",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "3a454f510a07",
+          "_type": "span",
+          "marks": [],
+          "text": "Keep track of your most important metrics in one place"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ebcda4100842",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ec00d0a4da31",
+          "_type": "span",
+          "marks": [],
+          "text": "Use templates and previous work as a starting point for new requests"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "f7914c5f0e98",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "f2af48a8303f",
+          "_type": "span",
+          "marks": [],
+          "text": "It\u2019s reporting infrastructure that actually scales as your team grows."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "order": 4,
+  "shortDescription": [
+    {
+      "_key": "c898e96d6f28",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "93bb4e4442a0",
+          "_type": "span",
+          "marks": [],
+          "text": "Keep your data, reports, and dashboards tidy and accessible with shared workspaces and project folders."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "organized-workspaces-and-shared-projects"
+  },
+  "title": "Organized Workspaces & Shared Projects"
+}

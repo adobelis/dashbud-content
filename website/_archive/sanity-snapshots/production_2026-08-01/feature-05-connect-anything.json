@@ -1,0 +1,151 @@
+{
+  "_createdAt": "2025-07-14T12:33:39Z",
+  "_id": "11e6db09-82cb-4188-a008-4d43ea907672",
+  "_rev": "CamHzSyS1JT3ENpT8Gn4p4",
+  "_system": {
+    "base": {
+      "id": "11e6db09-82cb-4188-a008-4d43ea907672",
+      "rev": "VYus6nyHpjKB0SEJ06xWJa"
+    }
+  },
+  "_type": "feature",
+  "_updatedAt": "2025-07-16T22:06:46Z",
+  "image": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-5d723eaa7abbf74eaf91ec7f9a6cee8ca1264b7a-1296x698-png",
+      "_type": "reference"
+    }
+  },
+  "imageAlt": "Data source tiles including Google Sheets, Stripe, Postgres, and CSVs",
+  "longDescription": [
+    {
+      "_key": "5b7447898a52",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "0206eda50581",
+          "_type": "span",
+          "marks": [],
+          "text": "Your data is everywhere \u2014 scattered across spreadsheets, SaaS tools, cloud platforms, and legacy databases. Most reporting tools make you jump through hoops just to bring it all together."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "1e0635d30460",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "8ebe51d5ed58",
+          "_type": "span",
+          "marks": [],
+          "text": "Dashbud makes it easy to plug in whatever you're working with:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bbbe55242b00",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "217ab87a213d",
+          "_type": "span",
+          "marks": [],
+          "text": "Upload CSVs or Excel sheets"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "928f87a79ac1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "69c6af8afbd7",
+          "_type": "span",
+          "marks": [],
+          "text": "Connect to Google Sheets or Airtable"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "d89e649b0c37",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "8322a5090336",
+          "_type": "span",
+          "marks": [],
+          "text": "Sync directly with databases like PostgreSQL, MySQL, or Snowflake"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bc9faa27ebb8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "7fa2cf53f3c9",
+          "_type": "span",
+          "marks": [],
+          "text": "Integrate with APIs or platforms like HubSpot, Stripe, and Google Ads"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "a2dad057d4ce",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e200085c949d",
+          "_type": "span",
+          "marks": [],
+          "text": "Whether you're a founder with one dashboard or a data lead wrangling six sources, Dashbud adapts. No lock-in, no special formats \u2014 just clean, flexible inputs that support real work."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "order": 5,
+  "shortDescription": [
+    {
+      "_key": "bed669a0f5fd",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "6bc0bf54a1d5",
+          "_type": "span",
+          "marks": [],
+          "text": "Dashbud connects to spreadsheets, databases, APIs, and cloud services \u2014 no data left behind."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "connect-anything-use-anywhere"
+  },
+  "title": "Connect Anything, Use Anywhere"
+}

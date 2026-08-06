@@ -1,0 +1,67 @@
+{
+  "_createdAt": "2025-07-13T17:14:14Z",
+  "_id": "f691ab1a-c9ff-40d0-bc80-0cd3a92c53ea",
+  "_rev": "7ebayzRj1wELuAyAN7LoO2",
+  "_system": {
+    "base": {
+      "id": "f691ab1a-c9ff-40d0-bc80-0cd3a92c53ea",
+      "rev": "VYus6nyHpjKB0SEJ074Qs2"
+    }
+  },
+  "_type": "homepage",
+  "_updatedAt": "2025-07-15T13:20:35Z",
+  "features": [
+    {
+      "_key": "683f814ee433",
+      "_ref": "f511cdf6-cfb1-4906-a82d-e404844d808e",
+      "_type": "reference"
+    },
+    {
+      "_key": "2758279bd326",
+      "_ref": "353166e1-2171-4557-a9f1-2c5186e8e312",
+      "_type": "reference"
+    },
+    {
+      "_key": "f51d52c05b3e",
+      "_ref": "aada85c2-bedf-4f07-9e7c-55d004241700",
+      "_type": "reference"
+    },
+    {
+      "_key": "344a982f3fa3",
+      "_ref": "3e0abf06-4e77-4fdc-aae7-58db5b439c26",
+      "_type": "reference"
+    },
+    {
+      "_key": "3f4002112cf2",
+      "_ref": "11e6db09-82cb-4188-a008-4d43ea907672",
+      "_type": "reference"
+    }
+  ],
+  "hero": {
+    "_ref": "b8feb522-f902-4fa6-bbc1-92724e3df508",
+    "_type": "reference"
+  },
+  "howItWorksSteps": [
+    {
+      "_key": "ccbc3fd0bca5",
+      "_ref": "7ebfaddd-29d1-47ea-9429-614c4463f715",
+      "_type": "reference"
+    },
+    {
+      "_key": "4f2912cada5a",
+      "_ref": "3eb3122a-9764-46da-8705-6e010bfd3f52",
+      "_type": "reference"
+    },
+    {
+      "_key": "9ac1038b8180",
+      "_ref": "174e1089-13fd-4577-b006-dfff7498348e",
+      "_type": "reference"
+    },
+    {
+      "_key": "859aea0ce2d6",
+      "_ref": "5d4d0536-8054-4c2c-89dc-9ea995d83c82",
+      "_type": "reference"
+    }
+  ],
+  "title": "Dashbud: business intelligence for humans"
+}

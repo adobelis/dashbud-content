@@ -1,0 +1,187 @@
+{
+  "_createdAt": "2025-07-14T12:12:17Z",
+  "_id": "f511cdf6-cfb1-4906-a82d-e404844d808e",
+  "_rev": "CamHzSyS1JT3ENpT8Ey5Yc",
+  "_system": {
+    "base": {
+      "id": "f511cdf6-cfb1-4906-a82d-e404844d808e",
+      "rev": "VYus6nyHpjKB0SEJ06xKPS"
+    }
+  },
+  "_type": "feature",
+  "_updatedAt": "2025-07-15T22:12:54Z",
+  "image": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-63cc579c43747507e9005dbecdd90f0d89b96fe2-2054x1590-png",
+      "_type": "reference"
+    }
+  },
+  "imageAlt": "The user types \"In-app conversion by screen\" and sees a bar chart with conversion percentages.",
+  "longDescription": [
+    {
+      "_key": "30529ffc3cae",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "25c3f092ec15",
+          "_type": "span",
+          "marks": [],
+          "text": "Dashbud lets you query your data like you're talking to a teammate. No technical syntax, no waiting in line for a report \u2014 just clear answers, fast."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "bb02faccc4e1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "583ce53bdd44",
+          "_type": "span",
+          "marks": [],
+          "text": "Traditionally, creating a report means one of two things:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "c4c30a4f6d3d",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "244957db7b3e",
+          "_type": "span",
+          "marks": [],
+          "text": "Writing SQL \u2014 which requires significant technical skill"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "57101d5ce4bf",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ceba9bf29ca6",
+          "_type": "span",
+          "marks": [],
+          "text": "Or slogging through a point-and-click interface in a BI tool \u2014 which is often slow, glitchy, and confusing"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ba0058001e6f",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "2cca821755a0",
+          "_type": "span",
+          "marks": [],
+          "text": "Dashbud removes both barriers. You simply ask a question \u2014 and Dashbud generates accurate, visual answers on the fly. For example:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "a811ac857e89",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a469292dfabd",
+          "_type": "span",
+          "marks": [
+            "em"
+          ],
+          "text": "\u201cWhat were our top-selling products last week?\u201d"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "39fbe38de273",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "51165d773aa4",
+          "_type": "span",
+          "marks": [
+            "em"
+          ],
+          "text": "\u201cShow me revenue by ad campaign for Q2.\u201d"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "a629f451a3ab",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a9539e31f8fe",
+          "_type": "span",
+          "marks": [
+            "em"
+          ],
+          "text": "\u201cWhat\u2019s our gross margin for last month compared to the same month last year?\u201d"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "d6476ad5dc1d",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "c0565910f479",
+          "_type": "span",
+          "marks": [],
+          "text": "By making reporting conversational, Dashbud gives business teams instant access to the answers they need \u2014 and frees up analysts to focus on deeper work."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "order": 1,
+  "shortDescription": [
+    {
+      "_key": "7d2695c47938",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a93a67ee1798",
+          "_type": "span",
+          "marks": [],
+          "text": "Ask questions in natural language and get answers in real time \u2014 no SQL, no middleman."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "plain-language-queries"
+  },
+  "title": "Plain Language Queries"
+}

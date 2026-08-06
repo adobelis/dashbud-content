@@ -15,62 +15,89 @@ For everything else, Dashbud's file import (CSV, Excel, Google Drive auto-sync) 
 
 ## Panel Design
 
-### Two-part layout
+### Two-column layout (text left, visual right — matching site pattern)
 
-**Part 1: Logo grid — "Connect directly"**
+```
+┌──────────────────────────┬──────────────────────────┐
+│ "Connect to your data"   │                          │
+│                          │  [logo cluster —          │
+│ Databases, warehouses,   │   11 logos, organic       │
+│ cloud sources...         │   layout, no labels]      │
+│                          │                          │
+│ Business systems like    │                          │
+│ Dynamics GP, SAP, Epic...│                          │
+│ we connect directly or   │                          │
+│ provide import workflows │                          │
+│                          │                          │
+│ Hundreds of other        │                          │
+│ platforms via API,       │                          │
+│ database, or file export │                          │
+└──────────────────────────┴──────────────────────────┘
+```
 
-A clean grid of logos for databases and platforms Dashbud connects to. No tiers, no asterisks, no "coming soon." One flat grid.
+Stacks on mobile (text first, then logo cluster below).
 
-Logos (in this order):
+**Left column: Text**
 
-| Logo | Label | Notes |
-|------|-------|-------|
-| PostgreSQL | PostgreSQL | Have logo |
-| MySQL | MySQL | Have logo |
-| SQL Server | Microsoft SQL Server | Have logo |
-| Oracle | Oracle | Have logo |
+Headline: **"Connect to your data"**
+
+Body — flowing text, not categorized lists. Covers both data platforms and business systems in a natural way. Something like:
+
+> Dashbud connects directly to databases like PostgreSQL, SQL Server, and Oracle, and to cloud warehouses like Snowflake, BigQuery, and Redshift. Import spreadsheets, connect Google Sheets or Airtable, or upload CSV and Excel files.
+>
+> For business systems like Dynamics GP, SAP Business One, or Epic — Dashbud connects directly to the underlying database or provides automated import workflows. Plus hundreds of other platforms via API, database, or file export.
+
+Design:
+- Teal headline
+- Body text in dark gray, comfortable reading width
+- Mention a couple of top system names naturally in the text — don't list them all, don't use category headers (ERPs/EMRs/POS)
+- Keep it brief and confident, not encyclopedic
+
+**Right column: Logo cluster**
+
+11 logos in a static organic cluster layout. No labels — the logos are recognizable on their own.
+
+Logos:
+
+| Logo | Tooltip | Notes |
+|------|---------|-------|
+| PostgreSQL | PostgreSQL | Have logo (square icon) |
+| MySQL | MySQL | Have logo (need square icon version) |
+| SQL Server | Microsoft SQL Server | Have logo (square) |
+| Oracle | Oracle | Have logo (need square icon version) |
 | Redshift | Amazon Redshift | Need logo |
 | Snowflake | Snowflake | Need logo |
 | BigQuery | Google BigQuery | Need logo |
-| Google Sheets | Google Sheets | Have logo |
-| Airtable | Airtable | Have logo |
+| Google Sheets | Google Sheets | Have logo (need square icon version) |
+| Airtable | Airtable | Have logo (need square icon version) |
+| CSV | CSV file import | Have logo (square) |
+| Excel | Excel file import | Have logo (need square icon version) |
 
 Design:
-- Grid: 4 columns on desktop, 3 on tablet, 2 on mobile
-- Each cell: logo centered, label below in small gray text
-- White background, subtle shadow or border per cell
-- No hover effects or links — these are informational, not clickable
-- All logos should be similar visual weight (use scale factors like the existing Logos.astro)
+- **Static cluster layout** — logos arranged organically, not a rigid grid. Slight variations in spacing and offset.
+- Each logo: icon/glyph version (not wordmarks), roughly square, similar visual weight
+- **No labels** — logos speak for themselves. Each logo has a `title` attribute for hover tooltip text (see table above).
+- Bigger than current implementation — w-16 h-16 or larger so they read clearly
+- **Cloud effect:** A soft, granular haze behind the entire logo group — not a smooth gradient but a dusty/grainy cloud texture. Use an SVG `feTurbulence` filter to generate procedural noise over a blurred teal/gray ellipse. This gives an organic, dusty feel with no image assets. Each individual logo gets a subtle halo/shadow (soft box-shadow or drop-shadow filter) so they feel like they're sitting slightly above the cloud surface.
 
-**Part 2: Text block — "Works with your business systems"**
+  Implementation hint for the coding agent:
+  ```html
+  <svg width="0" height="0">
+    <filter id="cloud-noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" />
+      <feColorMatrix type="saturate" values="0" />
+      <feBlend in="SourceGraphic" mode="multiply" />
+    </filter>
+  </svg>
+  <div style="filter: url(#cloud-noise); background: radial-gradient(ellipse, rgba(0,123,161,0.08), transparent 70%); ..." />
+  ```
+  Tune `baseFrequency` for grain size (higher = finer dust, lower = bigger clouds). Start at 0.65 and experiment. The cloud color should be very subtle — barely visible teal/gray, not a prominent shape.
+- No hover effects or links — informational, not clickable
 
-Below the logo grid, a text section explaining the ERP/legacy story. This is the business content that makes Dashbud's positioning unique — competitors can show a logo grid too, but none of them can make this claim.
-
-Headline: **"Works with your business systems"**
-
-Body (two columns on desktop, stacked on mobile):
-
-**Column 1: Direct connection via SQL Server or Oracle**
-> If your ERP runs on SQL Server or Oracle — and many do — Dashbud connects directly to the underlying database. Our semantic model maps your system's schema to plain business language, so your team asks questions without knowing table names.
->
-> Systems that work today: Microsoft Dynamics GP, Dynamics NAV, SAP Business One, Epicor Kinetic, Epicor Prophet 21, Infor SyteLine, Oracle E-Business Suite, JD Edwards, Epic Clarity, and more.
-
-**Column 2: File import for everything else**
-> For systems that don't expose a database — or when your team prefers their existing export workflows — Dashbud imports CSV and Excel files with automatic type detection, cleaning, and versioning. Set up auto-sync from Google Drive and your reports update themselves.
->
-> No data warehouse required. No ETL pipeline. Just your data, however it comes out.
-
-Design:
-- Light gray background to differentiate from the logo grid
-- Teal headline
-- Body text in dark gray, comfortable reading width
-- The ERP system names should be slightly emphasized (semibold or a subtle highlight) but not a bulleted list — keep it flowing
-- No logos for individual ERP systems (we don't have permission to use SAP/Epicor/etc. logos, and listing them as text is more honest about the relationship)
-
-### Section wrapper
-
-Heading above the whole section: **"Connect to the data you already have"**
-Subheading: **"Databases, spreadsheets, cloud platforms, or legacy business systems — Dashbud works with all of them."**
+Logo format notes:
+- **Need square/icon versions** for: Airtable (wide wordmark), MySQL (wide), Google Sheets (tall), Oracle (no viewBox), Excel (wide). Use icon/glyph forms.
+- PostgreSQL elephant, SQL Server, CSV are already square.
+- New logos needed: Redshift, Snowflake, BigQuery (square icon format).
 
 ## Content source
 
@@ -79,49 +106,24 @@ Create a new YAML file for this component:
 **`src/content/data-sources.yaml`**
 
 ```yaml
-section_title: "Connect to the data you already have"
-section_subtitle: "Databases, spreadsheets, cloud platforms, or legacy business systems — Dashbud works with all of them."
+headline: "Connect to your data"
 
-direct_connections:
-  - name: PostgreSQL
-    logo: postgresql
-  - name: MySQL
-    logo: mysql
-  - name: Microsoft SQL Server
-    logo: sql_server
-  - name: Oracle
-    logo: oracle
-  - name: Amazon Redshift
-    logo: redshift
-  - name: Snowflake
-    logo: snowflake
-  - name: Google BigQuery
-    logo: bigquery
-  - name: Google Sheets
-    logo: google_sheets
-  - name: Airtable
-    logo: airtable
+body:
+  - "Dashbud connects directly to databases like PostgreSQL, SQL Server, and Oracle, and to cloud warehouses like Snowflake, BigQuery, and Redshift. Import spreadsheets, connect Google Sheets or Airtable, or upload CSV and Excel files."
+  - "For business systems like Dynamics GP, SAP Business One, or Epic — Dashbud connects directly to the underlying database or provides automated import workflows. Plus hundreds of other platforms via API, database, or file export."
 
-erp_headline: "Works with your business systems"
-
-erp_direct:
-  headline: "Direct connection via SQL Server or Oracle"
-  body: "If your ERP runs on SQL Server or Oracle — and many do — Dashbud connects directly to the underlying database. Our semantic model maps your system's schema to plain business language, so your team asks questions without knowing table names."
-  systems:
-    - Microsoft Dynamics GP
-    - Microsoft Dynamics NAV
-    - SAP Business One
-    - Epicor Kinetic
-    - Epicor Prophet 21
-    - Infor SyteLine
-    - Oracle E-Business Suite
-    - JD Edwards
-    - Epic Clarity
-
-erp_import:
-  headline: "File import for everything else"
-  body: "For systems that don't expose a database — or when your team prefers their existing export workflows — Dashbud imports CSV and Excel files with automatic type detection, cleaning, and versioning. Set up auto-sync from Google Drive and your reports update themselves."
-  tagline: "No data warehouse required. No ETL pipeline. Just your data, however it comes out."
+logos:
+  - postgresql
+  - mysql
+  - sql_server
+  - oracle
+  - redshift
+  - snowflake
+  - bigquery
+  - google_sheets
+  - airtable
+  - csv
+  - excel
 ```
 
 ## Logo files needed

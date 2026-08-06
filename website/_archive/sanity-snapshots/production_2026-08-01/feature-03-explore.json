@@ -1,0 +1,149 @@
+{
+  "_createdAt": "2025-07-14T12:28:19Z",
+  "_id": "aada85c2-bedf-4f07-9e7c-55d004241700",
+  "_rev": "ctJcyS5elEBpU5esnw7lBB",
+  "_system": {
+    "base": {
+      "id": "aada85c2-bedf-4f07-9e7c-55d004241700",
+      "rev": "CamHzSyS1JT3ENpT8DuR4C"
+    }
+  },
+  "_type": "feature",
+  "_updatedAt": "2025-07-15T22:39:54Z",
+  "image": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-eb639dea12f32e169e182b1f095c1e0524baa72b-1775x872-webp",
+      "_type": "reference"
+    }
+  },
+  "imageAlt": "A sleek dashboard with charts and KPIs laid out cleanly, ready to share",
+  "longDescription": [
+    {
+      "_key": "47fc2c4ac318",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "dd49bdd176af",
+          "_type": "span",
+          "marks": [],
+          "text": "You\u2019ve probably seen this before: a valuable insight buried in a janky chart or an Excel sheet copied into a slide deck."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "05a75e7f07d4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "01aebe62420c",
+          "_type": "span",
+          "marks": [],
+          "text": "Dashbud helps you move beyond that. Every report or dashboard you generate is clean, clear, and presentation-ready by default \u2014 whether it\u2019s for internal planning, investor updates, or client-facing delivery."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "95e59f9b02d6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "80ef6e4e7ba3",
+          "_type": "span",
+          "marks": [],
+          "text": "No extra formatting, no tweaking colors, no rebuilding charts in PowerPoint. You get:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "4c88b9b1c128",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "873d7e26024f",
+          "_type": "span",
+          "marks": [],
+          "text": "Modern, responsive dashboards you can customize and share"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "30a6e3ded89e",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "d3a866c46597",
+          "_type": "span",
+          "marks": [],
+          "text": "Beautiful, readable reports that fit your brand"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "526bbf498db9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "7b79d5a17688",
+          "_type": "span",
+          "marks": [],
+          "text": "PDF and link-based sharing options that just work"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "3fc5a1c416aa",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "7bd1953d0a1f",
+          "_type": "span",
+          "marks": [],
+          "text": "It\u2019s fast, flexible, and easy to make high-quality reporting a routine part of how your team communicates."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "order": 3,
+  "shortDescription": [
+    {
+      "_key": "0702e7e1b97c",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "0605ed8c30d8",
+          "_type": "span",
+          "marks": [],
+          "text": "Dashbud makes it easy to create presentation-ready dashboards and reports without design work."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "clean-professional-outputs"
+  },
+  "title": "Clean, Professional Outputs"
+}

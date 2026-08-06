@@ -1,0 +1,149 @@
+{
+  "_createdAt": "2025-07-14T12:21:18Z",
+  "_id": "353166e1-2171-4557-a9f1-2c5186e8e312",
+  "_rev": "CamHzSyS1JT3ENpT8GZfnC",
+  "_system": {
+    "base": {
+      "id": "353166e1-2171-4557-a9f1-2c5186e8e312",
+      "rev": "VYus6nyHpjKB0SEJ07euXi"
+    }
+  },
+  "_type": "feature",
+  "_updatedAt": "2025-07-16T18:52:36Z",
+  "image": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-da2fe2d5939a26ad41225169b1132145b3fae557-1428x706-png",
+      "_type": "reference"
+    }
+  },
+  "imageAlt": "Dashbud's conversational UI suggesting a list of relevant report types based on available data",
+  "longDescription": [
+    {
+      "_key": "3f0d24faf599",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "b7a5122754f2",
+          "_type": "span",
+          "marks": [],
+          "text": "Creating reports from a blank screen is slow and intimidating \u2014 especially if you don\u2019t know what\u2019s possible or where to start."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "43901cfa225d",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "75f47cba6047",
+          "_type": "span",
+          "marks": [],
+          "text": "Dashbud helps by offering smart report suggestions based on the structure of your data. It understands common use cases \u2014 like marketing attribution, product performance, or financial summaries \u2014 and suggests reports that businesses like yours typically need."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ddadde023893",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "58a7bc16c7a9",
+          "_type": "span",
+          "marks": [],
+          "text": "But unlike \u201ccanned\u201d dashboards, these aren\u2019t one-size-fits-all templates. You stay in the driver\u2019s seat."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "f0675b50d3c9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "17a778bcfb4a",
+          "_type": "span",
+          "marks": [],
+          "text": "Want a P&L by business unit for Q1? Just ask."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "6068cee25fff",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a613bcaaa9a6",
+          "_type": "span",
+          "marks": [],
+          "text": "Curious how revenue broke down across ad campaigns? We\u2019ve seen that before \u2014 and we can help."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "f891245bfa72",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "1efbf0aad63f",
+          "_type": "span",
+          "marks": [],
+          "text": "Need a customer retention snapshot for your board deck? You\u2019re one step away."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "d5e0e50309a2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "deb8be5bba14",
+          "_type": "span",
+          "marks": [],
+          "text": "Dashbud brings its reporting experience to your unique data \u2014 and works with you, conversationally, to shape the exact report or dashboard you need."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "order": 2,
+  "shortDescription": [
+    {
+      "_key": "8792f3d3fe8c",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "c396e9c5f67d",
+          "_type": "span",
+          "marks": [],
+          "text": "Dashbud suggests useful reports based on your data structure \u2014 so you don\u2019t have to start from scratch."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "smart-report-recommendations"
+  },
+  "title": "Smart Report Recommendations"
+}
