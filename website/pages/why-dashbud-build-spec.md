@@ -1,9 +1,10 @@
 # Why Dashbud — Page Build Spec
 
 ## Overview
-New page replacing the old "How It Works" page. This is the sales argument page — problem → solution → CTA. Text-forward with strategic visual elements, not as component-heavy as the homepage.
+The comparison and migration page. Shows the trade-offs of current approaches (SaaS dashboards, BI tools, spreadsheets, AI workflows), how Dashbud compares to each, and how easy switching is. Text-forward with strategic visual elements, not as component-heavy as the homepage.
 
 **URL:** `/why-dashbud`
+**Nav label:** "Why Dashbud?"
 **Content source:** `content/website/pages/why-dashbud.md` (source of truth for all copy)
 **AI drilldown source:** `content/website/pages/ai-workflow-traps.md` (for the accordion content)
 
@@ -145,3 +146,28 @@ New page replacing the old "How It Works" page. This is the sales argument page 
 | `content/website/pages/ai-workflow-traps.md` | AI drilldown standalone piece | Accordion content |
 | `content/website/pages/use-cases.md` | Use cases page (separate build) | Not this page |
 | `content/website/pages/how-it-works.md` | Product flow steps (may link from here later) | Not this page |
+
+
+
+## Trade-off table mobile text:
+
+SaaS Dashboards
+QuickBooks, Google Analytics, etc.
++ Built in, no setup	
+- Clunky interfaces, can't mix data sources
+
+BI Tools
+Power BI, Tableau
++ Powerful, enterprise-grade	
+- Hard to learn, expensive, require a data team
+
+Spreadsheets
+Excel, Google Sheets
++ Flexible, existing expertise
+- Fragile, hard to update/share, competence tax
+
+AI Workflows
+Claude, ChatGPT
++ Fast and surprisingly capable
+- Calculations opaque, privacy/security concerns
+- Doesn't scale, vibe-coding problem [link?]

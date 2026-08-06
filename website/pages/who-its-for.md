@@ -1,4 +1,4 @@
-# dWho It's For
+# Who It's For
 
 ## You have the data. You just can't get at it.
 
@@ -24,7 +24,7 @@ Dashbud gives everyone access to the data they need and the ability to report fr
 
 With Dashbud, anyone on your team can self-serve. The bottleneck is gone.
 
-**Example:** A $80M/year manufacturer running a 20-year-old ERP exports daily CSVs to Google Drive. Dashbud auto-imports, cleans the data, and produces live dashboards for finance, sales, and warehouse ops — each team seeing only their own numbers. The person who used to pull every report now focuses on the business instead.
+**Example:** Your team runs on an ERP that wasn't built for reporting. You export daily CSVs to Google Drive. Dashbud auto-imports, cleans the data, and gives finance, sales, and ops their own dashboards — each team sees only their numbers. The person who used to pull every report goes back to their actual job.
 
 *Legacy ERPs, production databases, locked-down systems, single-person dependencies*
 
@@ -36,21 +36,21 @@ Your CRM knows your customers. Your accounting system knows your revenue. Your i
 
 Dashbud brings multiple sources together under one semantic model. Define the relationships once — this customer ID matches that account number, this product SKU maps to that inventory code — and then query across all of them as if they were one system. Databases, spreadsheets, cloud platforms, CSV exports — all in one place.
 
-**Example:** An e-commerce company with nine tables across orders, customers, products, and marketing. An analyst loads the data, teaches Dashbud the business rules — what's a gift set, how to calculate margin, what makes a customer "new." Thirty minutes later, the whole team has self-serve analytics across the full picture.
+**Example:** You run a CRM, an accounting platform, and an inventory system. Each has part of the picture but none can answer questions across all three. You connect them all to Dashbud, define the relationships once, and your team queries across the full picture — customers, revenue, and stock in one place.
 
 *Multi-system businesses, multi-location operations, mixed cloud and on-prem, databases alongside spreadsheets*
 
 ---
 
-## Your reporting is broken
+## Your reporting is *ad hoc*
 
 The monthly report takes two days. Half that time is pulling data from three different systems and pasting it into a master workbook. The other half is updating formulas, fixing broken references, and praying nothing shifted by a row. And when someone asks for a different cut of the numbers, the whole process starts over.
 
 This isn't a tool problem — it's a trust problem. Everyone builds their own reports, with their own assumptions, in their own spreadsheets. "Profit" means one thing to finance and another to sales. Nobody trusts anyone else's numbers.
 
-Dashbud replaces the DIY reporting cycle. Define your business rules once — what "margin" means, how to calculate utilization, which accounts roll up into overhead. Every query, every dashboard, every team uses the same definitions. When the definition changes, it changes everywhere. No more dueling reports. No more "Candace's numbers say X but Mike's say Y."
+Dashbud replaces the ad hoc reporting cycle. Define your business rules once — what "margin" means, how to calculate utilization, which accounts roll up into overhead. Every query, every dashboard, every team uses the same definitions. When the definition changes, it changes everywhere. No more dueling reports. No more "Candace's numbers say X but Mike's say Y."
 
-**Example:** A services firm tracks billable hours, client profitability, and marketing spend across three platforms. The monthly stakeholder report that took two days now takes twenty minutes — and the numbers are consistent because everyone queries the same model.
+**Example:** Your head of marketing produces revenue breakdowns, channel performance, and campaign ROI to create a monthly executive report in Excel. It takes his top analyst five hours to update it every month. Your head of strategy produces her own similar report, which sometimes produces different results. With Dashbud, everyone uses the same data and business rules. Reports have an easy-to-audit query trail. Data is live or from shared imported sources, and reports update automatically. Top analysts are freed to do real work, and everyone is singing from the same songbook.
 
 *Spreadsheet overload, ad hoc AI scripts, tribal knowledge, the competence penalty*
 
@@ -64,7 +64,7 @@ Dashbud's AI never sees a single data value. It reads your schema — field name
 
 For Epic users, Dashbud connects to Clarity or Caboodle — the reporting databases your system already maintains. For other systems, CSV or flat-file exports work just as well.
 
-**Example:** A healthcare practice needs to analyze thousands of patient encounters for operational reporting — revenue by provider, visit trends, payer mix — without exposing PHI to external platforms. Dashbud's schema-only architecture means they get the analytics without the compliance risk.
+**Example:** You need operational analytics — revenue by provider, visit trends, payer mix — but you can't expose patient data to external platforms. You connect Dashbud to your reporting database. The AI writes queries from your schema without ever seeing a record. You get the analytics without the compliance risk.
 
 *Healthcare and PHI, financial services, legal, HR and payroll, any regulated industry*
 

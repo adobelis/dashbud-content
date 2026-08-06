@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Push updated hero headline to Sanity STAGING dataset."""
+"""Push updated hero headline to Sanity. Defaults to staging; use --prod for production."""
 import json
+import sys
 import urllib.request
 from pathlib import Path
 
 PROJECT_ID = "89a9k63v"
-DATASET = "staging"
+DATASET = "production" if "--prod" in sys.argv else "staging"
 DOC_ID = "b8feb522-f902-4fa6-bbc1-92724e3df508"
 
 env_path = Path("/Users/arthur/www/dashbud/content/.env")
@@ -42,6 +43,6 @@ mutations = [{
     }
 }]
 
-print(f"Pushing to STAGING: headline = '{new_headline}', CTA = '{new_cta}'")
+print(f"Pushing to {DATASET.upper()}: headline = '{new_headline}', CTA = '{new_cta}'")
 result = sanity_mutate(mutations)
 print(f"Result: {json.dumps(result, indent=2)}")

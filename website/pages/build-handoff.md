@@ -5,17 +5,19 @@ New pages and components to replace/augment the old How It Works, Product, Tradi
 
 ## The pages and components
 
+### Who It's For (`/who-its-for`)
+**Purpose:** The main pitch page. Answers "is this for me?" through use case scenarios and four situation segments the prospect recognizes.
+**Spec:** `website/pages/who-its-for-build-spec.md`
+**Content:** `website/pages/who-its-for.md`
+**Images:** `website/pages/wif-images/` (four playful illustrations for segment cards)
+**Structure:** Hero with "Self-service analytics that works" + 2x2 segment cards → "How teams use Dashbud" tabbed use cases (6 sectors) → four situation sections (bottlenecked → scattered → ad hoc → sensitive) → differentiators → CTA.
+
 ### Why Dashbud (`/why-dashbud`)
-**Purpose:** The sales argument. Answers "why should I care?"
+**Purpose:** The comparison and migration page. Shows trade-offs of current approaches and how to switch.
 **Spec:** `website/pages/why-dashbud-build-spec.md`
 **Content:** `website/pages/why-dashbud.md`
 **Drilldown content:** `website/pages/ai-workflow-traps.md`
-
-### Who It's For (`/who-its-for`)
-**Purpose:** The identification page. Answers "is this for me?"
-**Spec:** `website/pages/who-its-for-build-spec.md`
-**Content:** `website/pages/who-its-for.md`
-**Structure:** Four situation segments (bottlenecked → scattered → broken → sensitive), each with a who/where/how/what frame, concrete example, and specifics line. Plus a differentiators section and CTA.
+**Structure:** Trade-offs table → AI workflow drilldown accordion → "How Dashbud helps" vs. grid → "Switching is easy" migration paths → Trust & privacy → CTA.
 
 ### Data Sources Panel (homepage component)
 **Purpose:** Show what Dashbud connects to — databases, cloud sources, and ERP/legacy systems.
@@ -28,22 +30,19 @@ New pages and components to replace/augment the old How It Works, Product, Tradi
 **Spec:** `website/pages/carousel-update-spec.md`
 
 ## How they relate to each other
-- **Why Dashbud** is about the problem and the solution. It's persuasion.
-- **Who It's For** is about the audience. The visitor recognizes their situation and sees a concrete example. It's identification.
+- **Who It's For** is the main pitch — "is this for me?" organized by use cases and the prospect's situation.
+- **Why Dashbud** is the deeper comparison — "how does Dashbud compare to what I'm doing now?" and "how hard is it to switch?" For prospects further along in evaluation.
 - They're complementary but not sequential — either can be a landing page from search, ads, or the nav.
-- They don't need to link to each other explicitly, though they can. The nav provides the connection.
 
 ## How they relate to the homepage
 - The **homepage** is the overview: hero, scroll-driven demo, feature pillars, trust, personas, CTA.
-- **Why Dashbud** goes deeper on the problem/solution story that the homepage only hints at. The homepage doesn't have the trade-offs table, the AI workflow drilldown, or the "vs." comparisons.
-- **Who It's For** expands the homepage's 3-card personas section into a full page organized by situation. The homepage personas section could link here, or be kept as a brief summary.
+- **Who It's For** expands the homepage's personas section into a full page organized by situation and use cases. The homepage personas section could link here.
+- **Why Dashbud** goes deeper on the comparison story — trade-offs table, AI workflow drilldown, "vs." cards, migration paths.
 - The homepage **scroll-driven demo strip** and **feature pillars** already cover "how it works" — neither new page needs to repeat that.
 - The **data sources panel** adds a visual connectivity story to the homepage that doesn't exist today.
 
 ## Navigation
-Current nav: [Home] [Why Dashbud?] [Pricing] [Blog] [Signup]
-
-Proposed nav: [Home] [Why Dashbud?] [Who It's For] [Pricing] [Blog] [Signup]
+Nav: **[Home] [Why Dashbud?] [Who It's For] [Pricing] [Blog] [Signup]**
 
 ## Design consistency
 All pages and components should share these patterns:
