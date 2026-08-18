@@ -1,0 +1,4 @@
+feedback_id,contact_id,name,date,source,page,category,feedback,severity,status,notes
+F001,P030,Daisy/Charlotte Ho,2026-08-11,verbal,general,positioning,Overall positive — she liked it and got what the product does.,positive,acknowledged,
+F002,P030,Daisy/Charlotte Ho,2026-08-11,verbal,general,design,Mobile formatting issues on smaller-format phones.,important,new,MKT-59L created. Blocking LinkedIn announcement (G003).
+F003,P030,Daisy/Charlotte Ho,2026-08-11,verbal,homepage,messaging,Scrolly-demo less compelling than text descriptions. She prefers reading about the product — especially as someone who isn't the primary user persona.,nice_to_have,acknowledged,Likely persona-dependent: non-target users want to read; target users may prefer the demo. Worth noting but probably not a change — the demo is for prospects who'd actually use the tool.

@@ -3,3 +3,5 @@ wiki/
 .venv
 .DS_Store
 ~$*
+voice/*.m4a
+

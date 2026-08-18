@@ -1,0 +1,211 @@
+You mentioned something that just aren't easy to get data out of.
+No.
+Are there certain platforms that I feel like the bulk of Epic users, Dashboard Connects,
+to Clarity or Corboodle?
+Yeah, I know.
+It's true.
+Two in the weeds, yeah.
+No, no.
+I mean, I think that's actually great, like, I mean, like, I feel like there's a lot
+of, there's like, okay, there's like tabloaf, right, and there's some other ones that
+just kind of like connect to a lot of stuff.
+Yes.
+How would this differ from tabloaf?
+Well, I mean, the main difference between us and tabloaf and looker is the AI-led
+semantic layer, so, you know, when you set up looker or tabloaf and look, they're building
+on AI to those platforms, but there's a limit to how far they're going to re-engineer those
+platforms to make them AI, to make them actually, the AI actually effective, because they've
+got built-in bases, like, you know, looker doesn't, or tabloaf and looker don't want
+to offend their built-in base of like data analysts who, the way they get a paycheck
+is that they're good at looker and tabloaf.
+Yeah.
+Okay.
+We're placing those data analysts to some extent with a layer of AI agent that really
+just knows how to write accurate queries and produce useful data display.
+Yeah.
+So, if you, I heard a little wind noise, so if you missed the last bit, you know, you got
+it?
+No.
+Sorry.
+Yeah.
+Sorry.
+I think, I mean, just take my car.
+You need to go chasing.
+Yeah.
+Okay.
+If you need to go and we need to reconnect, I don't let me, um, don't let it let me, um,
+Yeah.
+Two more.
+Two more.
+Okay.
+So, it sounds like, okay.
+So, it sounds like there's a distinction between, there's a distinction that makes sense.
+How about types of customers, because when you're talking about a, um, it seems like
+a pretty specific use case with the, the trial customer that you have?
+Yeah.
+Well, no.
+It's, I, I would say, um, that you, the, it's a million specific use cases that have to
+do with how difficult it is to, um, you, to, to, to connect to your data and to get good,
+um, answers out of it.
+So, okay.
+You know, we, but, you know, even if it's not that hard to connect your database and even
+if your data is relatively simple from a semantic perspective, so like all of your table, you're,
+we're connecting to a Postgres database, you know, that's just the back end of your, whatever,
+your home made like, uh, like a e-commerce system and your, your, your tables are all
+semantically named and your columns within those tables are all semantically named.
+Even if, and, and you don't have any columns, you don't want anybody to look at, so we don't
+have to filter out anything, we can just, the, the, the semantic modeling exercises, the,
+the semantic modeling agent says, I think I understand everything.
+Thanks.
+Okay.
+Um, what I think, so you do, yeah, you're doing some manage, do, do you do some manage
+service to help customers get their data in the platform?
+Uh, so, it's purely self-serve.
+It's, so that depends, we're, we're set up so that if, you know, if it's right now early
+on, I'm happy to help.
+But, um, what, to get the data into the platform, we have pretty advanced data cleaning tools,
+so if you're dropping in exports, those, the, you know, we're really good at like converting
+text into numbers or gates if it needs to be, which makes it much more, except much easier
+for, um, to write queries against.
+Okay.
+Um, yeah, I think, let's simply chat again about it, I think, what, so like I'm doing a
+lot of like paid advertising these days, um, and that's generally, I think in terms of
+like, so most of the businesses that work with now are spending, are basically, they, they
+got their kind of core customers and they're just, they're, they're trying to scale from
+like a three to a 10, uh, basically, um, and then I have some customers that are, what
+does that mean from a three to a 10?
+Uh, like, like they're spending, it's, they, well, my two biggest customers right now
+are spending like a couple hundred thousand a month, literally like scaling, like they
+got 1,000, 2,000 customers and they're like, scaling it out to be a paid advertising.
+And then my biggest customer right now is a company called Gusto.
+Okay.
+So, so they're spending like, they've got, uh, going to 1,000 customers and they're trying
+to get to 700,000 customers, um, then I do some work, but it's like, foundation or, I
+would say.
+Yeah.
+So, you're right now, like, just paid advertising, like, parking years, Facebook, Google,
+and LinkedIn ads, so scale out your, your user base, right?
+It sounds like where this is, is still getting kind of like first 10 customers.
+Yes, it is.
+Which is a little earlier than like my bread and butter right now, and the reason I just
+say bread and butter is because I like, uh, I like having the same types of headaches
+every day.
+Like, so, so I do like having the same things every day, that's, I like, you know, all the
+pieces that just like a little bit of austi and like, something zero to one stuff, yeah.
+In terms of like your next steps, it sounds like it is like potentially a bit of like
+cold outreach, or, oh, yeah, cold semi-war outreach, yeah, do you have kind of a point
+of view on what you're looking for in terms of getting to the next steps?
+What I'm looking for like in terms of the customer profile, or, yeah, customer profile,
+like, how to get there, you looking to basically how are you going to market with this?
+Well, I figure in terms of tools, I think LinkedIn would be a good, you know, LinkedIn
+sales navigator would be a good first tool to hit.
+I also have, at your recommendation, I got an Apollo account about when I was focused
+on this, you know, a year ago, I was supposed to be the marketing guy, um, in, uh, you
+know, or not, not the good marketing, go to market product, you know, but not the head
+of technology, um, yeah, uh, I am now all of those things, which is, you know, but, but
+the good news is that we, uh, that I built a really nice platform, um, yeah, uh, you
+know, and I got, we didn't start at nothing, the outgoing, uh, engineer who I had coached
+on it from, on architecture and kind of process, um, it was a young guy talented, but a
+little, well, he didn't do everything right, but he's green, he's green, but, um, he's,
+he's good, but he was, there are a lot of things it had to be fixed, um, started me off
+with some really good, um, infrastructure, which, uh, now is fully, you know, fully built
+that into a useful product. So we're there in terms of, in terms of, of that, and now I'm
+back as of like a month and a half ago, um, on, well, two months, but then I took a, a break
+for the, for the vacation back on, like figuring out how to get this into the market. Um, yeah,
+and that's, and I think that's, you know, those tools like, I don't, I don't know about Apollo
+for, I don't know how strong our email domain is in terms of trust, um, to get, actually,
+you know, get our emails in front of people. So I'm thinking, like, uh, LinkedIn would be, uh,
+you know, a better, more surefire way of actually distributing. Um, yeah. So I've been thinking
+about like maybe getting in front of 100, 200 people to start, see it, you know, select based
+on what I think are like profile, you know, people who have, I'd say mid market, you know,
+they don't have a full data team. Um, maybe they have like a data person who's totally overworked
+or, you know, um, yeah. And that's, and, and, and then, you know, possibly manufacturing or
+things that involve an ARP, which often is, which is I think a strength for us, um, or healthcare
+because we're, you know, because we have, um, a lot of a good data privacy story. Yeah.
+But, uh, yeah, we're in that, we're the zero to one phase exactly. Um, you know,
+if I can get like five customers, uh, over the next like two months, that would be, yeah.
+That means I, I think just like focusing like you said, um, focusing into something like a,
+means I've been manufacturing the, because ERP data is something like that. Anything
+where you're like focusing like that is just going to be coming from so much easier to sell,
+just particularly, there's just so many technology solutions on the market and anything you
+can become number one in is, or anything you can be the top solution in. Just, it makes it so
+much easier. It calls the sale. Like, yeah, I can see, like, I have one point that I've worked with
+for a while. They are green products. Green, they're just super horizontal. And so they take
+means with everybody and they have sold into just that every vertical. But problem is there's like
+10 different solutions that they compete directly with. And they're right.
+And they're like, you know, big giant companies that can undercut them on price, have just massive
+tea use. Right. And so their win rate from demo is like can be like one out of 20, one out of 30,
+one out of 40. It's just brutal. That's tough to make money on that. Yeah. Yeah. And so like,
+if I'm encouraged them to just like focus, like they can get the meetings, but I'm just
+encouraging them to focus and to think where they can just be like top three. Right. I don't know,
+I would kind of see the same thing here. Just. I mean, I think in terms of getting even attention,
+I think the more that we can just focus our messaging, you know, and really, and we'll be very helpful.
+Yeah. I think, you know, I think if you're like manufacturing manufacturing teams with custom ERP data,
+without, you know, it has like 10 to 50 without their own data team or something, then you know,
+like, oh my gosh, you know. Yeah, that's exactly that's exactly what this what this first customer
+is, probably 50 employees, many of them working like warehouse operations and stuff like that,
+or sales, they actually they have actually they have 20 sales people, but that's like probably a
+thanks to ton of sense. Yeah, makes a ton of sense and I'm
+sure that's what it does. Yeah, I mean, so you can focus there and use like that and get a good
+more like that. Those customers like have trouble buying solutions just because they don't want
+to be getting ready. And we're meant to, um, the other solutions may have difficulty working with
+their like custom databases or like a pretty specific database. And so if you have something like that,
+yeah, I think a follow and again, sales navigator can help you find other customers like them,
+but I do think like folks and like that, and just say we're going to actually almost niche is
+because the next step, even if it cuts out like a lot of revenue opportunity, right? Yeah,
+yeah, yeah, and like it's like, yeah, yeah, no, it's a concentrated learning
+rather than spreading it around. Yeah, well, I'd like to have to go, if you want to check later
+in the week, let's find a time. Love to, I'd love to. I hope everything's okay with your,
+did you check down your, did you see a babysitter ran off of the car?
+I don't know what I mean. She picks the kids up in our car, so it's like helpful.
+Oh, okay.
+Yes, I mean, rather than driving her car, she'll like kids into it.
+Right, no, no. Yeah, it connects. Yeah, well, it's on, let's check later in the week.
+But yeah, I think it'll take up the conversation again.
+Great. Thank you so much, Matt. I would love to look forward.
+And it's good to catch up. Yeah, yeah, I'd love to catch up more on other things too,
+but, but, but, but, when, when every time. All right, sounds good. All right,
+I'm going to get higher, I'm going to get higher, I'm going to get higher.
+Bye.
+Bye.
+Bye.
+Bye.
+Bye.
+Bye.
+Bye.
+Bye.
+Bye.
+Bye.
+Bye.
+Bye.
+Bye.
+Bye.
+Bye.
+Bye.
+Bye.
+Bye.
+Bye.
+Bye.
+Bye.
+Bye.
+Bye.
+Bye.
+Bye.
+Bye.
+Bye.
+Bye.
+Bye.
+Bye.
+Bye.
+Bye.
+But then let's just please let's just do it look like the ball
+I know that Arthur come on. That's not helpful. Just learn another language
+Just why don't you help you? I am here. I know this is do at the end of the week
+But just you know what?
+Set out three days and then you could do your analysis in a day and a half like it's just not gonna work
+Arthur, okay? And I I appreciate you being like, but it's so much better. I can't believe you're using it
+Not helpful. Not helpful. It's not that I can't believe it
+I can't believe it. I understand that that that it would be
+It would be much better if it were
+If it actually if you actually had access to it
+But I don't think you should also if if there's a possibility that you're

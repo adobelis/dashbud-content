@@ -1,0 +1,5 @@
+goal_id,goal,target_date,status,dependencies,created_date,revised_date,notes
+G001,Collect website feedback from inner circle,2026-08-15,in_progress,"P015 (Tim — trial account, awaiting feedback), P025 (Aparna — texted Aug 4, awaiting feedback), P030 (Daisy — has seen site, gave feedback)",2026-08-11,,"Need enough confidence in the site to go public. Tim, Aparna, Daisy are active. Consider also sending to Guy, JP, Alyssa, Billy, Bonnie."
+G002,Feel confident associating personally with Dashbud on LinkedIn,2026-08-15,not_started,"G001 (website feedback incorporated)",2026-08-11,,"Arthur has waited over a year for this — wanted product and site to be ready. This is the gate for G003."
+G003,LinkedIn announcement — public launch of Dashbud,2026-08-18,not_started,"G002 (confidence gate), G004 (mobile fix)",2026-08-11,,"One-shot moment. Week of Aug 18. Announce on LinkedIn, update profile, share with full network."
+G004,Fix mobile formatting for small phones,2026-08-15,not_started,"F002 (Daisy feedback)",2026-08-11,,"Mobile visitors from LinkedIn announcement will be significant. Desktop demo should kick in for tablets — just small phones need attention."

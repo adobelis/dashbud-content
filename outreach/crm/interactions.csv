@@ -1,0 +1,14 @@
+interaction_id,contact_id,name,date,channel,direction,type,summary,next_action,next_action_date
+1,31,Matt Lovett,2026-08-10,phone,outbound,meeting,"Spoke with Matt Lovett. Performance marketing expert (B2B paid ads). Discussed Dashbud — 0-1 vs his recent 3-10 work. Call got cut short (Rodgers call ran long).",Reschedule call with Lovett,2026-08-12
+2,15,Tim Cullen,2026-08-10,phone,outbound,meeting,"Caught up with Tim. Discussed Dashbud.",Set up trial account,2026-08-11
+3,15,Tim Cullen,2026-08-11,,outbound,give_trial,"Gave Tim a trial account. He said he'd look at the website and provide feedback.",Follow up for website feedback,
+4,25,Aparna Mukherjee,2026-08-04,text,outbound,initial_outreach,"Texted Aparna and asked for her feedback on Dashbud.",Follow up for feedback,2026-08-11
+5,34,Alyssa Elser,2026-08-07,,outbound,initial_outreach,"Shared the Dashbud website with Alyssa. She offered to try out the product.",Follow up — get her website feedback and set up trial account,2026-08-12
+6,32,Matt Rodgers,2026-08-10,phone,outbound,meeting,"Call with Matt Rodgers ran long — good conversation. He's been generous with thoughts on Dashbud.",,
+7,30,Daisy/Charlotte Ho,2026-08-07,in person,outbound,meeting,"Showed Daisy the website and got good feedback.",Follow up with friend invitation,2026-08-12
+8,44,Fernando Pizarro,,,,,to_do,,Reconnect and share Dashbud,2026-08-11
+9,46,Sky Tucker,2026-08-11,text,outbound,outreach,"Shared site.",Follow up if no response,2026-08-14
+10,25,Aparna Mukherjee,2026-08-04,text,outbound,initial_outreach,"Texted Aparna and asked for her feedback on Dashbud.",Follow up for feedback,2026-08-11
+11,47,David Bonfili,,,,,to_do,,Reconnect and share Dashbud,2026-08-12
+12,48,Jacob Silber,2026-08-11,,,say_hi,,Reconnect and share Dashbud,2026-08-12
+13,27,Jean-Paul Tremblay,2026-08-11,,,say_hi,,Reconnect and share Dashbud,2026-08-12
