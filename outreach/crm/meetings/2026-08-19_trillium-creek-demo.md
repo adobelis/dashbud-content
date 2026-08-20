@@ -2,7 +2,7 @@
 deal_id: D006
 company: Trillium Creek Dermatology
 contacts: Michelle Maynard (mmaynard@tcohio.com), Aaron Funk
-date: 2026-08-20
+date: 2026-08-19
 time: 1:00 PM
 type: demo
 status: scheduled
@@ -25,14 +25,14 @@ source: inbound (website/Calendly) — possible ModMed CEO connection via Scott
 ## What they told us
 Michelle's Calendly message: "We have ModMed and are interested in learning about potential report automations/dashboards"
 
-## What they likely struggle with (from Corey's ModMed research)
+## What they likely struggle with (from ModMed research)
 - ModMed's built-in analytics are basic — limited customization, pre-built reports only
 - 2-year historical data cap on analytics
 - No "connect your BI tool" experience — data is locked in
 - Manual CSV exports to Excel when built-in reports don't answer the question
 - Multi-location cross-comparisons that ModMed doesn't do well
 
-## Demo dataset (built by Corey)
+## Demo dataset
 Six tables uploaded as CSVs — modeled on what a ModMed API connector would produce:
 
 | Table | Rows | What it shows |
