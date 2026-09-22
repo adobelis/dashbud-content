@@ -30,6 +30,22 @@ The full annual subscription amount is due upon execution of this Agreement and 
 activation of Services.
 Additional users may be added during the subscription term at the then-current applicable
 pricing and may be prorated for the remainder of the annual term.
+
+Sharing and Distribution.
+Authorized Users may share reports, dashboards, and other platform outputs ("Shared
+Assets") with individuals who are not Authorized Users ("Share Recipients") via
+dashboard links and scheduled email delivery.
+
+The number of Share Recipients and Shared Assets is subject to the limits of Customer's
+subscription plan. As of the Effective Date:
+• Share Recipients: up to [___]
+• Published Shared Assets: up to [___]
+
+Sharing between Authorized Users is unlimited and not subject to these limits.
+
+Provider may adjust sharing limits upon renewal or plan change with reasonable notice.
+Customer may increase limits by upgrading to a higher subscription plan or by adding
+Authorized Users.
 4. Term and Renewal
 This Agreement begins on the Effective Date and continues for an initial term of twelve (12)
 months ("Initial Term").
