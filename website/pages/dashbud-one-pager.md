@@ -1,45 +1,32 @@
+Title: Dashbud — One-Pager
+Purpose: Landing page for visitors coming from the LinkedIn announcement or other top-of-funnel content. A survey, not a drill-down. Covers why, who, and how in one page. Should be scannable in under 5 minutes.
+URL: TBD — `/about-dashbud`, `/learn`, `/overview`?
+Audience: Someone who just read the "born free" post, or another general-interest post, and wants to understand what Dashbud is and why it exists. Not shopping for BI tools yet. Curious, not comparing.
+--
 # Dashbud — One-Pager
-
-**Purpose:** Landing page for visitors coming from the LinkedIn announcement or other top-of-funnel content. A survey, not a drill-down. Covers why, who, and how in one page. Should be scannable in under 5 minutes.
-
-**URL:** TBD — `/about-dashbud`, `/learn`, `/overview`?
-
-**Audience:** Someone who just read the "born free" post and wants to understand what Dashbud is and why it exists. Not shopping for BI tools yet. Curious, not comparing.
-
----
 
 ## Section 1: The Problem (Why)
 
-### Everyone wants to be data-driven. Almost nobody is.
+**Everyone wants to be data-driven. So why aren't they?**
 
-Your company runs on data — sales figures, operational metrics, customer records, financial reports. But getting answers from that data? That's where things fall apart.
+Your company runs on data — sales figures, operational metrics, customer records, financial reports. But getting answers from that data can be a problem. Every approach solves part of the problem, only to create new ones. 
 
-**The dashboard trap.** Your SaaS platforms each have their own dashboards. They're fine for what they show you, but they can't talk to each other, and they only answer the questions someone else thought to ask.
+**Dashboards: prefab silos.** Your SaaS platforms each have their own dashboards. Some are okay, some are terrible. Regardless, they can't talk to each other and they only answer the questions the platform company thought you might ask.
 
-**The spreadsheet cycle.** Someone exports the data to Excel. Builds a report. Updates it every month. It takes hours, it breaks constantly, and when that person leaves, the report leaves with them.
+**Spreadsheet: where your precious time goes to die.** You export the data to Excel. You clean it and build a report. A month later it's out of date, so you update it, a fragile process that takes from minutes to hours. If it's good, you share it. Then you leave the company, and who takes it over? 
 
-**The BI graveyard.** You evaluated Tableau or Power BI. Maybe you even bought it. But it needs a dedicated person (or team) to run, the learning curve is brutal, and six months later it's shelfware.
+**BI: tools with a bright future behind them.** Tableau, Power BI, Looker: so much power, so much promise. Then you woke up to discover the true cost: that you need to invest seriously in data analysts and infrastructure to make them work properly. Now you have both a new cost center and a new dependency to worry about. 
 
-**The AI mirage.** AI tools like ChatGPT and Claude can analyze data — impressively, at first. But the outputs are opaque, the calculations shift between runs, and you're handing your private data to a general-purpose AI with no guardrails. For regulated industries, this may be illegal. For everyone else, it's a liability.
-
-Every approach solves part of the problem while creating new ones. The data is there. The tools are the bottleneck.
+**AI workflows: a tantalizing mirage.** LLMs and vibe-coding tools can pull data from APIs and produce very pretty dashboards and reports. But the outputs are opaque and the calculations may shift between runs. Making business decisions based on the outuput of code you don't understand - sure, what could go wrong? Handing your company's or customer's private data to AI without guardrails... ditto.
 
 ---
 
-## Section 2: The Approach (What Dashbud Does Differently)
+Zoom out: where do these approaches fall down? The process of creating actionable business reporting is as follows:
 
-### AI-powered analytics where the AI never sees your data.
-
-Dashbud connects to your data — databases, spreadsheets, cloud platforms, file exports — and learns its *structure*: table names, column types, relationships. Then you teach it your *business rules*: what "margin" means, how to calculate utilization, which accounts roll up into overhead.
-
-When you ask a question, the AI writes a SQL query from the schema and your business rules. The query runs against your data. The results go to your screen. The AI never sees a single data value.
-
-**This is not a limitation — it's the architecture.** It means:
-
-- **Privacy by design.** Sensitive data — patient records, financial details, payroll — never leaves your database or touches an AI model.
-- **Auditable answers.** Every number traces back to a query you can read. No black-box calculations. No "the AI said so."
-- **Shared definitions.** "Revenue" means the same thing to sales, finance, and the executive team. Define it once, use it everywhere. No more dueling reports.
-- **Deterministic results.** The AI writes the query once. After that, it's a traditional report. Same question, same answer, every time.
+* Capture and source the data: get it from wherever it lives to somewhere you can use it. 
+* Clean it and make it usable: untangle the mess of overlaps, different date, unit, and naming conventions, etc. You'd do this by hand in a spreadsheet. You'd have a data engineer write an ETL pipeline for a large-scale project.
+* Put it somewhere people can access it: trivial for an individual, or at least a organized person; big infrastructure project for a company.
+* Analyze following shared rules: either grind out a really good spreadsheet
 
 ---
 
@@ -63,6 +50,23 @@ Dashbud works at every scale:
 | Cloud/SaaS | Google Sheets, APIs |
 | File imports | CSV, Excel exports |
 | Legacy/ERP | Via export-to-CSV or reporting database (Dynamics GP, Epicor, SAP, Infor, ModMed, Epic Clarity) |
+
+---
+
+## Section 2: The Approach (What Dashbud Does Differently)
+
+### AI-powered analytics where the AI never sees your data.
+
+Dashbud connects to your data — databases, spreadsheets, cloud platforms, file exports — and learns its *structure*: table names, column types, relationships. Then you teach it your *business rules*: what "margin" means, how to calculate utilization, which ad campaigns should be reported together.
+
+When you ask a question, the AI writes a SQL query from the schema and your business rules. The query runs against your data. The results go to your screen. The AI never sees a single data value.
+
+**This is not a limitation — it's the architecture.** It means:
+
+- **Privacy by design.** Sensitive data — patient records, financial details, payroll — never leaves your database or touches an AI model.
+- **Auditable answers.** Every number traces back to a query you can read. No black-box calculations. No "the AI said so."
+- **Shared definitions.** "Revenue" means the same thing to sales, finance, and the executive team. Define it once, use it everywhere. No more dueling reports.
+- **Deterministic results.** The AI writes the query once. After that, it's a traditional report. Same question, same answer, every time.
 
 ---
 
