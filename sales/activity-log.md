@@ -1,6 +1,21 @@
-# Activity Log — Late August / September 2026
+# Activity Log — Late August / October 2026
 
 Working backwards from today. Tracking time, activities, and ticket associations.
+
+---
+
+## 2026-10-06 (Monday)
+
+### Marketing / Legal
+- **MKT-61:** Privacy Policy overhaul — rewrote from scratch to reflect current data architecture (direct DB pass-through vs. file imports), AI separation, data governance, security controls, self-hosted option. Pushed to Sanity.
+- **MKT-61:** TOU tweaks — entity description reworded, "accessing Dashbud" (not "website"), free trial clause added. Pushed to Sanity.
+- Homepage hero CTAs corrected in Sanity (Try Dashbud → /signup, Book a Demo → Calendly)
+- Security overview drafted for ADAPT's Devon (VP of IT) — covers data architecture, encryption, access controls, governance, compliance, self-hosted deployment
+- LinkedIn founder announcement draft finalized
+
+### Sales
+- **Trillium Creek:** Lost. Michelle declined Sep 21 — chose to "use ChatGPT instead." Win-back email sent (Arthur + Scott) explaining why ChatGPT isn't a substitute. No reply as of Oct 6. Correspondence archived. MKT-60 and MKT-63L updated.
+- **ADAPT:** Still interested, likely implementation by EOY. Devon requested security synopsis. Self-hosted Azure deployment quoted at ~$40K.
 
 ---
 

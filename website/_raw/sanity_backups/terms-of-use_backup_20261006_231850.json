@@ -1,0 +1,675 @@
+{
+  "_createdAt": "2025-09-12T20:32:21Z",
+  "_id": "b2ae84e7-c16f-4564-9bfe-eef5e7d45dc4",
+  "_rev": "Tqh8WS5tzvNAerU03tNZao",
+  "_system": {
+    "base": {
+      "id": "b2ae84e7-c16f-4564-9bfe-eef5e7d45dc4",
+      "rev": "x7AKQdsMTT5RY3O5CdxApE"
+    }
+  },
+  "_type": "infopage",
+  "_updatedAt": "2026-09-08T22:39:47Z",
+  "body": [
+    {
+      "_key": "q8a0qb5idfqp",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "1cmd5ey51w2g",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Important"
+        },
+        {
+          "_key": "dez8lsekl033",
+          "_type": "span",
+          "marks": [],
+          "text": " \u2014 Please read this carefully."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "nram3xn2wisd",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "kq948kjvixrv",
+          "_type": "span",
+          "marks": [],
+          "text": "This End User License Agreement (\u201cAgreement\u201d) is a legal agreement between you (either an individual or a single entity) and Arthur Dobelis and Scott Binger, a general partnership trading as Dashbud (\"Provider\") for the use of the Dashbud software platform and any associated services, documentation, and updates (\"Dashbud\")."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "e8sdrry939oc",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "bzjmk5k1pork",
+          "_type": "span",
+          "marks": [],
+          "text": "By accessing or using Dashbud's website and services, you agree to be bound by this Agreement. If you do not agree with any part of this Agreement, you must not use Dashbud."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "vkgk2gm80ttt",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "8blwo11cl14x",
+          "_type": "span",
+          "marks": [],
+          "text": "1. License Grant"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "o3rpbnc9pl0f",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ou8kxaw90fs5",
+          "_type": "span",
+          "marks": [],
+          "text": "Provider grants you a limited, non-exclusive, non-transferable, revocable license to access and use Dashbud solely for your internal business purposes and in accordance with this Agreement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "xpen3d1fukre",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "p1j3jyzr6l08",
+          "_type": "span",
+          "marks": [],
+          "text": "2. Ownership and Restrictions"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "ur3o4i926wry",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "57j33sps9iet",
+          "_type": "span",
+          "marks": [],
+          "text": "Ownership: Dashbud is licensed, not sold. All rights, title, and interest in Dashbud (including all software, documentation, and intellectual property) remain with Provider."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "t40zfwu03cnp",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "0q0isp5ceyli",
+          "_type": "span",
+          "marks": [],
+          "text": "Restrictions: You may not:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ugiuls81yi2x",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "6xtm2d59zr90",
+          "_type": "span",
+          "marks": [],
+          "text": "Modify, reverse engineer, decompile, or disassemble Dashbud;"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "vn0735jiwi7i",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hxun0w9s3qbo",
+          "_type": "span",
+          "marks": [],
+          "text": "Copy, distribute, or sublicense Dashbud;"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "qlxgz7k4q695",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tw8jbt5yra3r",
+          "_type": "span",
+          "marks": [],
+          "text": "Use Dashbud to build a competing product or service;"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "90npsihry57j",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "1urixms2z723",
+          "_type": "span",
+          "marks": [],
+          "text": "Circumvent any user limits or access restrictions."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "yt4pk0q4xqt5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "y06w3igfavkc",
+          "_type": "span",
+          "marks": [],
+          "text": "3. User Data and Privacy"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "dgnk7zut6cn1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "9f8zl56td08q",
+          "_type": "span",
+          "marks": [],
+          "text": "Data Ownership: You retain all rights to the data you upload or connect to Dashbud."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "35svm9e1ye93",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "07gg91yt7hi9",
+          "_type": "span",
+          "marks": [],
+          "text": "Privacy: Dashbud shares only metadata (table and column names, types, and relationships) with AI services by default. Instrumental context data such as taxonomies and category values may be shared with AI services only with your confirmation. Row-level data is never transmitted to AI services. Dashbud does not use your data to train, fine-tune, or develop AI models."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "co5h4spn2gsz",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "9avq6nk4yvwb",
+          "_type": "span",
+          "marks": [],
+          "text": "Security: Provider uses commercially reasonable measures to secure your data, including encryption in transit and at rest, but you are responsible for safeguarding access credentials."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "3fh4d884bpdv",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "dts5l7fq8m98",
+          "_type": "span",
+          "marks": [],
+          "text": "HIPAA: Customers requiring a Business Associate Agreement should contact Dashbud prior to connecting protected health information."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sv1o7rexy2o7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "653lemsxakgl",
+          "_type": "span",
+          "marks": [],
+          "text": "4. Service Levels and Availability"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "hwbk0qjy2vfu",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "1fe0ryw71tzd",
+          "_type": "span",
+          "marks": [],
+          "text": "Dashbud is provided on an \u201cas is\u201d and \u201cas available\u201d basis. Provider will make commercially reasonable efforts to ensure uptime and support but does not guarantee uninterrupted service."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "kx04crrkabvw",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gvaei7hy5lwb",
+          "_type": "span",
+          "marks": [],
+          "text": "5. Fees and Payment"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "j3fptptcmkhi",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "stjw1zag6d7j",
+          "_type": "span",
+          "marks": [],
+          "text": "Use of Dashbud is subject to payment of applicable subscription fees. Failure to pay may result in suspension or termination of access."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "p0tvy0pn5xjx",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "nzsp3j28zexm",
+          "_type": "span",
+          "marks": [],
+          "text": "6. Term and Termination"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "znz1rs5q1rym",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vjgujvtcmnq1",
+          "_type": "span",
+          "marks": [],
+          "text": "This Agreement remains in effect until terminated. You may terminate at any time by ceasing use. Provider may suspend or terminate your license for violation of this Agreement. Upon termination, you must cease all use of Dashbud."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "qlsx2mufj70h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "yrbd3wbjppx9",
+          "_type": "span",
+          "marks": [],
+          "text": "7. Disclaimers and Limitation of Liability"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "9ih1k4mio6b0",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "09k60k2mp4td",
+          "_type": "span",
+          "marks": [],
+          "text": "Disclaimer: Dashbud is provided \u201cas is\u201d without warranties of any kind, express or implied."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "3tlerdnjq6oz",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ny2w333xuqa5",
+          "_type": "span",
+          "marks": [],
+          "text": "Limitation: Provider shall not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of profits, revenue, data, or business opportunity. Total liability shall not exceed the amount paid for the most recent three months of Dashbud services."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "v5fcjokz0bgl",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "h8md14abyrff",
+          "_type": "span",
+          "marks": [],
+          "text": "8. Indemnification"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "f62xmsd0ij1e",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "psb0dk6z0v1g",
+          "_type": "span",
+          "marks": [],
+          "text": "You agree to indemnify and hold Provider harmless from any claims, losses, or damages arising from your misuse of Dashbud or violation of this Agreement."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "75vqo50ilwth",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "1sc0p0rbxkn8",
+          "_type": "span",
+          "marks": [],
+          "text": "9. Governing Law"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "vqmnm04ju4bt",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "9vvae3uk57ko",
+          "_type": "span",
+          "marks": [],
+          "text": "This Agreement shall be governed by the laws of the State of New York, without regard to its conflict of law provisions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "olfwao57ppes",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "wg6hlns3lmjg",
+          "_type": "span",
+          "marks": [],
+          "text": "10. Miscellaneous"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "d5w6hpvzwrpw",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "umo7j2g96s9o",
+          "_type": "span",
+          "marks": [],
+          "text": "Entire Agreement: This is the entire agreement between you and Provider concerning Dashbud."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "lkmmg82nzbi2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "pxe8ggixf6i1",
+          "_type": "span",
+          "marks": [],
+          "text": "No Waiver: The failure to enforce any provision shall not be deemed a waiver."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "lcjde2bpvtcj",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "h99wdejn5wba",
+          "_type": "span",
+          "marks": [],
+          "text": "Severability: If any provision is found unenforceable, the rest shall remain in full force and effect."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "xsm1xoccsg5b",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "x4wgppnqdv60",
+          "_type": "span",
+          "marks": [],
+          "text": "Dashbud lets you create reports and dashboards from your own data with a conversational UI."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "hls108bio3t6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "2jb85drsuaxy",
+          "_type": "span",
+          "marks": [],
+          "text": "Links"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "6h80je6yvjyf",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "aaln6royqzal",
+          "_type": "span",
+          "marks": [
+            "dxhgfgdft6vm"
+          ],
+          "text": "Privacy Policy"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [
+        {
+          "_key": "dxhgfgdft6vm",
+          "_type": "link",
+          "href": "https://www.getdashbud.com/privacy"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "vhwi8c4t14jn",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "kc278l3mpuqj",
+          "_type": "span",
+          "marks": [
+            "wafrmdyvo788"
+          ],
+          "text": "Terms of Use"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [
+        {
+          "_key": "wafrmdyvo788",
+          "_type": "link",
+          "href": "https://www.getdashbud.com/terms-of-use"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "zho3j5ku7rye",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "p1alucsqkoh4",
+          "_type": "span",
+          "marks": [
+            "bz8hcd5ixpl0"
+          ],
+          "text": "Cookie Policy"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [
+        {
+          "_key": "bz8hcd5ixpl0",
+          "_type": "link",
+          "href": "https://www.getdashbud.com/cookie-policy"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "pimwt4xam5yf",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "u44c4wbxhs4h",
+          "_type": "span",
+          "marks": [],
+          "text": "\u00a9 2026 Dashbud. All rights reserved."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "vf6uc7sx8bmh",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "4xazytr4fboz",
+          "_type": "span",
+          "marks": [],
+          "text": "We use cookies \ud83c\udf6a"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "5geb5pro86rp",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "nprjygg9talc",
+          "_type": "span",
+          "marks": [],
+          "text": "Dashbud uses cookies for analytics and marketing. You can manage your preferences anytime. For more information: "
+        },
+        {
+          "_key": "zk9r9vr6mojd",
+          "_type": "span",
+          "marks": [
+            "e8055rjkmeph"
+          ],
+          "text": "see here"
+        },
+        {
+          "_key": "ms17bacaqe7g",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "e8055rjkmeph",
+          "_type": "link",
+          "href": "/info/cookie-policy"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "terms-of-use"
+  },
+  "title": "Dashbud | Terms of Use/End-User License Agreement",
+  "updated": "2026-09-08T00:00:00.000Z"
+}

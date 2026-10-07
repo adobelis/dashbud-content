@@ -10,9 +10,9 @@ _Sanity ID: b2ae84e7-c16f-4564-9bfe-eef5e7d45dc4_
 
 **Important** — Please read this carefully.
 
-This End User License Agreement (“Agreement”) is a legal agreement between you (either an individual or a single entity) and Arthur Dobelis and Scott Binger, a general partnership trading as Dashbud ("Provider") for the use of the Dashbud software platform and any associated services, documentation, and updates ("Dashbud").
+This End User License Agreement (“Agreement”) is a legal agreement between you (either an individual or a single entity) and Dashbud (a general partnership of Arthur Dobelis and Scott Binger) ("Provider") for the use of the Dashbud software platform and any associated services, documentation, and updates ("Dashbud").
 
-By accessing or using Dashbud's website and services, you agree to be bound by this Agreement. If you do not agree with any part of this Agreement, you must not use Dashbud.
+By accessing or using Dashbud, you agree to be bound by this Agreement. If you do not agree with any part of this Agreement, you must not use Dashbud.
 
 ## 1. License Grant
 
@@ -50,7 +50,7 @@ Dashbud is provided on an “as is” and “as available” basis. Provider wil
 
 ## 5. Fees and Payment
 
-Use of Dashbud is subject to payment of applicable subscription fees. Failure to pay may result in suspension or termination of access.
+Use of Dashbud may be subject to payment of applicable subscription fees, except during a free trial or evaluation period offered by Provider. Failure to pay applicable fees may result in suspension or termination of access.
 
 ## 6. Term and Termination
 

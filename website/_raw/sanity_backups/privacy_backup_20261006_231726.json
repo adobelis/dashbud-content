@@ -1,0 +1,1427 @@
+{
+  "_createdAt": "2025-09-12T20:28:10Z",
+  "_id": "3c4bf370-559c-453a-b429-de0e5248bd50",
+  "_rev": "OgAUDuWX5jwqflSvkrWBMa",
+  "_system": {
+    "base": {
+      "id": "3c4bf370-559c-453a-b429-de0e5248bd50",
+      "rev": "x7AKQdsMTT5RY3O5CdwjHn"
+    }
+  },
+  "_type": "infopage",
+  "_updatedAt": "2026-10-07T03:15:13Z",
+  "body": [
+    {
+      "_key": "t5czb3wxlkf4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zfi43mgru6sb",
+          "_type": "span",
+          "marks": [],
+          "text": "Dashbud \u2014 Privacy Policy"
+        }
+      ],
+      "markDefs": [],
+      "style": "h1"
+    },
+    {
+      "_key": "1qa2fueolnu6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "x2ct9jeckfm5",
+          "_type": "span",
+          "marks": [],
+          "text": "1. Overview"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sb67mbauf2wf",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "vqe2zcbrvfbo",
+          "_type": "span",
+          "marks": [],
+          "text": "Arthur Dobelis and Scott Binger, a general partnership trading as Dashbud (\"Dashbud\", \"we\", \"our\", or \"us\") is committed to protecting your privacy and your data. This Privacy Policy describes how Dashbud collects, uses, stores, and safeguards information when you use our platform and services."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "t2wxax0eqz9a",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "3okb6s660gur",
+          "_type": "span",
+          "marks": [],
+          "text": "Dashbud is designed to minimize its footprint on your data. How we handle your data depends on how you connect it \u2014 and in all cases, our AI layer never operates on your raw data."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "uxj2v5bkwbk2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hv9hnrxdp5t0",
+          "_type": "span",
+          "marks": [],
+          "text": "2. What We Collect"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "3w39e35f6twb",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "jry9bv0sxeje",
+          "_type": "span",
+          "marks": [],
+          "text": "When you use Dashbud, we collect only the information necessary to provide and improve our services:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "5jkexjdk0ztn",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "3droge640zzv",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Account information:"
+        },
+        {
+          "_key": "7u8qsa4ts307",
+          "_type": "span",
+          "marks": [],
+          "text": " Name, email address, organization name, and authentication credentials."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "d1obilul0ekt",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "x1p29p5q78w7",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Connection metadata:"
+        },
+        {
+          "_key": "dq56gh3rh7vy",
+          "_type": "span",
+          "marks": [],
+          "text": " Information about the databases and data sources you connect, including schema, table names, column names, data types, and relationships."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "9ije7ioecku4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "so66rbrs5gkw",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Semantic model data:"
+        },
+        {
+          "_key": "6420lqjybpa2",
+          "_type": "span",
+          "marks": [],
+          "text": " Business rules, column descriptions, and \u2014 with your explicit permission \u2014 unique values of low-cardinality taxonomy columns (e.g., status codes, category names) used to improve query accuracy."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "j1rdew12f2vf",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "f2zn33yvfe82",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Usage logs:"
+        },
+        {
+          "_key": "ns54bwoxk6ry",
+          "_type": "span",
+          "marks": [],
+          "text": " Activity logs related to feature usage, query execution, error reporting, and system diagnostics."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "5tbjb6gyz8n1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gc96uee2gfsy",
+          "_type": "span",
+          "marks": [],
+          "text": "3. How We Handle Your Data"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "ah17azb0asqf",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "jrpvuhz35y8d",
+          "_type": "span",
+          "marks": [],
+          "text": "Dashbud handles your data differently depending on how you connect it:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "g10c3coi52nq",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "qgoy1mhikwxy",
+          "_type": "span",
+          "marks": [],
+          "text": "Direct database connections (PostgreSQL, MySQL, SQL Server)"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "h3fvh1ofso1i",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a6d2s8u1we3d",
+          "_type": "span",
+          "marks": [],
+          "text": "When you connect your own database, Dashbud does not store or access your underlying data. We read only metadata \u2014 table names, column names, data types, and relationships. Queries are generated by the AI and executed against your database; raw data flows directly from your database to your browser and is never transmitted to or stored on Dashbud's infrastructure."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "7eyt9xzalxbd",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "iwj7xl275i6g",
+          "_type": "span",
+          "marks": [],
+          "text": "Query outputs are not stored. With direct connections, Dashbud never holds any of your substantive business data."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "xil27nb8rm2g",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "wu8mqk97vt0g",
+          "_type": "span",
+          "marks": [],
+          "text": "File imports and APIs (CSV, Google Sheets, API integrations)"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "34z59jwomgge",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "va0qbbc16vl1",
+          "_type": "span",
+          "marks": [],
+          "text": "When you import data via file upload, Google Sheets, or API, your data is ingested into a managed PostgreSQL database within Dashbud's infrastructure. Imported data is:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k8mo2lp4osfw",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "jrxf6jn4bf4i",
+          "_type": "span",
+          "marks": [],
+          "text": "Isolated within your organization and workspace boundaries"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "2k68969dhrbt",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zbcgiikj4ty2",
+          "_type": "span",
+          "marks": [],
+          "text": "Encrypted in transit and at rest"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "cupxh26djekq",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "8z9xtyr2brdf",
+          "_type": "span",
+          "marks": [],
+          "text": "Governed by role-based access controls and row-level security"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "j75x02ywdvkl",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "923qkar44lf0",
+          "_type": "span",
+          "marks": [],
+          "text": "Deletable on request or upon account termination"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ogt17mo78ugj",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "v14ha83a6bhb",
+          "_type": "span",
+          "marks": [],
+          "text": "Google Sheets and Google Drive"
+        }
+      ],
+      "markDefs": [],
+      "style": "h3"
+    },
+    {
+      "_key": "1mgnv9n4lnvu",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "wda6b2r66wso",
+          "_type": "span",
+          "marks": [],
+          "text": "When you connect your Google account, Dashbud requests read-only access through Google's OAuth 2.0 authorization flow. We access only the spreadsheets you explicitly select for import and store a copy of the imported data for querying. We also store an encrypted OAuth refresh token to re-access your selected spreadsheets for data updates."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "1guyc9kdgya2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "rzt9slgh5wxl",
+          "_type": "span",
+          "marks": [],
+          "text": "We do not access spreadsheets you have not selected, modify or delete any Google files, or share your Google data with third parties or use it for advertising."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "xrbbsbwa21un",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "e2zexr0zv2ks",
+          "_type": "span",
+          "marks": [],
+          "text": "You can disconnect your Google account at any time from your Dashbud workspace or revoke access directly from your "
+        },
+        {
+          "_key": "aaorfggqxdqu",
+          "_type": "span",
+          "marks": [
+            "jmir05zm6r3b"
+          ],
+          "text": "Google Account Permissions"
+        },
+        {
+          "_key": "bpks4k8z29gw",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "jmir05zm6r3b",
+          "_type": "link",
+          "href": "https://myaccount.google.com/permissions"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "z3v09uhg1oj7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "1dwjttnfxq76",
+          "_type": "span",
+          "marks": [],
+          "text": "4. AI and Your Data"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "w1ban92tk268",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "j44ca1nd9a1a",
+          "_type": "span",
+          "marks": [],
+          "text": "Dashbud's AI operates as a translation layer \u2014 it receives business questions and produces SQL queries, grounded in metadata and business rules. It never operates on your raw data."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "va2mh69xfa2o",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "d72o5vtw8m3p",
+          "_type": "span",
+          "marks": [],
+          "text": "Specifically:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "fnjqlp4n5wee",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tyde8jletbp3",
+          "_type": "span",
+          "marks": [],
+          "text": "The AI receives only structural metadata (schema, column types, relationships) and business context (semantic model definitions, business rules) to generate queries."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "zudpvizddrxo",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "4kzwg8b67bvd",
+          "_type": "span",
+          "marks": [],
+          "text": "Low-cardinality taxonomy values are shared with AI services only with your explicit confirmation."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "nju5ef476d2n",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "h36b1jicvtw8",
+          "_type": "span",
+          "marks": [],
+          "text": "Row-level data and query output data are never sent to AI services."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "04qek7vr09n5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "wqx15wvim5u5",
+          "_type": "span",
+          "marks": [],
+          "text": "Dashbud does not use your data to train, fine-tune, or develop AI models."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "yh26ckp3o3jo",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "z7khhiv842uu",
+          "_type": "span",
+          "marks": [],
+          "text": "All generated queries are auditable \u2014 you can see exactly what was executed."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "c1utkadx1175",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zmufcd90z2tf",
+          "_type": "span",
+          "marks": [],
+          "text": "5. How We Use Your Information"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "4izwagoix00p",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "uorzvb2ctvge",
+          "_type": "span",
+          "marks": [],
+          "text": "We use the information we collect strictly to:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "18n7tvruhe1l",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "87d3uatqlynd",
+          "_type": "span",
+          "marks": [],
+          "text": "Authenticate users and provide access to the Dashbud platform"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "6ns7cdtrz01c",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "t7p2xcqkt3ip",
+          "_type": "span",
+          "marks": [],
+          "text": "Generate AI-assisted queries using your metadata and semantic model"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "so7yvzgn034x",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "9re3e232cw47",
+          "_type": "span",
+          "marks": [],
+          "text": "Enforce data governance rules (column exclusion, row-level filtering, workspace scoping)"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "cay3bqo66vbz",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "u8bmbr5f86ox",
+          "_type": "span",
+          "marks": [],
+          "text": "Improve platform performance and reliability"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "wwjvfd279kbb",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "r0kpqtzrykqj",
+          "_type": "span",
+          "marks": [],
+          "text": "Provide support and troubleshoot issues"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "8f5r7gkmxs7v",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "m9q1n5c0j85d",
+          "_type": "span",
+          "marks": [],
+          "text": "Enforce our terms and protect against abuse"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ytt5ejye23ct",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "hvqoxb2k61gt",
+          "_type": "span",
+          "marks": [],
+          "text": "We do not use your information for advertising, sell or rent it to third parties, or allow any third-party AI models to access your data for purposes other than query generation."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "opn58z2sf8di",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "5r1ddl141isq",
+          "_type": "span",
+          "marks": [],
+          "text": "6. Data Governance Controls"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "3iprstioa06t",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "flem5h36j6sz",
+          "_type": "span",
+          "marks": [],
+          "text": "Dashbud provides workspace-level controls that let administrators determine what data each user or team can access:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ooer1h1ksdoo",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tejh88z5mjd2",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Column exclusion:"
+        },
+        {
+          "_key": "gtohvehc4thn",
+          "_type": "span",
+          "marks": [],
+          "text": " Sensitive columns can be hidden from users and from the AI entirely \u2014 they cannot be queried, filtered on, or referenced."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ptkglhh0c82w",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "1kiifnmtrlqa",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Row-level filtering:"
+        },
+        {
+          "_key": "91n968e01im4",
+          "_type": "span",
+          "marks": [],
+          "text": " Workspaces can restrict queries to defined subsets of data, enforced at the query level."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "9wl5euefidcc",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "95tbvpk2zqwz",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Workspace scoping:"
+        },
+        {
+          "_key": "mumokty5pheo",
+          "_type": "span",
+          "marks": [],
+          "text": " A single data source can serve multiple audiences, each with its own column and row restrictions."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "9mejyfyv655f",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "19hvr67x6eoz",
+          "_type": "span",
+          "marks": [],
+          "text": "These controls apply to the conversational query interface, reports, and dashboards. The AI operates within the same restrictions as the user."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "xqlgk1cm9fk3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "bnzefq0mpbi5",
+          "_type": "span",
+          "marks": [],
+          "text": "7. Security"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "bnaai4i6uumn",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "g38fbpvn6enn",
+          "_type": "span",
+          "marks": [],
+          "text": "We implement technical and organizational security measures including:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "kg25pvowrvuo",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "9d8m3rndgmy8",
+          "_type": "span",
+          "marks": [],
+          "text": "User authentication via Auth0 (industry-standard identity platform)"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "kyyx4263sct4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "54tyc621ryub",
+          "_type": "span",
+          "marks": [],
+          "text": "TLS/SSL encryption for all data in transit"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "i9y5woy6384m",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tejz5l83kabm",
+          "_type": "span",
+          "marks": [],
+          "text": "Encryption at rest for stored data, credentials, and OAuth tokens"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "t3qipjzzixr6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "qhc6s0p98x1i",
+          "_type": "span",
+          "marks": [],
+          "text": "Role-based access control (owner, admin, user, viewer)"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "au1j44jtqecw",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "sq49pce0g60a",
+          "_type": "span",
+          "marks": [],
+          "text": "Strict enforcement of organization and workspace boundaries"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "xime90gkx7n2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "jq4d3l37mq16",
+          "_type": "span",
+          "marks": [],
+          "text": "Production and staging environment isolation"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "jh0p88wqucxx",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "56giohawxywv",
+          "_type": "span",
+          "marks": [],
+          "text": "Logging and monitoring of access activity and query execution"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pkp4df7e9s4l",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "azwuw5gxiffj",
+          "_type": "span",
+          "marks": [],
+          "text": "Dashbud personnel have no direct query access to your data \u2014 whether it resides in your own database (connected as a data source) or in Dashbud's infrastructure (file imports, API data). Database credentials are encrypted and used only by the application at query time; there is no administrative role, console access, or internal tool that permits Dashbud staff to read, query, or export your data. Access to connection metadata and platform configuration is restricted to authorized personnel for support and diagnostics only."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "4770ohvm18g9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "8frjwi2un274",
+          "_type": "span",
+          "marks": [],
+          "text": "8. Third-Party Services"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "xaoqul8td7en",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ugdkwu7rs9dj",
+          "_type": "span",
+          "marks": [],
+          "text": "Dashbud does not share customer data or metadata with external third-party services unless explicitly authorized by you. AI services receive only metadata and business context as described in Section 4, never raw data."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "urtaugegyytd",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ormlcg05vz87",
+          "_type": "span",
+          "marks": [],
+          "text": "OAuth 2.0 is used for third-party integrations (e.g., Google Sheets). Tokens are encrypted at rest and scoped to minimum necessary permissions."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "6h3eyuwqdkmo",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "5d3p7sy9c33c",
+          "_type": "span",
+          "marks": [],
+          "text": "9. Data Retention and Deletion"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "2bkfrpymzwjl",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "o1earug51yj0",
+          "_type": "span",
+          "marks": [],
+          "text": "Account data is retained only while your account remains active."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "sg45ratr75dx",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "yri6e4295w0g",
+          "_type": "span",
+          "marks": [],
+          "text": "Connection metadata and semantic model data are retained to support ongoing query generation."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "z9g0un2yxtka",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "nmdg4ubhi6sr",
+          "_type": "span",
+          "marks": [],
+          "text": "Imported data (file uploads, API, Google Sheets) is retained until you remove the data source or terminate your account."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "arzzpt9l8l1a",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "gk4vmcgz3fk4",
+          "_type": "span",
+          "marks": [],
+          "text": "You may request deletion of your account, metadata, or imported data at any time by contacting us."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "334zo2swiled",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "oajmvcqxyfuy",
+          "_type": "span",
+          "marks": [],
+          "text": "Upon termination, customer data is deleted or returned per agreement terms."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "ohur2fgtjc9l",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "icvemor6upve",
+          "_type": "span",
+          "marks": [],
+          "text": "10. Data Ownership and Portability"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "5u3pnnpgop9v",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zd4317elprk3",
+          "_type": "span",
+          "marks": [],
+          "text": "You retain all rights to the data you upload or connect to Dashbud. Dashbud acquires no ownership interest in your data. You may request a complete export of your ingested data at any time."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "aqotjy586scc",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "geeiabsbkn1r",
+          "_type": "span",
+          "marks": [],
+          "text": "11. Compliance"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "by4yp65h5d8u",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "5ubf42yww7nu",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "HIPAA:"
+        },
+        {
+          "_key": "0h9dvflhd91u",
+          "_type": "span",
+          "marks": [],
+          "text": " Dashbud is designed to support HIPAA-covered workflows. We offer a Business Associate Agreement (BAA) for customers handling protected health information. Contact us before connecting PHI."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "lsrxdhquqxyk",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "iren16kh5maz",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Privacy by architecture:"
+        },
+        {
+          "_key": "azb5ng83yiw2",
+          "_type": "span",
+          "marks": [],
+          "text": " Our schema-only AI model means sensitive data is not exposed to AI services by default, reducing compliance surface area."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "7xwm581rqbwf",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "n96f7346vuuc",
+          "_type": "span",
+          "marks": [],
+          "text": "12. Self-Hosted Deployment"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "a3vemqnvrsjg",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "4daw6ljedjf5",
+          "_type": "span",
+          "marks": [],
+          "text": "For organizations with strict data residency or security requirements, Dashbud can be deployed into your own cloud environment. In this model, the entire platform runs within your cloud account and your data never leaves your infrastructure. Contact us for details."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "1tjp5jrb4e16",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "185f6wdrtgxs",
+          "_type": "span",
+          "marks": [],
+          "text": "13. Your Rights"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "rngg73f9zqg1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "r5u8sgzaci56",
+          "_type": "span",
+          "marks": [],
+          "text": "You have the right to:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "lsi6s3vi0ki3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "60tehbyrztl1",
+          "_type": "span",
+          "marks": [],
+          "text": "Request access to your account and profile data"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "smkoh5o9xyjp",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "xupbegeefm7t",
+          "_type": "span",
+          "marks": [],
+          "text": "Request correction or deletion of your information"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "llcsv6q939lk",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "cx67vj2dfter",
+          "_type": "span",
+          "marks": [],
+          "text": "Request export of your ingested data"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "j6ztsh3eh3x6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "lmbwf4482qcz",
+          "_type": "span",
+          "marks": [],
+          "text": "Withdraw consent for optional data processing"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "puszk8kgrypp",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "t74qx4nseopi",
+          "_type": "span",
+          "marks": [],
+          "text": "File a complaint with a regulatory authority, if applicable in your jurisdiction"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "n8f9puadskc8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "ceak90u19le4",
+          "_type": "span",
+          "marks": [],
+          "text": "14. Children's Privacy"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "eqdt1e6kii5x",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k4vlplqrs3cv",
+          "_type": "span",
+          "marks": [],
+          "text": "Dashbud is not intended for use by individuals under the age of 18. We do not knowingly collect personal information from children."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "oiavbnw5rtql",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "cole6xe3kc35",
+          "_type": "span",
+          "marks": [],
+          "text": "15. Changes to This Policy"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "sfuj5h252pna",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "0rhdn43oj069",
+          "_type": "span",
+          "marks": [],
+          "text": "We may update this Privacy Policy from time to time. When we do, we will revise the \"Last Updated\" date. Material changes will be communicated via email or platform notification."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "lmvap7biqi9j",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "zurek1zd5ceg",
+          "_type": "span",
+          "marks": [],
+          "text": "16. Contact Us"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "yfipat7dj7gn",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "cq0ezgipdubw",
+          "_type": "span",
+          "marks": [],
+          "text": "For any questions or concerns about this Privacy Policy, please contact us at: hello@mail.getdashbud.com"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "pzv14s7ebwij",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "1lba982n2wy5",
+          "_type": "span",
+          "marks": [],
+          "text": "Dashbud lets you create reports and dashboards from your own data with a conversational UI."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "privacy"
+  },
+  "title": "Dashbud | Privacy Policy",
+  "updated": "2026-10-06T00:00:00.000Z"
+}
