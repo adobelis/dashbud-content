@@ -40,14 +40,52 @@ Log of every touchpoint with a prospect.
 | next_action | text | What to do next |
 | next_action_date | date | When to do it |
 
+### pipeline.csv
+**The live deal pipeline.** This is the file in active use.
+
+| Column | Type | Description |
+|--------|------|-------------|
+| deal_id | PK | D001, D002, ... |
+| company | text | |
+| stage | enum | See deal stages below |
+| deal_type | text | subscription, subscription + deployment |
+| arr | number/range | Annual recurring revenue. Ranges allowed for unsigned deals |
+| one_time_revenue | number | Deployment or services revenue |
+| primary_contact | text | |
+| contact_role | text | |
+| source | enum | referral, scott_client, scott_referral, inbound_or_referral |
+| started | date | YYYY-MM-DD, when the deal opened |
+| last_activity | date | YYYY-MM-DD, most recent meaningful touch |
+| next_action | text | |
+| next_action_date | date | |
+| notes | text | Running history. Prefix status changes in CAPS with the date |
+
+#### Deal stages
+
+| Stage | Meaning |
+|-------|---------|
+| `exploratory` | Interest established, no formal proposal or evaluation yet |
+| `demo_done` | Demo delivered, awaiting next step |
+| `poc` | **We** do hands-on work with their real data to prove it works. Costly to us — Arthur builds reports/models directly. Not self-serve |
+| `trial` | **They** have product access and are evaluating it themselves. The advertised free trial |
+| `proposal` | Pricing and scope submitted |
+| `security_review` | In procurement, security, or legal diligence |
+| `closed_won` | Signed and paid |
+| `closed_lost` | Declined, or went dark after a decision point |
+| `dormant` | No activity and no decision. Revisit deliberately rather than letting it drift |
+
+**POC vs. trial matters.** Hands-on POCs are deliberate at this stage: every one produces a reusable technical proof point whether or not the deal closes. Omega proved ingestion and modeling on a large IBM Informix ERP dataset (orders + warehouse). Trillium Creek proved the two ModMed EMA tables driving a derm practice's monthly reporting ingest easily — which de-risks every future ModMed prospect even though the deal was lost. Log these in the success-story portfolio regardless of outcome.
+
+The risk to manage is not the POC itself but the **handoff**: if the prospect never gets into the app, they only ever see output, and output alone looks replaceable by ChatGPT. They never encounter the semantic model, governance, or shared definitions that make the comparison invalid. Aim to land the POC *inside* the product and hand over access, rather than delivering finished reports from outside it.
+
 ### deals.csv
-Pipeline tracking when a prospect becomes an opportunity.
+**Unused — empty except for the header.** Superseded by `pipeline.csv`. Either populate it or delete it; do not treat it as live.
 
 | Column | Type | Description |
 |--------|------|-------------|
 | deal_id | PK | D001, D002, ... |
 | prospect_id | FK | References prospects.prospect_id |
-| stage | enum | awareness, interested, demo_scheduled, demo_done, trial, closed_won, closed_lost |
+| stage | enum | Legacy enum; use the `pipeline.csv` stages above instead |
 | date_entered_stage | date | YYYY-MM-DD |
 | notes | text | |
 

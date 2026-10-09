@@ -4,6 +4,25 @@ Working backwards from today. Tracking time, activities, and ticket associations
 
 ---
 
+## 2026-10-08 (Thursday)
+
+### Sales / CRM
+- **ADAPT:** Scott sent the Dashbud security overview to Devon this week. Deal is now in security review — most advanced live deal. Still likely implementation by EOY. Note: the $35K Azure deployment figure is a stale bid; Arthur would price higher today, so treat any revival as a rebid.
+- **Omega:** Confirmed paid — 7 annual licenses, $7,200/yr, payment received 2026-08-25. Contract effective 2026-05-11, 12-month term, auto-renews unless either party gives 30 days' notice → real decision point ~2027-04-11. No product adoption yet; they consume only reports Arthur built. Re-engagement set for 2026-10-22: offer additional reports plus a recurring cadence, routed through the new Fractional CFO (the real stakeholder; Dan Peters, CTO, remains main contact).
+- **Trillium Creek:** Confirmed closed-lost. No response from Michelle or Aaron to the win-back email. Never logged into the app — consumed only Arthur-delivered reports, so never saw the semantic model or governance that make the ChatGPT comparison invalid.
+
+### CRM hygiene
+- `outreach/crm/pipeline.csv` brought current: all 6 deals re-staged (Omega closed_won, ADAPT security_review, TC closed_lost, AAH/PCI/PMC dormant), contacts and dates filled in, running history added to notes.
+- `outreach/crm/README.md`: documented `pipeline.csv` for the first time (it had no schema entry) and defined a 9-stage deal enum. Added an explicit **POC vs. trial** distinction — POC = we do hands-on work with their data; trial = they have self-serve product access. Marked the empty `deals.csv` as superseded.
+- Added `scripts/contacts/validate_pipeline.py` — parses the CSV and flags any stage not in the documented enum.
+
+### Insights captured
+- **Adoption pattern is the central GTM problem.** In 4 of 6 deals the product was delivered as a service. A customer who never uses the product has no way to know why ChatGPT isn't equivalent — this is upstream of the ChatGPT objection, not separate from it.
+- **POCs still pay for themselves** as reusable technical proof points regardless of deal outcome: Omega proved Informix ingestion at scale; TC proved ModMed EMA tables ingest easily, which de-risks every future ModMed prospect. The risk to manage is the handoff, not the POC.
+- **Possible principal-agent dynamic at TC:** champion may have been optimizing for personal skill acquisition (learning to vibe-code) rather than company reporting needs. Worth treating "champion wants to build it themselves" as a qualification signal.
+
+---
+
 ## 2026-10-06 (Monday)
 
 ### Marketing / Legal
@@ -15,7 +34,7 @@ Working backwards from today. Tracking time, activities, and ticket associations
 
 ### Sales
 - **Trillium Creek:** Lost. Michelle declined Sep 21 — chose to "use ChatGPT instead." Win-back email sent (Arthur + Scott) explaining why ChatGPT isn't a substitute. No reply as of Oct 6. Correspondence archived. MKT-60 and MKT-63L updated.
-- **ADAPT:** Still interested, likely implementation by EOY. Devon requested security synopsis. Self-hosted Azure deployment quoted at ~$40K.
+- **ADAPT:** Still interested, likely implementation by EOY. Devon requested security synopsis. Self-hosted Azure deployment quoted at $35K (earlier note said ~$40K; $35K is the figure in the bid, and it is stale — Arthur would price higher today).
 
 ---
 
@@ -74,6 +93,9 @@ Working backwards from today. Tracking time, activities, and ticket associations
 ---
 
 ## 2026-08-25–26
+
+### Sales
+- **Omega Molding — FIRST REVENUE.** Payment received 8/25: 7 annual licenses, $7,200/yr. Contract effective 2026-05-11. First paying Dashbud customer.
 
 ### Product engineering
 - **DS-419:** API key authentication and management — multiple commits
