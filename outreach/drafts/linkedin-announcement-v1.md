@@ -50,10 +50,12 @@ We're live and working with companies now.
 
 ## Individual, unusual
 
-Data is born free, and yet everywhere it is in chains. Every company wants to be data-driven, but most of its people are just along for the ride. How did this happen? We think we know, and it's why we built Dashbud.
+Data is born free, and yet everywhere it is in chains. Every company wants to be data-driven, but most of its people are just along for the ride - or worse, under the wheels. 
 
-Look at what most people actually have in front of them: a dashboard that can't answer today's question, a ticket waiting on an overstretched data team, or a DIY mess of exports  and spreadsheets held together with tape. AI agents offer to help, but they produce either a workflow that answers your question differently today than last week, or a batch of vibe code most users can't read — and neither follows your company's business rules.
+How did this happen? We think we know, and it's why we built Dashbud.
 
-Dashbud is an AI-powered analytics platform. You connect your data — exports from your manufacturing ERP, your multisite EMR, your SaaS tools, CSV files — define your business rules in a shared model, and your team asks questions and builds reports conversationally. It works for a single user exploring their data and scales to a whole company sharing governed reports and dashboards. Dashbud's AI works from structure and context, never your raw data — so it's built for private and regulated data from the ground up.
+Data analytics promised to transform business practices. A few companies can truly say they empower their people with all the information they need; most of us are either stuck with a batch of official reports or cobbling together a jumble of sources. AI agents offer to help, but they produce either an opaque workflow that answers your question differently today than last week, or a batch of vibe code most users can't read, when they aren’t busy violating every privacy and security rule in the book.
 
-Give Dashbud your spreadsheets, your giant exports, your SaaS APIs, the awful mess of data in your files. Dashbud gives them a home.
+Dashbud is an AI-powered analytics platform. We connect to data from almost any data source: from data lakes to personal spreadsheets. And then, we don’t look at it. Instead, we learn your data’s geography, its schema, its shape, and your business rules, so you can ask questions, get answers, and author reports conversationally. It works for a single user exploring a few files or APIs, and scales to a whole company, with shared definitions, data governance, and privacy baked in. 
+
+Give Dashbud your spreadsheets, your giant ERP exports, your SaaS APIs, the awful mess of data in your files. Dashbud gives you the ability to produce the answers you need.
