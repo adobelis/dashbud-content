@@ -54,8 +54,6 @@ Data is born free, and yet everywhere it is in chains. Every company wants to be
 
 Look at what most people actually have in front of them: a dashboard that can't answer today's question, a ticket waiting on an overstretched data team, or a DIY mess of exports  and spreadsheets held together with tape. AI agents offer to help, but they produce either a workflow that answers your question differently today than last week, or a batch of vibe code most users can't read — and neither follows your company's business rules.
 
-Dashbud is an AI-powered analytics platform. You connect your data — exports from your manufacturing ERP, your multisite EMR, your SaaS tools, CSV files — define your business    
-  rules in a shared model, and your team asks questions and builds reports conversationally. It works for a single user exploring their data and scales to a whole company sharing
-  governed reports and dashboards. The AI works from structure and context, never your raw data — so it's built for private and regulated data from the ground up.                   
-                                                                                                                                                                                   
-  Give Dashbud your spreadsheets, your giant exports, your SaaS APIs, the awful mess of data in your files. Dashbud gives them a home.
+Dashbud is an AI-powered analytics platform. You connect your data — exports from your manufacturing ERP, your multisite EMR, your SaaS tools, CSV files — define your business rules in a shared model, and your team asks questions and builds reports conversationally. It works for a single user exploring their data and scales to a whole company sharing governed reports and dashboards. Dashbud's AI works from structure and context, never your raw data — so it's built for private and regulated data from the ground up.
+
+Give Dashbud your spreadsheets, your giant exports, your SaaS APIs, the awful mess of data in your files. Dashbud gives them a home.

@@ -1,7 +1,7 @@
 # LinkedIn Profile Copy — Arthur Dobelis
 
 **Status:** Ready to update
-**Date:** 2026-10-07
+**Date:** 2026-10-09
 
 ---
 
@@ -13,11 +13,11 @@ Co-Founder, Dashbud
 
 ## About
 
-Co-Founder of Dashbud, an AI-powered analytics platform that connects to your data — databases, spreadsheets, cloud platforms, legacy systems — and lets anyone ask questions and build reports conversationally. The AI learns your schema and business rules, writes auditable SQL, and never sees your raw data.
+Co-Founder of Dashbud, an AI-powered analytics platform that connects to your data – from spreadsheets and cloud platforms to databases and legacy systems – and lets anyone ask questions and build reports conversationally. Dashbud learns your schema and business rules, writes auditable queries, and never sees your raw data.
 
-Before Dashbud, I spent 15+ years in product and technology leadership, building and deploying user-facing products, internal platforms, and data services. My work has always been data-driven and focused on sustainable results — identifying strategic opportunities, building solutions, and iterating forward.
+Before Dashbud, I spent 15+ years in product and technology leadership, building and deploying user-facing products, internal platforms, and data services. My work has always been data-driven and focused on sustainable results: identifying strategic opportunities, building solutions, and iterating forward.
 
-I'm particularly interested in the problem of making business data accessible without sacrificing privacy, accuracy, or governance — the gap that Dashbud was built to fill.
+The problem of making business data accessible for business users is one that I've lived, thought about, and tried to address for much of my career. I'm excited to offer a product that brings better data access to more people.
 
 ---
 
@@ -26,6 +26,6 @@ I'm particularly interested in the problem of making business data accessible wi
 ### Dashbud — Co-Founder
 *2025 – Present*
 
-AI-powered analytics platform for mid-market companies. Dashbud connects to databases, spreadsheets, APIs, and legacy systems, letting users ask questions and build reports conversationally. The AI operates on metadata and business rules only — never raw data — producing auditable SQL queries and deterministic reports.
+An AI-powered analytics platform that scales from small businesses to mid-market companies. Dashbud connects to databases, spreadsheets, APIs, and legacy systems, letting users ask questions and build reports conversationally. Dashbud produces auditable queries and polished, trustworthy reports. Shared business rules and strong data governance are built in, always focused on empowering the individual user.
 
-Leading product development, go-to-market strategy, and business development. Building for healthcare, manufacturing, professional services, and other industries where data privacy and governance are non-negotiable.
+I lead product development, go-to-market strategy, and customer success, building for healthcare, manufacturing, professional services, and other industries where accurate reporting and strong data governance are non-negotiable.
