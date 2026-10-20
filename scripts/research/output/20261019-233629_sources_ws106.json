@@ -1,0 +1,37 @@
+{
+  "ok": true,
+  "data": {
+    "items": [
+      {
+        "id": 1792002602111,
+        "org_id": 5,
+        "name": "Forge & Frame",
+        "dialect": "postgres",
+        "kind": "db_connection",
+        "origin": "db",
+        "execution_mode": "direct",
+        "visibility": "private",
+        "owner_user_id": 38,
+        "driver_hint": null,
+        "read_only": true,
+        "default_schema": null,
+        "connect_timeout_s": 10,
+        "statement_timeout_ms": null,
+        "connect_options": {},
+        "created_at": "2026-10-14T18:30:02.111265",
+        "updated_at": "2026-10-14T18:30:02.111269",
+        "table_count": null,
+        "total_row_count": null,
+        "total_column_count": null,
+        "workspaces": null
+      }
+    ],
+    "total": 1,
+    "page": 1,
+    "page_size": 20,
+    "next_cursor": null,
+    "more": null,
+    "has_more": false
+  },
+  "ts": "2026-10-20T03:36:29.593841Z"
+}

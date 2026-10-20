@@ -1,0 +1,24 @@
+{
+  "ok": true,
+  "data": {
+    "blueprint": {
+      "id": 73,
+      "workspace_id": 106,
+      "primary_data_source_id": null,
+      "name": "Default Blueprint",
+      "slug": "default-blueprint",
+      "description": null,
+      "is_active": true,
+      "active_version_id": null,
+      "created_at": "2026-10-14T18:30:01.026606Z",
+      "updated_at": "2026-10-14T18:30:01.026606Z",
+      "blueprint_json": {},
+      "current_version": 1
+    },
+    "active_version": null,
+    "tables": [],
+    "foreign_keys": [],
+    "semantic_items": []
+  },
+  "ts": "2026-10-20T03:36:23.006478Z"
+}

@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "data": {
+    "key_id": "bb8e3da4-b4b3-4bdc-b583-c4ea7dea1cb7",
+    "workspaces": [
+      {
+        "id": 106,
+        "name": "Forge&Frame",
+        "slug": "arthur-s-workspace"
+      }
+    ]
+  },
+  "ts": "2026-10-20T03:12:29.111210Z"
+}
