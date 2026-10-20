@@ -98,8 +98,7 @@ It is possible to build secure data workflows with AI, but giving generalist AI 
 * Built-in data updates, versioning, rollback.
 
 ### vs. AI workflows
-* Same AI-powered outputs — but the infrastructure is built for you.
-* Calculations are auditable SQL.
+* Calculations are auditable SQL, not opaque AI-generated code.
 * Business rules and assumptions are shared: decided by agreement, not an AI script.
 
 ## Switching to Dashbud is easy
