@@ -1,6 +1,6 @@
 ---
 order: 3
-title: Ask Questions, Get Real Answers
+title: Ask Questions, Get Answers
 slug: explore-and-analyze
 sanity_id: aada85c2-bedf-4f07-9e7c-55d004241700
 image_alt: Data Explorer showing a natural language question producing a professional chart

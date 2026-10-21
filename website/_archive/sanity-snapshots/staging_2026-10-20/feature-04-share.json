@@ -1,0 +1,73 @@
+{
+  "_createdAt": "2025-07-14T12:30:26Z",
+  "_id": "3e0abf06-4e77-4fdc-aae7-58db5b439c26",
+  "_rev": "dSwjrD8wMeJIHUgIWcCO3G",
+  "_system": {
+    "base": {
+      "id": "3e0abf06-4e77-4fdc-aae7-58db5b439c26",
+      "rev": "rJHL4a4dJtlEfGqgaeMKeB"
+    }
+  },
+  "_type": "feature",
+  "_updatedAt": "2026-07-14T15:51:18Z",
+  "image": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-e2d3f51b7c1ae1046325ddcadab2f6ad9d684d43-400x400-jpg",
+      "_type": "reference"
+    }
+  },
+  "imageAlt": "Team access matrix showing different roles with different workspace access levels",
+  "longDescription": [
+    {
+      "_key": "mqyiwul0iznm",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "f5f58zyn2iwi",
+          "_type": "span",
+          "marks": [],
+          "text": "Your data team models the data once. From there, clone workspaces for different functions \u2014 sales sees their pipeline, ops sees fulfillment, finance sees margins. Each team gets only the context they need, and the AI stays focused on their domain."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "idqth09cui5t",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "rq2c0ocjlcm9",
+          "_type": "span",
+          "marks": [],
+          "text": "Control access at every level: who sees which data sources, which workspaces, which dashboards. From a single shared data foundation, everyone gets the right view."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "order": 4,
+  "shortDescription": [
+    {
+      "_key": "t3hv9xycpjgp",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "tx8i9aum8fd4",
+          "_type": "span",
+          "marks": [],
+          "text": "Some users build. Some users explore. Some users review dashboards and reports. Data analyst, ops specialist, CEO: Dashbud gives all your users the access they need and the functionality they want."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "right-tools-every-role"
+  },
+  "title": "The Right Tools for Every Role"
+}

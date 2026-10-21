@@ -16,4 +16,4 @@ Dashbud is an AI-powered analytics platform. We connect to data from almost any 
 
 Give Dashbud your spreadsheets, your giant ERP exports, your SaaS APIs, the awful mess of data in your files. Dashbud gives you the ability to produce the answers you need.
 
-https://getdashbud.com
+Dashbud is live today! Message me to learn more, or click "Why Dashbud?" on my profile.

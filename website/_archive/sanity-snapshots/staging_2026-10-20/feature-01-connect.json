@@ -1,0 +1,95 @@
+{
+  "_createdAt": "2025-07-14T12:12:17Z",
+  "_id": "f511cdf6-cfb1-4906-a82d-e404844d808e",
+  "_rev": "dSwjrD8wMeJIHUgIWcCO3G",
+  "_system": {
+    "base": {
+      "id": "f511cdf6-cfb1-4906-a82d-e404844d808e",
+      "rev": "VYus6nyHpjKB0SEJ06xKPS"
+    }
+  },
+  "_type": "feature",
+  "_updatedAt": "2026-07-14T15:51:18Z",
+  "image": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-63cc579c43747507e9005dbecdd90f0d89b96fe2-2054x1590-png",
+      "_type": "reference"
+    }
+  },
+  "imageAlt": "Data source connection interface showing upload and database options",
+  "longDescription": [
+    {
+      "_key": "gl1pknnoh4av",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "uneywk1qrqy3",
+          "_type": "span",
+          "marks": [],
+          "text": "Dashbud's smart data loading handles formats automatically \u2014 type casting, date parsing, currency formatting \u2014 so your data is clean and queryable from the start. Every import is versioned and can be rolled back."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "nlr43av7k34e",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mou4e12zlql2",
+          "_type": "span",
+          "marks": [],
+          "text": "No data lake. No ETL pipeline. No migration project. Just connect what you have and start working."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "5aw0xc6t5ko5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "mh1mwt2rktt5",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Works with:"
+        },
+        {
+          "_key": "rbidt0wcg4g2",
+          "_type": "span",
+          "marks": [],
+          "text": " CSV and Excel file uploads, Google Sheets, PostgreSQL, SQL Server, MySQL, Oracle, Redshift, and more."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "order": 1,
+  "shortDescription": [
+    {
+      "_key": "8blcfvkffk7a",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "2msxcsppz0nq",
+          "_type": "span",
+          "marks": [],
+          "text": "Upload spreadsheets, connect directly to databases, or sync from cloud sources like Google Sheets. No data warehouse required."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "connect-any-data-source"
+  },
+  "title": "Connect Any Data Source"
+}

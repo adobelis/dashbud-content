@@ -1,0 +1,73 @@
+{
+  "_createdAt": "2025-07-14T12:28:19Z",
+  "_id": "aada85c2-bedf-4f07-9e7c-55d004241700",
+  "_rev": "dQz02GE9Km2UjhQn2BMQ5C",
+  "_system": {
+    "base": {
+      "id": "aada85c2-bedf-4f07-9e7c-55d004241700",
+      "rev": "CamHzSyS1JT3ENpT8DuR4C"
+    }
+  },
+  "_type": "feature",
+  "_updatedAt": "2026-08-01T15:45:10Z",
+  "image": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-eb639dea12f32e169e182b1f095c1e0524baa72b-1775x872-webp",
+      "_type": "reference"
+    }
+  },
+  "imageAlt": "Data Explorer showing a natural language question producing a professional chart",
+  "longDescription": [
+    {
+      "_key": "7skqpq1fjyhx",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "1kzezj7dnd89",
+          "_type": "span",
+          "marks": [],
+          "text": "Dashbud's Data Explorer writes the query, then produces a deterministic report \u2014 stable, accurate, and repeatable. Smart chart formatting automatically picks the right visualization, handles time series, and keeps legends readable."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "iprs5tw26p9z",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "3f8xh1ax3urh",
+          "_type": "span",
+          "marks": [],
+          "text": "Need interactive controls? Just ask Dashbud to parametrize any dimension \u2014 region, product line, date range \u2014 and your report becomes a live tool your team can use without touching a query."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "order": 3,
+  "shortDescription": [
+    {
+      "_key": "umhqddr6jvrg",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "fefltf0enwug",
+          "_type": "span",
+          "marks": [],
+          "text": "Type a question in plain English and get back tables, charts, and insights \u2014 grounded in your semantic model, accurate every time."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "explore-and-analyze"
+  },
+  "title": "Ask Questions, Get Real Answers"
+}

@@ -1,0 +1,41 @@
+{
+  "_createdAt": "2025-07-13T15:29:36Z",
+  "_id": "b8feb522-f902-4fa6-bbc1-92724e3df508",
+  "_rev": "E875sFuJqJDpgXRtj6Z3SQ",
+  "_system": {
+    "base": {
+      "id": "b8feb522-f902-4fa6-bbc1-92724e3df508",
+      "rev": "oLHtOefD7nkFljdU8Fq3SW"
+    }
+  },
+  "_type": "hero",
+  "_updatedAt": "2026-07-24T21:13:45Z",
+  "headline": "AI-powered analytics for *all your data*",
+  "heroImage": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-0fe74c9be50099a34e0e9d67ef7549174dcf2bef-1536x1024-png",
+      "_type": "reference"
+    }
+  },
+  "primaryCtaText": "Try Dashbud",
+  "primaryCtaUrl": "/signup",
+  "secondaryCtaText": "Book a demo",
+  "secondaryCtaUrl": "https://calendly.com/arthur-evolytix/dashbud-demo-and-setup",
+  "subheadLine": [
+    {
+      "_key": "crjornznfmvw",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "h01ibsec4c80",
+          "_type": "span",
+          "marks": [],
+          "text": "From a single spreadsheet to your company's entire data ecosystem, give everyone access to trusted, modern data tools."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "_createdAt": "2025-07-14T12:21:18Z",
+  "_id": "353166e1-2171-4557-a9f1-2c5186e8e312",
+  "_rev": "dSwjrD8wMeJIHUgIWcCO3G",
+  "_system": {
+    "base": {
+      "id": "353166e1-2171-4557-a9f1-2c5186e8e312",
+      "rev": "VYus6nyHpjKB0SEJ07euXi"
+    }
+  },
+  "_type": "feature",
+  "_updatedAt": "2026-07-14T15:51:18Z",
+  "image": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-da2fe2d5939a26ad41225169b1132145b3fae557-1428x706-png",
+      "_type": "reference"
+    }
+  },
+  "imageAlt": "Semantic model conversation showing data context being defined through natural language",
+  "longDescription": [
+    {
+      "_key": "ujsbljso6356",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "4iwt5gch6l13",
+          "_type": "span",
+          "marks": [],
+          "text": "Tell Dashbud what your columns mean, how your tables relate, and what the business rules are. The AI asks questions, you answer them. Your semantic model becomes the foundation for every query \u2014 grounding the AI in your business context."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "q13z9zd18394",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "iywdle3yhtw3",
+          "_type": "span",
+          "marks": [],
+          "text": "Model once, then clone and customize for different teams or projects. Your sales team gets their view. Finance gets theirs. Each workspace carries only the context it needs \u2014 no clutter, no confusion."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "order": 2,
+  "shortDescription": [
+    {
+      "_key": "bz42fchseiuo",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "dh4mvhknsdvi",
+          "_type": "span",
+          "marks": [],
+          "text": "Set up a Semantic Model by telling Dashbud about your data in plain language. No code, no configuration files, no query language."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "slug": {
+    "_type": "slug",
+    "current": "model-your-data"
+  },
+  "title": "Model Your Data Through Conversation"
+}
