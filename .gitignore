@@ -5,3 +5,6 @@ wiki/
 ~$*
 voice/*.m4a
 
+node_modules/
+__pycache__/
+*.pyc
