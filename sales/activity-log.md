@@ -1,6 +1,25 @@
-# Activity Log — Late August / October 2026
+# Activity Log — Late August / November 2026
 
 Working backwards from today. Tracking time, activities, and ticket associations.
+
+---
+
+## 2026-10-31–11-02 (Saturday–Monday)
+
+### Marketing — content strategy
+- **MKT-68L ("Downstream" blog series):** 6h of research into AI memory, covering both agent and non-agent approaches. Relates to the memory plane of the series argument and the candidate sixth post, "Memory Is Not a Database Feature."
+- **Working docs drafted:** `website/blog/_downstream-series-plan.md` (five posts, arguments, tone guardrails, bench) and `website/blog/_downstream-space-map.md` (the planes, who owns each, plus the in-weights memory addendum).
+- **Time:** 2h Sat 10/31, 3h Sun 11/01, 1h Mon 11/02 morning.
+
+---
+
+## 2026-10-21–22 (Wednesday–Thursday)
+
+### Marketing — LinkedIn launch
+- **Founder announcement posted** Wed 10/21 2:00pm — "Data is born free" (Rousseau hook). First public association of Arthur with Dashbud. Full stats and running log in `outreach/linkedin-post-tracker.md`.
+- **~21h performance:** 965 impressions, 507 members reached, 48% out-of-network, 40 engagements (23 reactions / 13 comments / 2 reposts). ~4.1% engagement rate; comment-to-reaction ratio 0.57, well above typical — the likely driver of the out-of-network reach.
+- **Promotion legwork:** ~30 of 50 planned personal outreaches done (text + DM). Escalating to high-value promoters only once the post is ~a day old, so the ask comes with visible traction attached rather than as a cold favor. Post written to be non-time-sensitive for exactly this reason.
+- Outcomes (DMs, profile→site traffic, notable commenters) still to be filled in.
 
 ---
 
