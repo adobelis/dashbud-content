@@ -1,93 +1,148 @@
 # "Downstream" — blog series plan
 
-**Status:** Proposal, 2026-11-02. Five posts to start. Arthur writes; this is the argument map, not copy.
+**Status:** Working plan, revised 2026-11-03. Five posts to start. Arthur writes; this is the argument map, not copy. Ticket: MKT-68L (will renumber on push).
 **Section:** New blog section, slug `downstream`, alongside Data Analytics. Needs a Sanity section entry.
+**Companion:** `_downstream-space-map.md` for the layers between the model and business value.
 
-## The frame
+Convention in this doc: blockquotes are Arthur's words, verbatim, from the ticket and the Nov 2–3 conversation. Unquoted text is Claude's elaboration and can be cut.
 
-The frontier labs' incentive is generality. A model that serves everyone has to be agnostic about any one business's schema, definitions, and trust boundary. Business applications are the opposite problem: they are made of the specific stuff. Nobody at a lab is wrong about this; it just isn't where their gradient points.
+---
 
-So the thesis: **the model is upstream; the value is downstream.** Most of what makes AI useful inside a business happens after the token comes out: grounding, governance, determinism, agreement on definitions, deployment. That work needs proximity to the customer, not scale, which makes it independent-developer territory. It is also where Dashbud lives, and the series should say so once, plainly, and then not pitch.
+## Origin
 
-Tone guardrails, every post:
-- Structure, not competence. Never "they can't."
-- No lab's name in a headline. Products named only as examples, never as targets.
-- Credit upstream. The models made this possible, and each post should carry a sentence that says so without flinching.
-- Argue from design decisions, not from the product. Each post generalizes one principle that Dashbud happens to embody, with at least one example that isn't Dashbud.
+> At dashbud, we are somewhat critical of the big labs' efforts to create business applications. Fundamentally -- not their strong suit. I don't want to piss anyone off, but I think we can talk about the opportunities downstream of model development as a place (where we live, and) that is ripe for independent development.
 
-Note on the word: in ML, "downstream tasks" are what a model is adapted to after pretraining. The overlap is deliberate and practitioners will hear it. Define it in one paragraph in the opener.
+> Yes, let's do just five to start. Please feel free to cogitate on this as much as you need to. It's a complex space to feel out.
 
-## The five posts
+> And don't feel like you need to flesh the posts out. Focus on feeling out the space: control plane, memory plane, etc.
 
-### 1. Downstream
-*Series opener. Defines the term and the position.*
+## The frame (ticket summary, Arthur's text)
 
-**Argument:** The frontier model is becoming a utility, and the history of utilities is that the money and the meaning end up in what is built on them. Electricity didn't make GE the only company; it made appliances an industry. The important AI businesses of the next decade will be built by people closer to the customer than to the model.
+> New blog section and theme exploring the proposition that the value of AI in business is downstream of the model: in the control plane and other aspects of the execution harness. Critical of the labs' business-application efforts on structural grounds -- avoid criticizing them on competence. Highlight the value of independent developers in the ecosystem -- i.e., where Dashbud lives.
+>
+> Unifying idea: **the skipped step.** The "let the model handle it" framework skips an important step: asking the model to handle the entire vertical process cuts out an important step: where someone with a stake decides what matters.
+>
+> We distilled this position by exploring recent developments in model memory. Google's "Sleep" framework and other labs' efforts to enhance medium-term model memory are interesting and may be promising long-term, but they not only lack 1. a grounded, near-term deployment approach, but also, 2. attention to the subtleties of relevance.
 
-**What it draws on:** the one-pager's "promise vs. reality" framing, now applied to AI itself. The LinkedIn post's AI paragraph (opaque workflow, vibe code) as the symptom.
+How the skipped step surfaced, in the conversation:
 
-**Tone risk:** this is the post most likely to read as sour. Lead with gratitude and the utility analogy, which is flattering to the labs. End with "this is where we live, so weigh it accordingly."
+> That prioritization argument is absolutely spot-on. Trust the model to know what to keep... yeah. Generalizes to the whole ballgame. Jumps a step. Exactly.
 
-### 2. The Model Shouldn't See Your Data
-*First design principle.*
+Claude's gloss: the model can execute the decision; it cannot make it, because mattering is a property of the stakeholder, not of the content. The labs skip the step because it is the one thing that doesn't scale. Downstream is the step.
 
-**Argument:** The most consequential decision in a business AI system is not which model you use. It is what the model is allowed to see. A model that works from schema, names, and rules, and never from values, can be trusted with regulated data; one that reads the rows cannot, however good it is. This is a trust-boundary decision, and a trust boundary is the one thing a general-purpose vendor cannot draw for you.
+## Tone guardrails (ticket, Arthur's text)
 
-**What it draws on:** Trust & Privacy on Why Dashbud; the healthcare example from Who It's For. Generalize: the pattern is "model authors the query, database runs it, results go to the person." Any team can build that way.
+> - Structure, not competence. Never "they can't."
+> - No lab's name in a headline.
+> - Credit upstream in every post.
+> - Argue from design principles with at least one non-Dashbud example each.
 
-**Tone risk:** sounds like a pitch. Keep Dashbud to one paragraph; spend the rest on the pattern and on what you give up (the model can't eyeball the data for anomalies, so you need other tools for that).
+Added from the conversation:
+- Plain words. Say what happens before naming it. No infrastructure vocabulary (Arthur on "execution guarantees" and "lineage": "a very opaque way of describing things").
+- Humility where earned. Arthur, on AI-native UX: "not something the labs have any track record on. In fairness, very few people do."
 
-### 3. A Smarter Model Won't Settle What "Margin" Means
-*Second design principle: agreement is not a model capability.*
+Note on the word: in ML, "downstream tasks" are what a model is adapted to after pretraining. The overlap is deliberate. Define it in one paragraph in the opener.
 
-**Argument:** The hard problem in business data isn't answering the question; it's agreeing on what the question means. Finance and sales define margin differently, and both are right. No amount of intelligence resolves a definitional dispute, because it is organizational, not analytical. It has to be settled by people and written down somewhere the model reads from. That artifact, the semantic layer, is downstream work by definition: no lab can ship your company's definitions.
+---
 
-**What it draws on:** "Herd the cats" on Who It's For; dueling reports; the vibe-code problem (every personal AI script encodes its author's private assumptions). The "Vibe-Code Mirage" piece already on Arthur's list fits here as a companion or a follow-up.
+## The five posts (titles verbatim from the ticket)
 
-**Tone risk:** low. This one is almost universally agreed with; the risk is being boring. Lead with a concrete dueling-reports story.
+### 1. Downstream / The Skipped Step (opener)
 
-### 4. Same Question, Same Answer
-*Third design principle: the model is a compiler, not a runtime.*
+Defines the term and the position. The skipped step is the argument; see the frame above for Arthur's statement of it.
 
-**Argument:** Businesses run on numbers that are the same every time they're pulled. Language models are probabilistic by construction. The downstream move is not to make the model more reliable; it's to take it out of the runtime loop. Use it to author the deterministic artifact once (the query, the report definition), then run that artifact conventionally. Reliability debates about models mostly dissolve once the model isn't answering the question live.
+Open decision (ticket): "Opener thesis: utility analogy as hook with the skipped step as the argument, or skipped step alone." The utility analogy: the model as electricity; the money and meaning end up in what's built on it.
 
-**What it draws on:** "Deterministic reports" on Why Dashbud; the LinkedIn post's "answers your question differently today than last week." Generalize: code generation, infrastructure-as-code, and compilers all work this way already.
+Claude's note: the post most likely to read as sour. Lead with gratitude, say once that this is where Dashbud lives, end with "weigh it accordingly."
 
-**Tone risk:** low. This is the most technical post and the one most likely to be shared by engineers. Keep one diagram: question → model → artifact → runtime.
+### 2. Model memory and data access require custom work because of the diversity of data environments and hierarchy of relevance.
 
-### 5. What the Model Will Eat, and What It Won't
-*The map. Keeps the series honest.*
+Arthur, on the state of the memory plane:
 
-**Argument:** A lot of today's downstream work will be absorbed upstream: prompt engineering, retrieval plumbing, tool wrappers, the connector of the month. Builders who stand there will be run over, and the labs will be right to do it. What won't be absorbed is anything that encodes a trust boundary, an organizational agreement, a liability, or a deployment constraint. A test for founders: would this still matter if the model were ten times smarter? If yes, it's durable downstream territory. If no, it's a feature the model will have next year.
+> I really don't know what the labs are doing on the memory plane. It seems like... nothing? But I use claude code/cli exclusively, though I've built on it via the SDK. I see Oracle (Richmond Alake) and probably others are building in this direction. Love RA's content, but he is 50% selling oracle enterprise services. The other half of his content is DiY memory layer development, which seems more promising as a market direction.
 
-**What it draws on:** posts 2 through 4 as the three worked examples of "still matters." The own-cloud deployment option as a fourth. Dashbud's agent API as an example of building *for* the upstream models rather than against them.
+> BTW I just read Google's Sleep article and it seems at least 2 years away from global deployment. Architecturally very distant from SOTA mass-market offering.
 
-**Tone risk:** prophecy. Frame as a heuristic, give examples of things you expect to be eaten (including some Dashbud has built), and say so. That admission is what earns the rest of the series its credibility.
+> And who knows whether thats' really the best approach. Yes, HOPE+1. Continuous incorporation of context as a medium-term memory via special fine-tuning is... not close.
+
+Ticket log: "2026-10-31–11-02: 6h research into AI memory, agent and non-agent approaches (2h Sat, 3h Sun, 1h Mon am). Informs the memory plane and the candidate sixth post."
+
+Claude's elaboration: "hierarchy of relevance" is the skipped step applied to data: someone has to decide what the model may see, what the fields mean, and which number is the real one. Memory splits three ways: personal (the labs own it, and it's thin: in Claude Code, a markdown file the user curates), agent memory (crowded: memory-layer startups and database vendors, mostly storage and retrieval), organizational (nearly empty: what the company has agreed is true, written by people after an argument). A memory layer stores what was observed; a semantic model records what was decided. In-weights memory is the form of memory a business can least audit: it cannot answer who decided this, when, and can we roll it back.
+
+Dashbud example: the AI writes the query from schema and business rules and never sees a row. Non-Dashbud example: any team can build that pattern; the model authors, the database runs.
+
+### 3. Orchestration: many gardens and many flowers blooming
+
+Arthur:
+
+> I think you got the orchestration one -- the first framing, but I believe it could also apply to agent coordination... the point is that each agent or tool has a specific surface with its own agreed-upon role and governance. So Dashbud's workspace API as a governance layer: a way agents can either build their own reports or use ones built by humans -- based on shared definitions and governed access.
+
+The first framing, for reference: the downstream world will be plural, many domain-specific gardens that agents visit, rather than one orchestration layer that wins. Both readings hold at once: one principle at two scales.
+
+On the title:
+
+> I didn't know the flowers got hosed in the end, so maybe we have to change that wording.
+
+The Hundred Flowers campaign (1956) invited open criticism and purged the people who offered it within a year. Candidate: "many gardens, many gates." Gardens have walls and gates, which is the point.
+
+Claude's elaboration: an agent arriving at the workspace gate can consume reports humans built, or author its own inside the same definitions and scope. Either way it is a colleague with the same permissions as a person in that role, which is the first time "agent" has meant something a compliance officer could sign.
+
+### 4. AI UX and UX for AI: supporting human users and networked integrations
+
+Arthur:
+
+> But don't undersell the value of AI-native UX. It's a moving target, and again, many of the questions involve governance: do I trust Grokbot to read all my emails? I don't, and right now that is preventing me from using it. But also redefining the UX around AI capabilities is just new, and again, not something the labs have any track record on. In fairness, very few people do.
+
+Claude's elaboration: the two halves meet at consent granularity. The refusal isn't of the capability; it's of the scope, because "all" is the only scope on offer. The UX that unlocks it is a scoping UX: these senders, this label, this date range, read but never send. The labs ship all-or-nothing consent because granular consent doesn't scale and because they'd rather have the data. The UX innovation that matters most is the scope dialog, not the chat box. A Dashbud workspace is a scope dialog turned into a product object.
+
+Open UX questions worth naming: when the model should ask vs. act; how to show where a number came from without leaving the page; whether the artifact or the conversation is the unit of work; how a person corrects what the model believes. Dashbud has opinions on a couple and no track record on the rest.
+
+Home for "same question, same answer": the first promise an interface for AI has to make. Use the model to author the query once; run it conventionally. The model is a compiler, not a runtime.
+
+### 5. The future model capability path
+
+Arthur, on the earlier framing ("What the Model Will Eat, and What It Won't"):
+
+> Ok, good theme. I'll reframe it. Thanks.
+
+Arthur, on the optimistic close:
+
+> Sorry to go way out there but I was just thinking... a possible solution is a kind of organziational metaprogramming. If I give you a coding agent that knows how to build a personal/organizational memory system, then you work with it to develop the priority-based system that your use-case demands. That's not a content focus for us, but it might be a kind of optimistic fallback. I'm not negative on the whole enterprise. Hell if I was we wouldn't be talking about this now.
+
+Claude's elaboration: much of today's downstream work will be absorbed upstream (connectors, prompt tricks, retrieval plumbing, chat interfaces), and the labs will be right to do it. What won't be absorbed is anything that encodes a decision by someone with a stake. Practical close: would this still matter if the model were ten times smarter? If yes, build it. If no, the model will have it next year.
+
+On in-weights memory: every proposal for memory inside the model has to answer who curates it, who can see it, and who can undo it. None do yet; those questions are the organizational layer restated.
+
+On metaprogramming: the coding agent doesn't decide what matters; it makes it cheap for the person who does to encode, test, and revise it. Dashbud's modeling agent is this in miniature. Arthur's own setup (memory files, CLAUDE.md, SDK runner, Jira CLI) is a priority system built with a coding agent, and its failure mode is the predicted one: a stale team line persisted ten months because nobody owned curation. Tools lower the cost of the step; they don't supply the authority. The labs' coding agents are the best thing that has happened to downstream builders. Admit that some of what Dashbud has built will be eaten too.
+
+---
+
+## Recurring case
+
+Michelle Maynard, Trillium Creek Dermatology. Arthur:
+
+> She's the one we wrote the send-off letter to, explaining gently why Dashbud may do some things she needs, even if she doesn't know it now.
+
+Primary report runner at a five-location practice; declined Dashbud for ChatGPT having never logged in. A competent personal solution the organization doesn't own. Pre-fork customer: no dueling report, PHI scare, or broken export yet, so no stakes for a downstream product to hold. The model wins the pre-fork market, and that's fine. Use anonymized. The send-off letter is at `sales/deals/trillium-creek/correspondence/2026-09-21_michelle-decline-and-response.md`.
 
 ## Order and cadence
 
-1 → 2 → 3 → 4 → 5 as a series arc: position, three principles, map. At the every-other-week cadence that's ten weeks, which is fine; each post stands alone and the opener can be published before the rest are written. Post 5 could move to second if the framework is wanted early, but ending on it is stronger.
+1 → 5 as written. Every other week at most; quality over quantity. Each post gets LinkedIn and X cuts at publish time, with the canonical version on the blog and the LinkedIn post standing alone without a link.
+
+## Open decisions (ticket, Arthur's text)
+
+> - Opener thesis: utility analogy as hook with the skipped step as the argument, or skipped step alone.
+> - Integrating "The Vibe-Code Mirage" (existing draft) is a companion to post 3 or stands alone.
+> - Candidate sixth post, "Memory Is Not a Database Feature," vs. bench item "The Semantic Model Is the Product."
 
 ## Bench (not in the first five)
 
-- The Vibe-Code Mirage (Arthur's existing draft; companion to post 3)
-- Your Cloud, Not Theirs: deployment as the quietest moat
+- The Vibe-Code Mirage (existing draft)
+- Memory Is Not a Database Feature: the memory-layer market is solving storage for a problem that is about agreement and authority
 - The Semantic Model Is the Product
-- Build for the Agents: why an API that models can call is the right shape for a downstream product (the agent API module, generalized)
-- Generality Is Their Business Model. Specificity Is Yours.
+- Your Cloud, Not Theirs: deployment as the quietest moat
+- Build for the Agents: an API that models can call is the right shape for a downstream product
 
 ## Relation to existing content
 
-"The Lost Promise of Business Intelligence" is about why BI didn't deliver. Downstream is about why AI won't deliver it either unless someone does the specific work. The opener should link back to it as the prequel.
-
-## Arthur's reframe (2026-11-03, from the ticket)
-
-The five posts as Arthur rewrote them. Supersedes the list above, which stays for reference. The shift: from five principles Dashbud embodies to a survey of the downstream landscape. Less exposed to the "vendor defending its niche" reading; room for things Dashbud doesn't do.
-
-1. **Downstream / The Skipped Step** (opener)
-2. **Model memory and data access require custom work** because of the diversity of data environments and the hierarchy of relevance. ("Hierarchy of relevance" = the skipped step applied to data, in plain words.)
-3. **Orchestration: many gardens, many gates.** Both readings at once: ecosystem pluralism (domain gardens that agents visit, not one orchestration layer that wins) and agent coordination within a workflow. One principle at two scales: each agent or tool has a specific surface with an agreed role and its own governance. Dashbud's workspace API as a gate: an arriving agent can consume reports humans built, or author its own inside the same definitions and scope. Either way, a colleague with the same permissions as a person in that role. *Wording note: avoid "many flowers blooming"; the Hundred Flowers campaign ended with the flowers purged.*
-4. **AI UX and UX for AI: humans and networked integrations.** Don't undersell. AI-native UX is a moving target and few have a track record, labs included. The two halves meet at consent granularity: Arthur won't let Grokbot read all his email because "all" is the only scope offered, so the capability goes unused. The UX that matters most is the scope dialog, not the chat box; a Dashbud workspace is a scope dialog turned into a product object. Open UX questions worth naming: ask vs. act; provenance inline (number → SQL); artifact vs. conversation as the unit of work; how a person corrects what the model believes. Dashbud has opinions on some, no track record on the rest; say so. Home for "same question, same answer" (model as compiler, not runtime) as the first promise an AI-facing interface must make.
-5. **The future model capability path.** Softer than "what the model will eat." Home for the ten-times-smarter test as the practical close, and for the in-weights-memory point (the most ambitious memory is the least auditable).
-
-Michelle Maynard (Trillium Creek) as the recurring case: a competent personal solution the organization doesn't own; pre-fork customer; the model wins the pre-fork market and that's fine.
+"The Lost Promise of Business Intelligence" is about why BI didn't deliver. Downstream is about why AI won't deliver it either unless someone does the specific work. The opener should link back to it as the prequel. All posts link to /why-dashbud (see MKT-67).
