@@ -3,7 +3,7 @@ event_id: 2026-10-07-adapt-security-overview-sent
 date: 2026-10-07
 type: email
 account: adapt
-people: [devon]
+people: [devon-kerr-adapt]
 direction: outbound
 summary: Scott emailed the security overview to Devon — deal now in security review
 stage_after: security_review

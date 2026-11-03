@@ -34,7 +34,7 @@ The privacy architecture is the whole sale here. AI never sees raw data — sche
 
 | Person | Role | Notes |
 |---|---|---|
-| Devon | VP of IT / CIO | Requested the security synopsis. Title appears as both in prior notes — worth confirming which |
+| Devon Kerr | VP of IT / CIO | Requested the security synopsis. Title appears as both in prior notes — worth confirming which |
 
 ## Status
 

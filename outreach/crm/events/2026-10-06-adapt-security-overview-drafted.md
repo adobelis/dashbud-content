@@ -3,7 +3,7 @@ event_id: 2026-10-06-adapt-security-overview-drafted
 date: 2026-10-06
 type: internal_note
 account: adapt
-people: [devon]
+people: [devon-kerr-adapt]
 direction: internal
 summary: Arthur drafted security overview for ADAPT at Devon's request
 tags: [security-review, privacy]
