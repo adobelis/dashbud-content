@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en" data-color-scheme="ivory">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Where&#x27;re All The AI Chips?</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="theme-color" content="#dd0000">
+
+
+    <link rel="preload" href="https://www.wheresyoured.at/assets/dist/app.min.js?v=bedouiKdMlG5hio2" as="script">
+    <link rel="preload" href="https://www.wheresyoured.at/assets/dist/app.min.css?v=e1oIDNSAmCBh50zt" as="style">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+
+    <link rel="preload stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" 
+          as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin>    
+    <style>body { --font-body: 'Inter', sans-serif; --font-headings: 'Inter', sans-serif;}</style>
+
+
+
+
+
+    <script async defer src="https://www.wheresyoured.at/assets/dist/app.min.js?v=bedouiKdMlG5hio2"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://www.wheresyoured.at/assets/dist/app.min.css?v=e1oIDNSAmCBh50zt" />
+
+    <style>
+  :root {
+    --global-max-width: 1280px; /* site max width */
+    --global-content-width: 680px; /* post-content-width */
+    --global-wide-width: 960px; /* site max width */
+    --global-radius: 10px; /* default radius */
+    --global-gallery-gap: 1em; /* Image gallery distance between images */
+    --global-hyphens: none; /* none/auto */
+    --global-header-height: 80px;
+    --global-theme-notifications: visible; /* visible/hidden */
+    --global-progress-bar: visible; /* visible/hidden */
+    --global-content-preview-fading: 0%; /* 50%-100% for fading effect */
+  }
+</style>
+
+<script>
+  let preferredTheme = localStorage.getItem('PREFERRED_COLOR_SCHEME') || `ivory`;
+  document.documentElement.setAttribute('data-color-scheme', preferredTheme);
+  
+  // Global values needed
+  const themeGlobal = {
+    currentPage: parseInt(''),
+    nextPage: parseInt(''),
+    nextPageLink: '',
+    maxPages: parseInt(''), 
+    lastPage: `` === `` ? true : false,
+    postsPerPage: parseInt('12'),
+    scrollPos: 0
+  }
+
+  // Calculate contrast & HSL value;
+  function getBrandColorInfo(hexcolor) {
+    // get contrast
+    if (hexcolor.slice(0, 1) === '#') { hexcolor = hexcolor.slice(1); }
+    if (hexcolor.length === 3) { hexcolor = hexcolor.split('').map(function (hex) { return hex + hex;}).join(''); }
+    let r = parseInt(hexcolor.substr(0,2),16), g = parseInt(hexcolor.substr(2,2),16), b = parseInt(hexcolor.substr(4,2),16);
+    let yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+    const colorContrast = (yiq >= 128) ? '#000' : '#fff';
+
+    //get HSL
+    r /= 255, g /= 255, b /= 255;
+    const max = Math.max(r, g, b), min = Math.min(r, g, b);
+    let h, s, l = (max + min)  /  2;  
+    if ( max == min ) { h = s = 0; } else {
+      let d = max - min;
+      s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+      switch(max){
+        case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+        case g: h = (b - r) / d + 2; break;
+        case b: h = (r - g) / d + 4; break;
+      }
+      h /= 6;
+    }
+    const colorHSL = [Math.round(h * 360), Math.round(s * 100), Math.round(l * 100)];
+
+    // return
+    return { colorContrast, colorHSL }
+  };
+
+  const brandColor = getBrandColorInfo("#dd0000");
+  let style = document.createElement('style');
+  style.innerHTML = `:root { 
+    --color-brand-contrast: ${brandColor.colorContrast}; 
+    --color-brand-hsl: ${brandColor.colorHSL[0]} ${brandColor.colorHSL[1]}% ${brandColor.colorHSL[2]}%;
+  }`
+  document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+    
+    
+     
+
+    <link rel="icon" href="https://storage.ghost.io/c/24/d8/24d8fcec-dfba-4f40-a467-823d2941ae46/content/images/size/w256h256/2024/01/wyea-.jpeg" type="image/jpeg">
+    <link rel="canonical" href="https://www.wheresyoured.at/wherere-all-the-ai-chips/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="Ed Zitron&#x27;s Where&#x27;s Your Ed At">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Where&#x27;re All The AI Chips?">
+    <meta property="og:description" content="If you liked this piece, you should subscribe to my premium newsletter, and you can subscribe on the following links: $70 a year, $18 a quarter, or $7 a month.
+
+In return you get a weekly premium newsletter including vast, detailed analyses of NVIDIA, Anthropic and OpenAI’s finances, and">
+    <meta property="og:url" content="https://www.wheresyoured.at/wherere-all-the-ai-chips/">
+    <meta property="og:image" content="https://storage.ghost.io/c/24/d8/24d8fcec-dfba-4f40-a467-823d2941ae46/content/images/2024/01/wyea--1.jpeg">
+    <meta property="article:published_time" content="2026-09-22T14:35:46.000Z">
+    <meta property="article:modified_time" content="2026-09-22T14:35:46.000Z">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Where&#x27;re All The AI Chips?">
+    <meta name="twitter:description" content="If you liked this piece, you should subscribe to my premium newsletter, and you can subscribe on the following links: $70 a year, $18 a quarter, or $7 a month.
+
+In return you get a weekly premium newsletter including vast, detailed analyses of NVIDIA, Anthropic and OpenAI’s finances, and">
+    <meta name="twitter:url" content="https://www.wheresyoured.at/wherere-all-the-ai-chips/">
+    <meta name="twitter:image" content="https://storage.ghost.io/c/24/d8/24d8fcec-dfba-4f40-a467-823d2941ae46/content/images/2024/01/wyea--1.jpeg">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Ed Zitron">
+    <meta name="twitter:site" content="@edzitron">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="1200">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Ed Zitron's Where's Your Ed At",
+        "url": "https://www.wheresyoured.at/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://storage.ghost.io/c/24/d8/24d8fcec-dfba-4f40-a467-823d2941ae46/content/images/2024/01/wide-with-letters-1.jpeg"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Ed Zitron",
+        "url": "https://www.wheresyoured.at/author/ed-zitron/",
+        "sameAs": []
+    },
+    "headline": "Where're All The AI Chips?",
+    "url": "https://www.wheresyoured.at/wherere-all-the-ai-chips/",
+    "datePublished": "2026-09-22T14:35:46.000Z",
+    "dateModified": "2026-09-22T14:35:46.000Z",
+    "description": "If you liked this piece, you should subscribe to my premium newsletter, and you can subscribe on the following links: $70 a year, $18 a quarter, or $7 a month.\n\nIn return you get a weekly premium newsletter including vast, detailed analyses of NVIDIA, Anthropic and OpenAI’s finances, and the AI bubble writ large. It's a great way to support my free work, and you'll get full access to my massive archive of premium analyses of the tech and finance industry.\n\nOn Friday, I’ll publish the second part",
+    "mainEntityOfPage": "https://www.wheresyoured.at/wherere-all-the-ai-chips/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 6.74">
+    <link rel="alternate" type="application/rss+xml" title="Ed Zitron&#x27;s Where&#x27;s Your Ed At" href="https://www.wheresyoured.at/rss/">
+    <script defer src="https://cdn.jsdelivr.net/ghost/portal@~2.72/umd/portal.min.js" data-i18n="true" data-ghost="https://www.wheresyoured.at/" data-key="e36e7d7220258a9362c249dff6" data-api="https://ed-zitrons-wheres-your-ed-at.ghost.io/ghost/api/content/" data-locale="en" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style><script async src="https://js.stripe.com/v3/"></script>
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.9/umd/sodo-search.min.js" data-key="e36e7d7220258a9362c249dff6" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.9/umd/main.css" data-sodo-search="https://ed-zitrons-wheres-your-ed-at.ghost.io/" data-locale="en" crossorigin="anonymous"></script>
+    
+    <link href="https://www.wheresyoured.at/webmentions/receive/" rel="webmention">
+    <script defer src="/public/cards.min.js?v=mLGdiz8Ij-Hk3ydN"></script>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=WwnU9jw5ancNC8Gc">
+    <script defer src="/public/member-attribution.min.js?v=AKG4hWena9j3yX3I"></script>
+    <script defer src="/public/ghost-stats.min.js?v=GjA0fyDfVPF71jEZ" data-stringify-payload="false" data-datasource="analytics_events" data-storage="localStorage" data-host="https://www.wheresyoured.at/.ghost/analytics/api/v1/page_hit"  tb_site_uuid="24d8fcec-dfba-4f40-a467-823d2941ae46" tb_post_uuid="1ae6fef9-0e72-427d-aec6-f0d1d2e2e380" tb_post_type="post" tb_member_uuid="undefined" tb_member_status="undefined" tb_gift_link=""></script><style>:root {--ghost-accent-color: #dd0000;}</style>
+    <script defer="defer" data-domain="wheresyoured.at" src="https://plausible.io/js/script.hash.outbound-links.js"></script>
+<meta name =“robots” content=“max-image-preview:large”>
+
+<style>
+  .header { height: auto; }
+  .header__inner > *:not(.header__brand) { display: none!important; }
+  .header__brand { flex:1!important; margin: 0!important; justify-content:center; }
+  .header__brand img { height: auto; max-width: 100%; border-radius: var(--global-radius); }
+
+  .home-layout { max-width: 720px;margin: 0 auto; }
+  .home-layout .hero { margin: 2rem 0 3rem; }
+  .home-layout .hero__media { flex: 1; display: none; }
+  .home-layout .hero__media img { aspect-ratio: 1/1; }
+  .home-layout .hero__content { flex: 2; }
+  .home-layout .hero__title { font-size: calc(var(--font-size-base)*2 + .75vw); line-height: 1.1; }
+  .home-layout[data-layout="hero-with-image-below"] .hero__content { min-height: 0; }
+  
+  .post-card { padding: 1.5rem; }
+  .post-feed article.post-card:nth-of-type(odd) { background: rgba(0,0,0,0.05); }
+  
+  @media only screen and (min-width: 48em) {
+    /* .header { --global-header-height: 96px; } */
+    .header__brand img { height: 120px; max-width: none; }
+    /* .home-layout .hero__media { display: flex; } */
+  }
+  
+  .hero__content .header__menu { display: flex!important; margin-top: 2rem; }
+  .hero__content .header__menu .nav { justify-content: center; flex-wrap: wrap; }
+</style>
+  </head>
+  <body class="post-template ">
+    <div class="progress-bar"></div>
+    
+      <header class="header js-header" data-header="normal">
+  <div class="container wrapper flex is-rel header__inner">
+    <button class="btn-toggle menu__toggle js-menu-open"
+      type="button" title="Menu" aria-label="Menu">
+        <span></span>
+        <span></span>
+    </button>
+
+<a class="header__brand" href="https://www.wheresyoured.at">        <img class="header__logo"
+          src="https://storage.ghost.io/c/24/d8/24d8fcec-dfba-4f40-a467-823d2941ae46/content/images/size/w600/2024/01/wide-with-letters-1.jpeg"
+          alt="Ed Zitron&#x27;s Where&#x27;s Your Ed At"/>
+</a>
+    <nav class="header__menu flex-1 flex-cc">
+      <ul class="nav">
+    <li class="nav-home"><a href="https://www.wheresyoured.at/">Home</a></li>
+    <li class="nav-about"><a href="https://www.wheresyoured.at/about/">About</a></li>
+    <li class="nav-better-offline"><a href="http://linktr.ee/betteroffline">Better Offline</a></li>
+    <li class="nav-news"><a href="https://www.wheresyoured.at/tag/news/">News</a></li>
+</ul>
+
+    </nav>
+
+
+
+      <button class="btn-toggle header-search__toggle" data-ghost-search title="Search" aria-label="Search">
+        <i class="icon icon-search">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+</i>      </button>
+    
+
+        <a href="/signin/" class="btn signin-link radius" data-portal="signin">Log In</a>
+        <a href="/signup/" class="btn signup-link btn--brand radius" data-portal="signup">Subscribe</a>
+      
+
+    <div class="member-menu js-member-menu">
+      <a href="/signup/" data-portal="signup" class="signup-link">
+        <i class="icon icon-arrow-up-right icon--sm">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <line x1="17" y1="7" x2="7" y2="17" />
+  <polyline points="8 7 17 7 17 16" />
+</svg>
+
+
+
+</i>Sign up
+      </a>
+
+      <a href="/signin/" data-portal="signin" class="signin-link">
+        <i class="icon icon-login icon--sm">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-in">
+  <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+  <polyline points="10 17 15 12 10 7"></polyline>
+  <line x1="15" y1="12" x2="3" y2="12"></line>
+</svg>
+</i>Sign in
+      </a>
+</div>  </div>
+</header>
+
+      <div class="menu js-menu">
+  <div class="menu__header flex content-start">
+    <button class="btn-toggle menu__toggle is-active js-menu-close"
+      type="button" title="Menu" aria-label="Menu">
+        <span></span>
+        <span></span>
+    </button>
+
+      <button class="btn-toggle header-search__toggle" data-ghost-search title="Search" aria-label="Search">
+        <i class="icon icon-search">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+</i>      </button>
+
+
+  </div>
+
+  <nav class="menu__navigation">
+    <ul class="nav">
+    <li class="nav-home"><a href="https://www.wheresyoured.at/">Home</a></li>
+    <li class="nav-about"><a href="https://www.wheresyoured.at/about/">About</a></li>
+    <li class="nav-better-offline"><a href="http://linktr.ee/betteroffline">Better Offline</a></li>
+    <li class="nav-news"><a href="https://www.wheresyoured.at/tag/news/">News</a></li>
+</ul>
+
+
+      <ul class="nav">
+    <li class="nav-sign-up"><a href="#/portal/">Sign up</a></li>
+</ul>
+
+  </nav>
+
+  <div class="menu__actions m-b flex w-100">
+        <a href="/signin/" data-portal="signin" class="btn signin-link btn--bordered radius m-r">
+          <i class="icon icon-login icon--sm">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-in">
+  <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+  <polyline points="10 17 15 12 10 7"></polyline>
+  <line x1="15" y1="12" x2="3" y2="12"></line>
+</svg>
+</i>Log in
+        </a>
+        <a href="/signup/" data-portal="signup" class="btn signup-link btn--brand radius">
+          <i class="icon icon-arrow-up-right icon--sm">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <line x1="17" y1="7" x2="7" y2="17" />
+  <polyline points="8 7 17 7 17 16" />
+</svg>
+
+
+
+</i>Subscribe
+        </a>
+  </div>
+</div>
+
+
+    <main class="main">
+      
+
+  <div class="container wrapper m-0-auto">
+      <div class="post-hero is-post is-featured" 
+    data-feature-image="false" data-image-style="max-width">
+    <div class="post-hero__content flex flex-col">
+
+
+      <h1 class="post-hero__title">Where&#x27;re All The AI Chips?</h1>
+
+
+        <div class="post-hero__info">
+          <span class="post-hero__authors"><a href="/author/ed-zitron/">Ed Zitron</a></span>
+          <time class="post-hero__date" datetime="2026-09-22">Sep 22, 2026</time> 
+          <span class="post-hero__readtime">34 min read</span>
+        </div> 
+    </div>
+
+  </div>
+
+    <div class="row m-b-lg">
+      <div class="col-xs-12 col-lg-3">
+        <div class="post-toc js-post-toc is-aside"> 
+  <div class="post-toc__header flex items-center">
+    <span class="m-r flex-1">Table of Contents</span>
+    <button class="post-toc__toggle js-toc-toggle">
+      <i class="icon icon-list icon--sm">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-list" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <line x1="9" y1="6" x2="20" y2="6" />
+  <line x1="9" y1="12" x2="20" y2="12" />
+  <line x1="9" y1="18" x2="20" y2="18" />
+  <line x1="5" y1="6" x2="5" y2="6.01" />
+  <line x1="5" y1="12" x2="5" y2="12.01" />
+  <line x1="5" y1="18" x2="5" y2="18.01" />
+</svg>
+</i>    </button>
+  </div>
+  <div class="post-toc__content js-toc"></div>
+</div>
+
+      </div>
+
+      <div class="col-xs-12 col-lg-6">
+
+        <article class="post featured no-image content post-access-public no-overflow">
+          <p>If you liked this piece, you should subscribe to my premium newsletter, and you can subscribe on the following links:<a href="https://edzitronswheresyouredatghostio.outpost.pub/public/promo-subscription/w1KX6aWthd?ref=wheresyoured.at"><u> $70 a year</u></a>,<a href="https://edzitronswheresyouredatghostio.outpost.pub/public/promo-subscription/pJMqFLQQw0?ref=wheresyoured.at"><u> $18 a quarter</u></a>, or<a href="https://edzitronswheresyouredatghostio.outpost.pub/public/promo-subscription/iT6Np52ZmU?ref=wheresyoured.at"><u> $7 a month</u></a>.</p><p>In return you get a weekly premium newsletter including vast, detailed analyses of<a href="https://www.wheresyoured.at/the-haters-guide-to-nvidia/"><u> NVIDIA</u></a>,<a href="https://www.wheresyoured.at/howmuchmoney/"><u> Anthropic and OpenAI’s finances</u></a>, and<a href="https://www.wheresyoured.at/premium-the-haters-guide-to-the-ai-bubble-vol-2/"><u> the AI bubble writ large</u></a>. It's a great way to support my free work, and you'll get full access to my massive archive of premium analyses of the tech and finance industry.</p><p>On Friday, I’ll publish the second part of The Hater’s Guide to AI Debt (<a href="https://www.wheresyoured.at/premium-the-haters-guide-to-ai-debt-part-1/" rel="noreferrer">here's part 1</a>) — where we’ll talk about the spiraling costs associated with standing up compute, why they won’t get better, and how the situation poses an existential risk to counterparties like Oracle. With that in mind, if you haven’t already, check out the <a href="https://www.wheresyoured.at/premium-the-haters-guide-to-ai-debt-part-1/"><u>first Hater's Guide To Oracle</u></a> (<a href="https://www.wheresyoured.at/premium-the-haters-guide-to-oracle-part-2/" rel="noreferrer">or part 2</a>), or perhaps my premium piece about <a href="https://www.wheresyoured.at/how-openai-kills-oracle/" rel="noreferrer">how OpenAI <em>Kills</em> Oracle</a>, or even my Hater's Guides To the<a href="https://www.wheresyoured.at/hatersguide-saas/"><u> SaaSpocalypse</u></a>,<a href="https://www.wheresyoured.at/hatersguide-privatecredit/"><u> Private Credit,</u></a> and<a href="https://www.wheresyoured.at/hatersguide-pe/"><u> Private Equity.</u></a>&nbsp;</p><p>If you want to get in touch — and especially if you have any juicy information about Anthropic, OpenAI, or any other companies in the AI bubble — hit me up on Signal at ezitron.76. I’m also on IB on your Bloomberg Terminal.&nbsp;</p><hr><p>Soundtrack: <a href="https://www.youtube.com/watch?v=HLUX0y4EptA&ref=wheresyoured.at"><u>Flobots - Handlebars</u></a></p><hr><p>A few months ago, I asked <a href="https://www.wheresyoured.at/where-are-all-the-data-centers/"><u>where all the data centers were</u></a>, because I was struggling to find proof that very many were being finished despite all the capex spending, construction, and the <a href="https://www.wheresyoured.at/premium-the-haters-guide-to-the-memory-crisis/"><u>skyrocketing cost of RAM</u></a>.&nbsp;</p><p>The answer to that question was, effectively, “nowhere.” <a href="https://www.wheresyoured.at/where-are-all-the-data-centers/#none-of-microsoft%E2%80%99s-announced-data-center-capacity-since-2024-has-been-completed"><u>The vast majority of Microsoft data center projects I could find had barely gotten started</u></a>, aside from the massive OpenAI-dedicated “<a href="https://www.wheresyoured.at/where-are-all-the-data-centers/#none-of-microsoft%E2%80%99s-announced-data-center-capacity-since-2024-has-been-completed:~:text=saying%20the%20following%3A-,Microsoft,-is%20in%20the"><u>Fairwater</u></a>” data centers that are “open” in the sense that some of the buildings are turned on, with the remainder either being actively built or with construction expected to start at some later point.</p><p>A couple of months later, <a href="https://www.theguardian.com/technology/2026/aug/17/are-microsofts-ai-plans-being-held-back-by-a-shortage-of-chips?ref=wheresyoured.at"><u>The Guardian and I ran an investigation</u></a> working with a source familiar with Microsoft’s GPU capacity, finding that it had approximately 2.2 million chips. At the time, I was unable to verify whether these were <em>all</em> of its GPUs, or whether OpenAI had its own allocation that wouldn’t appear in the data we obtained, which is why I left out one piece of reporting — that, based on the precise loadout of GPUs in operation, that Microsoft had around 1.993GW of capacity, backed by around $50 billion in GPUs, predominantly made up of NVIDIA H100 and H200 chips, with a decent amount of GB200 and GB300s.</p><p>Two weeks ago, <a href="https://www.bloomberg.com/news/features/2026-09-10/microsoft-ai-focused-data-center-plan-to-add-26-gigawatts-of-compute?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc4OTA3NDY1MCwiZXhwIjoxNzg5Njc5NDUwLCJhcnRpY2xlSWQiOiJUTDYyQ0dLSVVQU0EwMCIsImJjb25uZWN0SWQiOiJEQ0FGMjNFM0YyMkE0Qzk5OTM0RUMyRDEwNkM0ODc0NyJ9.nYG4XOhTjwnggpyQBiqDE_2Hp9p2EprUnX82KGKTuRE&ref=wheresyoured.at"><u>Bloomberg reported</u></a> that Microsoft had “about 12 gigawatts of capacity,” but that “...only about 2 gigawatts of the company’s current 12-gigawatt capacity is centered on AI-specific chips.” A quote follows:</p><blockquote>Newer AI tools use increasing amounts of CPU servers in addition to GPUs, meaning Microsoft needs to expand all types of computing power, according to [infrastructure expert <a href="https://www.linkedin.com/in/alistair?ref=wheresyoured.at"><u>Alistair</u></a>] Speirs, “GPUs by themselves don’t make great AI infrastructure,” he said.</blockquote><p>That’s a really nice way of saying that Microsoft is directly misleading reporters, investors and the general public about its capacity. It has claimed again and again that it has brought <em>gigawatts of capacity</em> online for the best part of a year, all, in my opinion, with the intent of misrepresenting the scale of an AI data center buildout where I believe most of the GPUs, to <a href="https://datacentremagazine.com/news/microsofts-power-problem-ai-chips-are-sitting-in-inventory?ref=wheresyoured.at"><u>quote Satya Nadella</u></a>, are now “sitting in inventory that [they] can’t plug in.”</p><p>Today’s newsletter is about a cruel truth:<strong> that NVIDIA’s revenue growth is almost entirely the result of speculative purchases by hyperscalers and neoclouds that take years to install its GPUs.</strong></p><p>In other words, I think everybody is completely wrong about data center capacity, and it’s going to be a nightmare to untangle once they work it out.&nbsp;</p><p>Everybody wants AI to be just like the Dot-Com Bubble, when I fear that GPUs may end up like <a href="https://www.nbcnews.com/tech/video-games/those-old-e-t-atari-games-dug-desert-sold-108-n418971?ref=wheresyoured.at"><u>the millions of unsold copies of Atari’s ET</u></a> found buried in New Mexico.</p><h1 id="microsoft-only-has-2gw-of-ai-specific-data-center-capacity-despite-claiming-it-added-a-gigawatt-a-quarter-three-quarters-straight">Microsoft Only Has 2GW of AI Specific Data Center Capacity, Despite Claiming It Added A Gigawatt A Quarter Three Quarters straight</h1><p><a href="https://www.wheresyoured.at/where-are-all-the-data-centers/#none-of-microsoft%E2%80%99s-announced-data-center-capacity-since-2024-has-been-completed:~:text=be%20getting%20finished.-,Microsoft%20Says%20Its%20Fairwater%20Data%20Centers%20Are%20Operational%20%E2%80%94%20They%E2%80%99re%20Actually%20Unfinished,-In%20September%202025"><u>Per my own article</u></a>:</p><blockquote>In September 2025, CEO Satya Nadella claimed that Microsoft<a href="https://x.com/satyanadella/status/1968677244861379012?s=20&ref=wheresyoured.at"><u> had added 2GW of capacity</u></a> “in the last year,” and acted as if Fairwater, a project with two actively-constructed data centers with one in Wisconsin<a href="https://www.datacenterdynamics.com/en/news/microsoft-breaks-ground-on-1bn-data-center-in-wisconsin/?ref=wheresyoured.at"><u> that broke ground in September 2023</u></a> and<a href="https://www.datacenterdynamics.com/en/news/microsoft-breaks-ground-on-palmetto-data-center-in-georgia/?ref=wheresyoured.at"><u> another in Atlanta that broke ground in July 2024</u></a>, was something to be “announced” rather than “a very expensive project that has taken forever.” Nadella also claimed that there are “multiple identical Fairwater datacenters under construction,“ though he neglected to name them.</blockquote><p>In earnings calls for its <a href="https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2?ref=wheresyoured.at#:~:text=All%20up%2C%20we%20added%20nearly%20one%20gigawatt%20of%20total%20capacity%20this%20quarter%20alone.%C2%A0"><u>second</u></a>, <a href="https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3?ref=wheresyoured.at#:~:text=All%20up%2C%20we%20added%20another%20gigawatt%20of%20capacity%20this%20quarter%2C%20and%20remain%20on%20track%20to%20double%20our%20overall%20footprint%20in%20just%20two%20years."><u>third</u></a>, and <a href="https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4?ref=wheresyoured.at#:~:text=All%20up%2C%20we%20added%20another%20gigawatt%20of%20capacity%20this%20quarter%20and%20remain%20on%20track%20to%20roughly%20double%20our%20overall%20capacity%20in%20just%20two%20years."><u>fourth</u></a> quarter fiscal year 2026 earnings, Microsoft would use near-identical phrasing:</p><ul><li><strong>Satya Nadella, Q2 FY26 (January 28, 2026) earnings call: </strong><em>All up, we added nearly one gigawatt of total capacity this quarter alone.&nbsp;</em></li><li><strong>Satya Nadella, Q3 FY26 (April 29, 2026) earnings call: </strong><em>All up, we added another gigawatt of capacity this quarter, and remain on track to double our overall footprint in just two years.</em></li><li><strong>Satya Nadella, Q4 FY26 (July 29, 2026) earnings call: </strong><em>All up, we added another gigawatt of capacity this quarter and remain on track to roughly double our overall capacity in just two years.</em></li></ul><p>While I cannot say the exact rationale for making these statements, I can find no way to interpret them other than being an act of deception.&nbsp;</p><p>In its Q2 2026 earnings call, Microsoft CFO Amy Hood responded to UBS analyst Karl Keirstead’s question, again repeating the “gigawatt” language [emphasis mine]:</p><blockquote><strong>KARL KEIRSTEAD, UBS</strong>: Okay, thank you very much.<br><br>Satya and Amy, regardless of how you allocate the capacity between first party and third party, can you comment qualitatively on the amount of capacity that you have coming on? <strong>I think the one gigawatt added in the December quarter was extraordinary and hints that the capacity adds are accelerating</strong>, <strong>but I think a lot of investors have their eyes on Fairwater Atlanta, Fairwater Wisconsin and would love some comments about the magnitude of the capacity adds, regardless of how they’re allocated in the coming quarters. Thank you.<br><br>AMY HOOD</strong>: Yeah, Karl, I think we’ve said a couple of things. We’re working as hard as we can to add capacity as quickly as we can. You’ve mentioned specific sites like Atlanta or Wisconsin. Those are multiyear deliveries, so I wouldn’t focus necessarily on specific locations.<br><br>The real thing we’ve got to do, and we’re working incredibly hard at doing it, is adding capacity globally. A lot of that will be added in the United States, the two locations you’ve mentioned, but it also needs to be added across the globe to meet the customer demand that we’re seeing and the increased usage.<br><br>We’ll continue to add both long-lived infrastructure. The way to think about that is we need to make sure we’ve got power and land and facilities available, and we’ll continue to put GPUs and CPUs in them when they’re done as quickly as we can. And then finally, we’ll try to make sure we can get as efficient as we possibly can on the pace at which we do that and how we operate them, so that they can have the highest possible utility.</blockquote><p>Note that Karl’s line of questioning directly addresses Fairwaters Atlanta and Wisconsin, two explicitly AI-focused data centers dedicated to OpenAI, and Hood responds by talking about a gigawatt of capacity in the December quarter (<a href="https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1?ref=wheresyoured.at"><u>referring to Q1 FY26, when no mention of adding a gigawatt in a quarter was made</u></a>).</p><p>I already anticipate the response here will be that what Microsoft said here is “legal,” because it never said that this was <em>AI</em> capacity, but anyone responding like this operates with a peasant’s mindset. Anyone reading this transcript or hearing Microsoft mentioning that it added “gigawatts” of data center capacity is thinking about <em>AI data center capacity</em> — as evidenced by <a href="https://www.datacenterdynamics.com/en/news/microsoft-brings-1gw-of-capacity-online-in-latest-quarter-again/?ref=wheresyoured.at"><u>this piece</u></a> and <a href="https://www.directionsonmicrosoft.com/microsoft-expect-capacity-constraints-capex-acceleration-to-continue/?ref=wheresyoured.at"><u>this piece</u></a> and basically everyone you talk to on the subject.&nbsp;</p><p>Let me be very blunt: <strong>it appears that Microsoft has, since the beginning of 2022, spent around $265 billion in capital expenditures (and added around $320 billion in assets to its properties, plants and equipment) to bring around $50 billion of GPUs online, <u>and has used broad, vague language to make it seem like it’s been far more productive.&nbsp;</u></strong></p><p>Nobody on God’s green Earth is sitting here wondering if Microsoft added gigawatts of <em>CPU capacity</em> or <em>cloud storage,</em> nor are analysts desperate to hear about aggregate numbers — they’re asking <strong>where is all the money you’re spending on AI going</strong>, and the answer, it appears, is “into a warehouse” or “into a data center without power.”</p><p>To bring home the point, I analyzed Microsoft’s earnings calls between Fiscal Year 2010 and Fiscal Year 2022, and found little discussion of data center capacity outside of competition with Amazon Web Services and Google Cloud, and no discussion of megawatts or gigawatts. When it comes to earnings calls, <em><u>Microsoft’s use of megawatts and gigawatts is explicitly AI-era terminology</u>, </em>used for the first time in <a href="https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4?ref=wheresyoured.at#:~:text=We%20stood%20up%20more%20than%20two%20gigawatts%20of%20new%20capacity%20over%20the%20past%2012%20months%20alone."><u>its Q4 FY2025 earnings call</u></a><strong>, </strong>though it had used it elsewhere, such as in a document <a href="https://www.businessinsider.com/microsoft-plan-double-triple-data-center-capacity-2024-4?ref=wheresyoured.at"><u>reported on by Business Insider in April 2024</u></a> that said it had brought online “more than 500 megawatts of new data center capacity,” including this damning quote, emphasis mine:</p><blockquote>In the second half of last year, Microsoft delivered "record-level GPU capacity," more than doubling its total installed GPU base, the document said, <strong>without mentioning actual numbers.</strong></blockquote><p>It appears that Microsoft is being vague with its numbers to hide the very obvious truth: <strong>that it’s spending hundreds of billions of dollars to buy GPUs that sit in warehouses or unpowered data centers, likely years in advance.</strong></p><p>This is a huge scandal. Why is Microsoft buying so many GPUs if it’s not got anywhere to put them? Why isn’t it waiting to buy the GPUs when it needs them, rather than buying them months or years in advance? Why is Microsoft telling us it’s bringing gigawatts of capacity online when it’s very clearly doing otherwise?</p><p>And at this point, can we take <em>anyone’s</em> capacity announcements seriously?</p><h2 id="microsoft-is-warehousing-an-estimated-50-billion-to-100-billion-in-gpus">Microsoft Is Warehousing An Estimated $50 Billion to $100 Billion In GPUs&nbsp;</h2><p>Microsoft is one of the first companies to build a GPU-powered AI data center (<a href="https://news.microsoft.com/source/features/ai/openai-azure-supercomputer/?ref=wheresyoured.at"><u>back in 2020, specifically for OpenAI</u></a>), and has both incredible amounts of experience standing up compute infrastructure and resources to make it happen.&nbsp;</p><p>I need to stress this point, because outside of the hyperscalers, the other companies building large-scale data centers are neoclouds, many of which were former crypto mining companies, or Oracle, which only dipped its toe into cloud infrastructure in 2016, long after Microsoft launched Azure and Google launched Google Cloud.&nbsp;</p><p>If <em>anyone</em> has the expertise and resources to deploy large-scale AI infrastructure assets at scale, it’s Microsoft — and, as a result, Microsoft’s effectiveness in deploying AI infrastructure is more meaningful than, say, that of a Neocloud or even Oracle.&nbsp;</p><p>As I said above, Microsoft had — as of a few months ago — approximately $50 billion of actual GPUs in service at around an estimated 1.993GW of AI capacity, with Bloomberg reporting on September 11, 2026 that it had “around” 2GW.&nbsp;</p><p>It has spent $265 billion in capital expenditures, and per estimates from Michael Turrin of Wells Fargo and Gregg Moskowitz of Mizuho Securities, and Microsoft’s own statements in earnings calls:</p><ul><li>In Fiscal Year 2025 (July 1, 2024 to June 30, 2025, $64.6 billion total capex) Microsoft’s split between short-lived (read: GPUs and associated gear) and long-lived (IE: physical infrastructure like buildings) assets was 50/50, <strong>meaning that approximately $32.3 billion was GPUs and associated gear</strong>.</li><li>In Fiscal Year 2026 (July 1 2025 to June 30 2026, $115.9 billion in total capex), Microsoft’s split was two-thirds (67%) short versus long, or<strong> around $74.4 billion in GPUs and associated gear</strong>.</li><li>This leaves us with an estimated <strong>$106.7 billion in short-lived, uninstalled GPUs.&nbsp;</strong></li><li>I will concede that there may be <em>other </em>short-lived assets, <a href="https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4?ref=wheresyoured.at#:~:text=in%20our%20guide.-,Roughly%20two%20thirds,-of%20our%20capex"><u>Microsoft’s own language from earnings calls</u></a> notes they refer to “primarily CPUs and GPUs.”<ul><li>I severely doubt that Microsoft is spending more than a few billion on CPUs.</li><li>I am preemptively assuming this is where AI bulls will latch onto first, and want to be clear that <em>there really are no other big ticket items that could be taking up this much capex.</em>&nbsp;</li></ul></li></ul><p>As mentioned above, <a href="https://www.datacenterdynamics.com/en/news/microsoft-has-ai-gpus-sitting-in-inventory-because-it-lacks-the-power-necessary-to-install-them/?ref=wheresyoured.at"><u>Nadella mentioned in November 2025</u></a> that he had “...a bunch of chips sitting in inventory that [he couldn’t plug in],” but didn’t make any mention of how many there were.&nbsp;</p><p>In other words, Microsoft is warehousing anywhere from $50 billion to $100 billion in GPUs, <em>and has barely gotten $50 billion worth installed in the last four years.</em>&nbsp;</p><p>If Microsoft is struggling, <em>everybody’s</em> struggling, and we may have a very inconvenient truth: that NVIDIA has potentially sold hundreds of billions of GPUs years in advance.</p><p>And yes,<em> everybody</em> is struggling.&nbsp;</p><h1 id="neoclouds-and-hyperscalers-have-over-374-billion-in-%E2%80%9Cconstruction-in-progress%E2%80%9D-assets-with-an-estimated-200-billion-in-gpus-sitting-in-warehouses">Neoclouds and Hyperscalers Have Over $374 Billion In “Construction In Progress” Assets, With An Estimated $200 Billion+ In GPUs Sitting In Warehouses&nbsp;&nbsp;</h1><p>Microsoft, as a deeply unhelpful and deceptive company, does not disclose its “construction in progress” on its balance sheet — the place where companies put everything that they’re building, and in the era of AI, their unbuilt data centers and yet-to-be-installed GPUs (or, in Google’s case, its custom TPU AI chips).&nbsp;&nbsp;</p><blockquote><strong>Sidenote:</strong> Construction in progress is a <em>stock</em> rather than a <em>total</em> — while capital expenditures are however much money was spent, CIP represents the accrual of <em>stuff.</em></blockquote><p>Across hyperscalers including Google, Meta, Oracle, Amazon, SpaceX, and Tesla, neoclouds like CoreWeave and IREN, and colocation companies like Core Scientific and Applied Digital, there is over $374 billion in construction in progress, a figure that’s likely <em>lower</em> than the true number, because Amazon’s contribution ($71.7 billion) is only current as of the end of 2025.&nbsp;</p><p>The $374 billion number doesn’t include any CIP from Microsoft, Firmus, Sharon AI, Equinix, Nebius, or any number of private operators like Vantage, DataBank, CyrusOne, or QTS. It does not include any sovereign AI projects (<a href="https://www.datacenterdynamics.com/en/news/saudi-arabian-ai-venture-humain-buys-18000-nvidia-gb300-chips-several-hundred-thousand-more-on-the-way/?ref=wheresyoured.at"><u>Humain/Saudi Aramco</u></a>, <a href="https://www.edb.gov.sg/en/news-and-insights/singapore-goes-full-throttle-on-ai-to-secure-future-for-workforce-allocates-s500m-for-advanced-hardware?ref=wheresyoured.at"><u>Singapore</u></a>, <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/indias-reliance-builds-a-gigawatt-data-center-with-nvidia-blackwell-ai-gpus?ref=wheresyoured.at"><u>Reliance in India</u></a>, <a href="https://www.datacenterdynamics.com/en/news/g42-ceo-says-company-will-receive-first-ai-chip-shipments-within-months-to-support-initial-200mw-of-capacity-for-planned-stargate-cluster/?ref=wheresyoured.at"><u>G42</u></a> in the UAE), private projects run by or for OpenAI or Anthropic, Stack Infrastructure (<a href="https://www.stackinfra.com/about/news-press/press-releases/stack-infrastructure-delivers-digital-infrastructure-for-data-center-campus-in-new-mexico/?ref=wheresyoured.at"><u>which is building Oracle’s New Mexico data center</u></a>, with the CIP not landing on Oracle’s balance sheet as it doesn’t “own” the project), or <a href="https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101651795?ref=wheresyoured.at"><u>Meta’s $27.3 billion off-balance-sheet “Hyperion” data center</u></a>. Between them, I think there’s at least another $50 billion to $100 billion of CIP, but for fairness I’m not including it in the larger total.</p><p>This number has increased across the dataset from $102.9 billion in 2023, to $145.6 billion in 2024, to $243.2 billion in 2025.&nbsp;</p><p>Between 2023 and 2025, the combined capital expenditures of these companies was $351.6 billion on $243.2 billion of CIP. In other words, lots of money out the door with a bunch of stuff in a big, confusing and potentially-unproductive pile.</p><p>If I’m honest, I think that $200 billion number might be a little generous.&nbsp;</p><p>Considering Oracle’s CIP number from its latest quarterly earnings <a href="https://d18rn0p25nwr6d.cloudfront.net/CIK-0001341439/461fdc14-9ec3-424f-b4fa-96fe6ff788ec.pdf?ref=wheresyoured.at"><u>was at $48.5 billion</u></a> and Google’s Q2 2026 “assets not yet in service” were at <a href="https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/GOOG-10-Q-Q2-2026.pdf?ref=wheresyoured.at"><u>an astonishing $122.8 billion</u></a>, <a href="https://s206.q4cdn.com/479360582/files/doc_financials/2026/q1/GOOG-10-Q-Q1-2026.pdf?ref=wheresyoured.at"><u>up from $108.5 billion in Q1</u></a> 2026 and <a href="https://s206.q4cdn.com/479360582/files/doc_financials/2025/q4/GOOG-10-K-2025.pdf?ref=wheresyoured.at"><u>$78.5 billion at the end of 2025</u></a>, it’s reasonable to believe that Microsoft has <em>at least </em>$50 billion of construction in progress. I also think it’s fair to assume that Amazon has, since the beginning of 2026, added at least $25 billion to CIP, though we’ll find out at the end of the year.</p><p>As far as the breakdown of assets goes, I think it’s fair to assume the 50/50 split is accurate. <a href="https://abc.xyz/investor/events/event-details/2026/2026-Q2-Earnings-Call-2026-GgTAq7Is0z/default.aspx?ref=wheresyoured.at#:~:text=Approximately%2060%25%20of%20our%20investment%20in%20technical%20infrastructure%20this%20quarter"><u>In Google’s latest earnings call</u></a>, CFO Anat Ashkenazi said that “...60% of our investment in technical infrastructure this quarter was in servers,” referring to servers with GPUs or TPUs. Wells Fargo’s Ken Gawrelski estimated in a note from January 2026 that approximately 65% of Meta’s capex was tied to “shorter-life servers and networking equipment assets.” Per Karl Keirstead of UBS in a note in January 2026, “...the vast majority of Oracle’s capex is for equipment, mostly Nvidia GPUs,” adding that “...by comparison, we estimate average annual capex over the next 5 years for Microsoft with perhaps 60% or around $125 billion for short-lived equipment/chips.”&nbsp;</p><p>Yet arguably the most revealing thing I could find was <a href="https://seekingalpha.com/article/4896212-amazon-com-inc-amzn-q1-2026-earnings-call-transcript?ref=wheresyoured.at#:~:text=can%20monetize%20it%2C-,typically,-6%20to%2024"><u>a quote from CEO Andy Jassy on Amazon’s Q1 2026 earnings call from April</u></a>:</p><blockquote>…AWS has to lay out cash for land, power, buildings, chips, servers and&nbsp;networking gear in advance of when we can monetize it, typically 6 to 24 months before we start billing customers depending on the component.</blockquote><p>So, if we assume the number is roughly $374 billion, plus (at minimum) $50 billion from Microsoft, plus another (at minimum) $20 billion from Amazon, that puts us around $444 billion, with Google’s share — $120.8 billion — being 60% GPUs and related hardware, for a total of $72.48 billion, putting us at (assuming a 50/50 split) <strong>an estimated $234 billion in GPUs and TPUs sitting in warehouses.&nbsp;</strong></p><h1 id="nvidia-and-broadcom-have-sold-approximately-5615-billion-in-ai-chips-and-hardware-since-the-beginning-of-2023-meaning-that-approximately-50-of-sold-ai-chipshardware-is-being-warehoused-and-their-sales-are-the-product-of-speculation-rather-than-value">NVIDIA and Broadcom Have Sold Approximately $561.5 Billion In AI Chips and Hardware Since The Beginning of 2023, Meaning That Approximately 50% Of Sold AI Chips/Hardware Is Being Warehoused And Their Sales Are The Product Of Speculation Rather Than Value</h1><p>Since the beginning of calendar year 2023, NVIDIA has sold roughly $496.4 billion in GPUs and associated gear, and Broadcom approximately $65.1 billion in AI chips (though I’ll add that Broadcom only started disclosing its AI segment <a href="https://finance.yahoo.com/news/broadcom-inc-nasdaq-avgo-q1-183528611.html?ref=wheresyoured.at#:~:text=semiconductors%2C%20AI%20revenue%20quadrupled%20year%2Don%2Dyear%20to%20%242.3%20billion%20during%20the%20quarter%2C%20more%20than%20offsetting%20the%20current%20cyclical%20slowdown%20in%20enterprise%20and%20telcos."><u>as of its March 2024 earnings</u></a>) for a total of $561.5 billion.&nbsp;</p><blockquote><strong>Sidenote: </strong>Except where otherwise stated, I’m using calendar years because it’s the best way to align to CIP across my analysis.&nbsp;</blockquote><p>Based on discussions with sources familiar with Azure infrastructure, Microsoft has a great deal of H100 and H200 inventory up and running — mostly consisting of hundreds of thousands of Hopper chips, as well as&nbsp; somewhere in the region of 160,000 Blackwell GPUs at the time of discussion.&nbsp;</p><p>Based on a further analysis of NVIDIA’s earnings calls in the period along with estimates from Vijay Rakesh of Mizuho and Ross Seymore of Deutsche Bank, I <em>roughly</em> estimate NVIDIA has sold approximately $222.6 billion in Hopper and $270.9 billion in Blackwell GPUs. I think it’s reasonable to believe that the majority — if not the entirety — of Hopper GPUs are installed, leaving us with millions of Blackwell GPUs waiting to be installed.</p><p>This is, to be clear, <a href="https://www.wheresyoured.at/the-haters-guide-to-nvidia/#nvidia-claims-to-have-shipped-6-million-blackwell-gpus-in-the-last-4-quarterswhich-would-amount-to-6gw-to-12gw-of-data-center-capacity-with-1gw-taking-25-years-and-40bn-50bnmeaning-millions-of-blackwell-gpus-are-sat-waiting-to-be-installed"><u>an assertion I made in November 2025</u></a>, when I took Jensen Huang’s statement that NVIDIA shipped “6 million” NVIDIA GPUs literally, versus using the whacky Jensen Maths that “each GPU is actually two GPUs,” bringing the total down to three.</p><p><em>Nevertheless,</em> based on everything I’ve discussed today, it’s very reasonable to ask <em>whether even a quarter of those Blackwell GPUs are actually in data centers, </em>or at least <em>data centers with power connected to them.&nbsp;</em></p><p>And if the truth — and this very much seems to be the case — is that NVIDIA has sold <em>hundreds of billions of dollars of GPUs years in advance, </em>that materially changes everything about the AI bubble and the AI data center buildout.</p><h1 id="all-ai-data-center-capacity-data-is-now-suspicious-questionable-or-outright-useless-as-a-barometer-of-what%E2%80%99s-actually-functional">All AI Data Center Capacity Data Is Now Suspicious, Questionable, Or Outright Useless As A Barometer Of What’s Actually Functional</h1><p>I have, on occasion, cited <a href="https://www.currence.ai/blog/data-center-outlook?ref=wheresyoured.at"><u>Sightline Climate’s February estimates</u></a>, which I’ll now quote in their entirety:&nbsp;</p><blockquote>We’re tracking 190GW across 777 large data centers and AI factories (&gt;50MW) announced since 2024. At least 16GW of capacity is slated to come online in 2026 across roughly 140 projects. Yet only about 5GW is currently under construction. Around 11GW remains in the announced stage with no visible construction progress, despite typical build timelines of 12–18 months.</blockquote><p>I love Sightline Climate, and believe they do important and helpful work, <strong>but based on Microsoft’s obfuscation of what “capacity” actually means, I believe that virtually all estimates around <em>operational</em> AI data center capacity are now functionally useless. </strong>While we can use Sightline’s data as a measure of <em>how much is in planning,</em> I no longer think anyone has a handle on how much capacity is <em>built.</em></p><p>The same goes for basically any statements made by companies about or reporting around their potential capacity that do not specifically separate active AI capacity from overall capacity.</p><h1 id="the-weasel-wording-of-ai-data-center-capacity">The Weasel Wording Of AI Data Center Capacity</h1><p>Microsoft claims, as reported, that it has 12GW of capacity — 3GW of which came online in the last three quarters! — but only 2GW of that is <em>AI data center capacity</em>, which begs two questions:</p><ul><li>Are we talking about <em>power capacity</em> or <em>IT load?</em><ul><li>If it’s power capacity, this number is functionally useless.</li></ul></li><li>Is this <em>actual data center capacity</em> or <em>total power secured</em>?&nbsp;<ul><li>If it’s the latter, Microsoft is basically saying “I got power from someone” rather than “I have a data center connected to power that I have either built or commissioned myself.”</li></ul></li><li>If it brought online 3GW of capacity in nine months but AI capacity only increased by, at best, a few hundred megawatts, <em>what the hell is in the other data centers?</em><ul><li>I seriously cannot understand how Microsoft got to 12GW of capacity in totality but only 2GW of AI data center capacity.&nbsp;</li></ul></li></ul><p>It’s very clear that Microsoft is playing silly buggers with the term “capacity,” which makes me believe this is an industry-wide problem.&nbsp;</p><h3 id="coreweave">CoreWeave</h3><p>For example, CoreWeave <a href="https://s205.q4cdn.com/133937190/files/doc_financials/2026/q2/CoreWeave-Q2-26-Earnings-Infographic.pdf?ref=wheresyoured.at"><u>claimed in its latest earnings presentation</u></a> that it added 850MW in “active power” in the last quarter:</p><figure class="kg-card kg-image-card"><img src="https://storage.ghost.io/c/24/d8/24d8fcec-dfba-4f40-a467-823d2941ae46/content/images/2026/09/data-src-image-c50fe6de-3f09-4a53-8252-659a9df99411.png" class="kg-image" alt="" loading="lazy" width="1484" height="498" srcset="https://storage.ghost.io/c/24/d8/24d8fcec-dfba-4f40-a467-823d2941ae46/content/images/size/w600/2026/09/data-src-image-c50fe6de-3f09-4a53-8252-659a9df99411.png 600w, https://storage.ghost.io/c/24/d8/24d8fcec-dfba-4f40-a467-823d2941ae46/content/images/size/w1000/2026/09/data-src-image-c50fe6de-3f09-4a53-8252-659a9df99411.png 1000w, https://storage.ghost.io/c/24/d8/24d8fcec-dfba-4f40-a467-823d2941ae46/content/images/2026/09/data-src-image-c50fe6de-3f09-4a53-8252-659a9df99411.png 1484w" sizes="(min-width: 720px) 720px"></figure><p>There is a big difference between whether that’s <em>active, revenue-generating AI data center capacity</em> or <em>850MW of power at a plant not connected to anything because the data center isn’t built yet, </em>much like it’s very different if it’s <em>only 50MW or 200MW of AI data center capacity.&nbsp;</em></p><h3 id="oracle">Oracle</h3><p><a href="http://seekingalpha.com/article/4945295-oracle-corporation-orcl-q1-2027-earnings-call-transcript?ref=wheresyoured.at"><u>In Oracle’s case</u></a>, there were some statements made in its most recent earnings call by co-CEO Clay Magouyrk that are equally-misleading:&nbsp;</p><blockquote>All right. Thanks, Mike. OCI continues to grow quickly by delivering the capacity our customers need. We delivered 850 megawatts of AI capacity containing more than 300,000 GPUs to customers since the end of Q4. Delivery in Q1 is almost 3x what we delivered in all of Q4 and 73% of the total capacity we delivered last fiscal year. This reflects years of investment in every aspect of infrastructure, from data center design through supply chain and manufacturing, to installation and operations.</blockquote><p>Just so we’re clear, here’re the statements made by Mr. Magouyrk:</p><ul><li>Oracle has delivered 850MW of AI capacity containing “more than 300,000 [non-specific] GPUs since the end of Q4 (fiscal year 2026, ending May 31 2026).</li><li>Delivery in Q1 Fiscal Year 2027 is “73% of the total capacity we delivered last fiscal year,” which <em>could</em> mean 620MW of <em>AI data center </em>capacity, but he said <em>total capacity</em>, which involves <em>non-AI data centers.</em></li></ul><p>Then there was another quote that had me <em>very confused</em> about Stargate Abilene, a 1.2GW total capacity/824MW IT load (IE: GPUs and essential hardware) data center campus that’s been under construction since June 2024.</p><blockquote>Abilene continues to deliver at an extraordinary pace. We delivered 131,000 GPUs there in Q1, 1.9x the volume delivered in Q4. 6 of the 8 campus buildings, representing 618 megawatts, and 75% of total capacity have now been delivered to the customer. Customer acceptance has compressed to only 24 hours, showing the systems arrived ready for customer workloads. The recently released GPT-6 Astra was trained at our site in Abilene.</blockquote><p>I’m waiting on an update from a source, but as of June this year, only three buildings were ready to go in Abilene, with a fourth a perennial work-in-progress. I concede that perhaps development has sped up, but per <a href="http://yesenergy.com/blog/what-does-a-hyperscale-data-center-really-look-like?ref=wheresyoured.at"><u>Yes Energy’s analysis</u></a>, as of June Stargate Abilene was pulling a <em>total</em> power load of around 450MW — and Mr. Magouyrk specifically said “75% of total capacity” and “618MW,” which sounds like it’s referring to <em>IT load.</em>&nbsp;</p><p>I don’t even have a clear answer as to what’s going on here, other than that we don’t have much (if any) clarity around how much data center capacity is even being built.&nbsp;</p><h3 id="amazon">Amazon</h3><p><a href="https://sustainability.aboutamazon.com/2025-amazon-sustainability-report.pdf?ref=wheresyoured.at"><u>Buried deep within a sustainability report released in July</u></a>, saying…</p><blockquote>We added more data center capacity globally than any other company, including more than 1.2 gigawatt (GW) in Q4 [2025] alone, and we expect AI and cloud services to continue growing. As we grow, we invest relentlessly in efficiency.</blockquote><p>You’re meant to read that and say “wow, 1.2GW of <em>AI</em> data center capacity,” but that doesn’t, as we’ve established with Microsoft, <em>mean anything of the sort.</em></p><p>Data Center Dynamics accidentally <a href="https://www.datacenterdynamics.com/en/news/aws-says-it-added-more-data-center-capacity-than-any-other-company-in-2025-including-12gw-in-q4/?ref=wheresyoured.at"><u>explained the problem in their piece on the report</u></a>:</p><blockquote>As for Amazon's rivals, exact figures are also undisclosed. Microsoft stood up 1GW of data center capacity in what it calls FY2026 Q2, but that is actually the same timeframe as Amazon's Q4. In its FY2025, Microsoft brought online a total of 2GW.</blockquote><p>As we’ve established, that “1GW of capacity” does not mean, in any way, shape or form, <em>1GW of AI data center capacity</em>, or even <em>usable capacity of any kind.</em> In fact, it’s unclear what it is that was added, because none of these companies tell you.&nbsp;</p><h3 id="openai">OpenAI</h3><p><a href="https://www.datacenterdynamics.com/en/news/openai-cfo-says-company-ended-2025-with-19gw-of-compute-scaled-revenue-at-same-speed/?ref=wheresyoured.at"><u>At the end of 2025</u></a>, OpenAI claimed it had “1.9GW of compute” — which would suggest that it takes up the vast majority of Microsoft’s infrastructure and some of Oracle’s — but it doesn’t distinguish between whether that’s <em>active power</em>, <em>IT load</em> or <em>even accessible to the company.&nbsp;</em></p><h1 id="hyperscaler-depreciation-doesn%E2%80%99t-make-sense-based-on-their-current-capital-expenditures">Hyperscaler Depreciation Doesn’t Make Sense Based On Their Current Capital Expenditures</h1><p><a href="https://www.wheresyoured.at/where-are-all-the-data-centers/#that-800-billion-in-capex-is-yet-to-truly-enter-depreciation"><u>As I discussed a few months ago</u></a>, despite vast amounts of capital expenditures, hyperscaler depreciation — by which I mean when you spread out the cost of GPUs over 6 years starting from when they enter service — also suggests that the vast majority of capex is yet to be put in service.</p><p>To illustrate, I pulled an historical chart of hyperscaler depreciation and amortization as a percentage of capital expenditures. If capital expenditures were quickly turning into operational, useful and revenue-generating assets, the percentage would be growing versus collapsing quarter-after-quarter, with Google’s sitting at an embarrassing 15.8%, suggesting less than 16 cents of every dollar of capex is flowing into D&amp;A. While this isn’t a <em>cost</em> (as it’s spreading out the cost of something spread over a period of time), it eats into net income.</p><p>As you’ll see, at several points hyperscalers reclassified the “useful life” of servers, allowing them to spread out the costs of servers containing AI GPUs for a year or two longer, allowing them to lower depreciation costs as a result.</p><p>For example, in 2022, Microsoft extended the <a href="https://www.theregister.com/off-prem/2022/08/02/microsoft-extends-life-of-cloud-servers-to-six-years/311008?ref=wheresyoured.at"><u>useful lifespan of servers from four to six years</u></a> — and this year, changed the depreciation schedule of the <a href="https://seekingalpha.com/article/4927536-microsoft-datacenters-now-last-25-years-chips-inside-do-not?ref=wheresyoured.at"><u>actual data center structures from 15 to 25 years</u></a>. The following year, <a href="https://www.datacenterdynamics.com/en/news/google-increases-server-life-to-six-years-will-save-billions-of-dollars/?ref=wheresyoured.at"><u>Meta and Google followed suit</u></a>, with Meta extending the lifespan to five years and Google to six. Meta would again <a href="https://www.thestack.technology/meta-extends-server-life-again-saving-it-2-9-billion/?ref=wheresyoured.at"><u>extend the useful life of its servers in 2025</u></a>, pushing it to 5.5 years.&nbsp;</p><p>Amazon, meanwhile, can’t make up its mind about how long its servers last, having increased (and decreased) multiple times over the course of the past six years. <a href="https://moneywise.com/news/top-stories/amazon-ai-data-center-server-depreciation-chip-lifespan?ref=wheresyoured.at"><u>Quoting MoneyWise</u></a>:&nbsp;</p><blockquote>Depreciation is the mechanism underneath all of this — the way a company spreads equipment cost across the years it expects to use it. Stretch the assumption and current profits look better. Shorten it and the bill comes sooner.<br><br>Amazon has done both, repeatedly. Servers went from three years to four in 2020, four to five in 2022, and five to six in January 2024, before the 2025 reversal [to five years].</blockquote><figure class="kg-card kg-image-card"><img src="https://storage.ghost.io/c/24/d8/24d8fcec-dfba-4f40-a467-823d2941ae46/content/images/2026/09/data-src-image-e51aabc5-74c8-4ac2-94ea-95720bb738b6.png" class="kg-image" alt="" loading="lazy" width="1028" height="675" srcset="https://storage.ghost.io/c/24/d8/24d8fcec-dfba-4f40-a467-823d2941ae46/content/images/size/w600/2026/09/data-src-image-e51aabc5-74c8-4ac2-94ea-95720bb738b6.png 600w, https://storage.ghost.io/c/24/d8/24d8fcec-dfba-4f40-a467-823d2941ae46/content/images/size/w1000/2026/09/data-src-image-e51aabc5-74c8-4ac2-94ea-95720bb738b6.png 1000w, https://storage.ghost.io/c/24/d8/24d8fcec-dfba-4f40-a467-823d2941ae46/content/images/2026/09/data-src-image-e51aabc5-74c8-4ac2-94ea-95720bb738b6.png 1028w" sizes="(min-width: 720px) 720px"></figure><p>This chart tells us three things:</p><ol><li>Hyperscalers are getting increasingly worse at turning their capex into operational capacity.</li><li>Hyperscalers have massive depreciation charges to look forward to that will eat their profits alive.&nbsp;</li><li>Hyperscalers have a spending problem.</li></ol><p>And because they’ve continued to be cloak and dagger about their actual capacity or where their capital expenditures are actually going, it’s anyone’s guess as to when depreciation will spike.</p><p>But it’ll have to at some point unless they intend to write the GPUs off.</p><h1 id="nvidia-is-selling-hundreds-of-billions-of-dollars%E2%80%99-worth-of-gpus-years-in-advance-%E2%80%94-why-are-companies-still-buying-them">NVIDIA Is Selling Hundreds of Billions Of Dollars’ Worth Of GPUs Years In Advance — Why Are Companies Still Buying Them?</h1><p>This situation is utterly obscene.&nbsp;</p><p>It’s very clear that at least $200 billion — if not more than $300 billion — of NVIDIA’s GPU sales have been made a year or years in advance, just as the company telegraphs it will <a href="https://www.reuters.com/business/media-telecom/nvidia-forecasts-quarterly-revenue-above-estimates-2026-08-26/?ref=wheresyoured.at"><u>make over $670 billion in revenue in its fiscal year 2028</u></a> (starting February 2027).&nbsp;</p><p>It’s also clear that Microsoft, Google, Amazon, Meta, SpaceX, and every neocloud are purchasing NVIDIA GPUs tens of billions at a time under the implicit knowledge that it will take years to build the capacity and connect the power to them, creating what amounts to the largest pre-order campaign in the history of capitalism, but also <em>a material misrepresentation of the current AI buildout.</em></p><h2 id="less-than-50-of-the-12-trillion-in-hyperscaler-capital-expenditures-have-turned-into-operational-data-center-capacity-%E2%80%94-leaving-an-estimated-390-billion-of-ai-hardware-uninstalled">Less Than 50% Of The $1.2 Trillion+ In Hyperscaler Capital Expenditures Have Turned Into Operational Data Center Capacity — Leaving An Estimated $390 Billion+ Of AI Hardware Uninstalled</h2><p>Investors — and journalists — have been under the assumption that gigawatts of <em>AI data center capacity</em> have been coming online on a regular basis, with NVIDIA raking in hundreds of billions of dollars for GPUs that are quickly fed into AI infrastructure.&nbsp;</p><p>Since the beginning of 2022, Amazon, Google, Microsoft, and Meta have spent over a trillion dollars in capital expenditures, and if Microsoft is indicative of the larger effort — about 18% ($50 billion or so) of capital expenditures turned into revenue-generating IT infrastructure — that would mean only around $222.66 billion of NVIDIA and other AI chips across the four largest hyperscalers are actually operational and functional.&nbsp;</p><blockquote><strong>Sidenote:</strong> I realize that Amazon has capital expenditures outside of AI data centers related to its eCommerce and logistics operations, but based on its rapid growth since 2022, I think most of it is attributable to AI. The following are imperfect yet, I believe, well-founded estimates.</blockquote><p>If we assume — kindly — that 50% of the cost of a data center is construction, this would mean around $445.3 billion of data center capacity is operational.</p><p>This leaves us with around $791 billion of capital expenditures unaccounted for, which is fairly disastrous, and if we assume that 50% of <em>that</em> is GPUs (across NVIDIA, AMD, Trainium, TPUs and any other custom silicon), that’s around $395 billion of silicon that’s been sold and is, I hope, sitting in a warehouse or an unpowered data center, as if they were just sold on paper, that’s…questionably legal accounting. I’m willing to believe that some share of that is also CPU infrastructure, storage, and other dollars not flowing directly to NVIDIA.</p><p>In any case, that’s a shit ton of undeployed silicon, and a very, very, very different picture to the one that both NVIDIA and the hyperscalers have been telling investors.&nbsp;</p><p>There’s a world of difference between “we’re buying a lot of GPUs and building a lot of data centers to make a lot of money” and “we’re investing in this stuff on the off chance it makes us money years in the future.”</p><p>I’ll break it down:</p><ul><li>If investors and the general public believe Microsoft, Google, Amazon and Meta are bringing capacity online rapidly, capital expenditures are justified at their current rate, because it’s seen as <em>spending money</em> to <em>make money.</em></li><li>If the truth is that the vast majority of these capital expenditures are going <em>into Jensen Huang’s pocket and filling warehouses full of GPUs</em>, that means that investors are being sold a line of shit about both revenue growth.</li></ul><h2 id="nobody%E2%80%99s-%E2%80%9Cai-bets-have-paid-off%E2%80%9D-if-most-of-their-%E2%80%9Cai-bets%E2%80%9D-aren%E2%80%99t-even-on-the-table">Nobody’s “AI Bets Have Paid Off” If Most Of Their “AI Bets” Aren’t Even On The Table</h2><p>For the most part, hyperscalers have been given <em>credit</em> for their capital expenditures because overall revenues have grown, with everyone saying that their “<a href="https://www.bloomberg.com/news/articles/2026-07-30/goldman-says-microsoft-shows-wall-street-how-its-ai-bet-pays-off?ref=wheresyoured.at"><u>AI</u></a> <a href="https://www.bloomberg.com/news/articles/2024-10-29/alphabet-beats-quarterly-sales-estimates-on-google-cloud-growth?ref=wheresyoured.at"><u>bets</u></a> <a href="https://finance.biggo.com/news/202510310022_Amazon_AWS_Growth_Accelerates_AI_Investment?ref=wheresyoured.at"><u>have</u></a> <a href="https://www.barrons.com/articles/meta-platforms-stock-ai-conference-aa7d43ed?eafs_enabled=false&ref=wheresyoured.at"><u>paid</u></a> <a href="https://www.aol.com/articles/microsoft-ceo-satya-nadellas-costly-094500000.html?ref=wheresyoured.at"><u>off</u></a>,” when it’s clear that the AI bets in question have barely started to come online.&nbsp;</p><p>I believe the reason that Google, Amazon, Microsoft, and <em>most notably <strong>not</strong> Meta</em> have seen remarkable revenue growth in the AI era is that they’re selling effectively all of their available compute to either Anthropic or OpenAI, <a href="https://www.wheresyoured.at/the-ai-demand-bubble/"><u>who make up more than 70% of their AI revenues</u></a>, and why the only AI data center companies with any revenue growth — CoreWeave, Nebius, IREN, et. al — are connected directly or by proxy to the two AI labs.&nbsp;</p><p>Thanks to near-infinite resources — over $217 billion in 2026 alone — given to OpenAI and Anthropic, hyperscalers can effectively saturate any of the GPU infrastructure they bring online, as both AI labs are capitalized and willing to buy basically anything available.&nbsp;</p><p>And because capacity is coming on <em>very slowly otherwise</em>, it’s sending out an illusory signal around “insatiable demand” for AI compute, when the <em>actual</em> situation is that <em>barely any compute is coming online, even when it’s built by the largest and best-capitalized companies in the world.</em></p><h1 id="200bn-in-uninstalled-gpus-guarantees-we%E2%80%99re-in-an-overbuild-scenario-%E2%80%94-and-how-anthropic-and-openai-distort-the-demand-for-ai-compute">$200bn+ In Uninstalled GPUs Guarantees We’re In An Overbuild Scenario — And How Anthropic and OpenAI Distort The Demand For AI Compute</h1><p>I’ll give you an example. Microsoft spent $265 billion in capex since the beginning of 2022, and in its most-recent fiscal year, <a href="https://www.wheresyoured.at/news-microsoft-disclosures-suggest-openai-sales-account-for-around-70-of-fy26-ai-revenue-more-than-7-of-fy26-revenue/"><u>70% of its AI revenue — and 7% of its overall revenue — came from OpenAI</u></a>. If you, as an investor, were to believe that this revenue was a result of <em>all that capex</em>, you were categorically wrong. Most of that capex hasn’t, in fact, been put into action.&nbsp;</p><p><a href="https://www.crn.com/news/ai/2026/amazon-q2-earnings-aws-ai-demand-outpaces-capacity-through-2027-jassy-says?ref=wheresyoured.at"><u>Amazon</u></a>, <a href="https://cloudwars.com/cloud/google-cloud-customer-demand-outstrips-data-center-capacity-as-q1-growth-slips-to-28/?ref=wheresyoured.at"><u>Google</u></a>, and <a href="https://www.directionsonmicrosoft.com/microsoft-expect-capacity-constraints-capex-acceleration-to-continue/?ref=wheresyoured.at"><u>Microsoft</u></a> have said multiple times that they have demand that wildly outstrips capacity,<em> but they’re totally opaque about where that demand comes from, largely because the answer is OpenAI, Anthropic, or in </em><a href="https://www.cnbc.com/2026/06/28/google-limits-metas-use-of-its-gemini-ai-models-ft-reports.html?ref=wheresyoured.at"><em><u>Google</u></em></a><em> and </em><a href="https://www.bloomberg.com/news/articles/2026-08-20/meta-has-quietly-become-one-of-microsoft-s-largest-ai-customers?ref=wheresyoured.at"><em><u>Microsoft’s</u></em></a><em> case Meta. </em>I apologize if I’m overexplaining myself, but I really need to be clear about the problem.</p><p>If “demand is outstripping supply” because of millions of customers begging for AI compute, that’s very different to “demand outstripping supply” because <em>three customers are taking up most or all of the capacity.&nbsp;</em></p><p>Similarly, if “demand is outstripping supply” <em>because lots of capacity is coming online and a diverse subset of customers is buying it</em>, that’s <em>vastly different </em>to if <em>capacity is coming on slowly, and the vast majority of it is being given straight to OpenAI, Anthropic, or Meta.</em></p><p><a href="https://www.theinformation.com/articles/anthropic-commits-spending-200-billion-googles-cloud-chips?rc=kz8jh3&ref=wheresyoured.at"><u>The $1.3 trillion in compute commitments from Anthropic and OpenAI</u></a> have created a distortion in the demand for AI compute, in part because of their massive amounts of capital and in part because of their ridiculous demands for compute.&nbsp;</p><p>The massive backlogs across Google, Microsoft, Amazon, CoreWeave, IREN, Nebius, and Nscale come not from <em>the incredible demand for AI compute</em> but <em>the incredible ability for Anthropic and OpenAI to sign contracts.</em> For example, <a href="https://www.cnbc.com/2026/08/26/anthropic-and-nscale-strike-45-billion-cloud-deal-sources-say.html?ref=wheresyoured.at"><u>Nscale’s $45 billion deal with Anthropic</u></a> <a href="https://www.investing.com/news/stock-market-news/85-of-nscales-103b-of-contracts-are-with-microsoft-and-anthropic-4908995?ref=wheresyoured.at"><u>along with a contract with Microsoft make up 85% of its $103 billion backlog</u></a>, and Anthropic’s deal is <a href="https://www.investing.com/news/stock-market-news/85-of-nscales-103b-of-contracts-are-with-microsoft-and-anthropic-4908995?ref=wheresyoured.at"><u>contingent on yet-to-be-raised financing</u></a>. These backlogs are regularly used to justify the massive AI data center buildout, when they’re more a function of Dario Amodei and Sam Altman’s DocuSign accounts.</p><p>You see, the ultimate problem is that the world outside of hyperscalers is — as a result of the obfuscation of data center capacity — under the belief that these companies are <em>buying GPUs</em> and then <em>quickly turning that into cash</em> versus <em>buying these GPUs and quickly turning them into storage.&nbsp;</em></p><p>This, by the way, is the problem with hyperscalers not explicitly breaking out their AI revenue, because in doing so they create the (I’d argue deliberate) illusion that <em>AI capex</em> is creating<em> revenue growth</em>, which both tricks investors into buying their stock and tricks developers into building AI data centers, believing that capex quickly translates into revenue.</p><p>You can scoff about how investors or developers should “do better research” or “learn about stuff,” but remember that the vast majority of data points about data center construction are somewhere between misleading and outright fantasy. I’ve seen estimates of 12GW, 15GW, and as much as 20GW of capacity coming online in 2026, but based on everything I’ve talked about today, I think it’s farcical to believe that <em>more than five to ten gigawatts of operational AI data center capacity actually exists.</em></p><blockquote><strong>Sidenote: </strong>Per Bloomberg Intelligence’s Kunjan Sobhani and Oscar Hernandez Tejada, as of March 2, 2026, there was “about” nine gigawatts of AI data center capacity “live and largely absorbed,” but even then I am suspicious this number refers to overall capacity and not the critical IT load of said data centers.</blockquote><p>When you have companies like Microsoft and Amazon saying they’re bringing on a gigawatt of capacity — worded in such a way as to make you <em>believe </em>it’s AI data center capacity — every single quarter, what are you meant to believe? That the largest companies in the world would actively mislead you as a means of making their capital expenditures look more effective?&nbsp;</p><p>And in turn, are you meant to believe that every single media outlet and research firm that pumps out theoretical gigawatts of yearly capacity coming online is wrong too?&nbsp;</p><p>No, you’re probably going to believe the consensus, even when the underlying numbers don’t really make sense, and <a href="https://www.wheresyoured.at/where-are-all-the-data-centers/#none-of-microsoft%E2%80%99s-announced-data-center-capacity-since-2024-has-been-completed"><u>even when Microsoft’s announced capacity never seems to come online</u></a>, because if you <em>don’t</em> believe that, you have to accept that everybody got this wrong.</p><h1 id="what-if%E2%80%A6we%E2%80%99re-in-an-ai-data-center-overbuild">What If…We’re In An AI Data Center Overbuild?</h1><p>So, let me explain a few things before we go any further:</p><ul><li>As it stands, it appears to take years to build an AI data center based on every source I can see.</li><li>Hundreds of billions of dollars’ worth of GPUs have been sold in advance under the belief that this capacity will be built, energized and leased to somebody.</li><li>Right now, capacity is coming on very, very slowly, and nobody really wants to talk about it.</li></ul><p>You’ll also notice that there are <em>tons</em> of stories about <em>announced</em> AI data centers but <em>very few about completed ones, </em>and those mostly operate as reputation laundering.&nbsp;</p><p>For example, CNBC helped both Oracle and Amazon do the same trick, claiming that their data centers were “open” when they were, in fact, <em>opening one or a few of many parts of a data center campus:</em></p><ul><li>On September 23, 2025, journalist MacKenzie Sigalos reported that “<a href="https://www.cnbc.com/2025/09/23/openai-first-data-center-in-500-billion-stargate-project-up-in-texas.html?ref=wheresyoured.at"><u>OpenAI’s first data center in $500 billion Stargate project is open in Texas, with sites coming in New Mexico and Ohio</u></a>,” when in fact <em>one of eight buildings</em> was open, a fact buried six paragraphs into the story.</li><li>On October 29, 2025, Sigalos reported that “<a href="https://www.cnbc.com/2025/10/29/amazon-opens-11-billion-ai-data-center-project-rainier-in-indiana.html?ref=wheresyoured.at"><u>Amazon [opened its] $11 billion AI data center in rural Indiana as rivals race to break ground</u></a>,” claiming, and I quote, that it was “up and operational, while most AI rivals are promising data centers of the future.” In truth, only seven out of thirty buildings were complete, a fact buried 9 paragraphs and a video into the piece.</li></ul><p>In Sigalos’ defense, Amazon leading the scam, <a href="https://www.aboutamazon.com/news/aws/aws-project-rainier-ai-trainium-chips-compute-cluster?ref=wheresyoured.at"><u>claiming in a blog released the same day</u></a> that Project Rainier was “now fully operational,” using weasel wording to refer to Rainier not as <em>the data center</em> but as an <em>AI compute cluster</em>, even though <em>everything about its blog and the CNBC story exists to make you think it refers to the full data center project.</em></p><p>All of this is to say that, for the most part, AI data center projects get announced and funded all the time, that the press willingly or otherwise engages in laundering the scale and completion of the projects, and everybody on the outside is deceived into thinking the AI buildout is faster and more effective than it really is.</p><p>This means that <a href="https://finance.yahoo.com/technology/article/techs-ai-debt-boom-in-one-chart-143849995.html?ref=wheresyoured.at"><u>the $290 billion in AI data center debt</u></a> issued this year (outside of hyperscalers) will go towards building capacity at whatever rate it can, which is a problem because the vast majority of these deals are project financing-based, meaning that they’re funded out of the revenues of a customer who may or may not exist.</p><p>In all honesty, the best case scenario would be if NVIDIA stopped selling GPUs, or AI data center debt stopped being issued, because every single time a data center is funded and breaks ground, it increases the severity of the overbuild scenario.</p><p>As I discussed in my premium piece <a href="https://www.wheresyoured.at/dot-com-bubble/#gpus-are-not-fiber-optic-cable-%E2%80%94-they-require-more-capex-to-buy-them-and-build-data-centers-more-opex-to-power-and-run-the-data-centers-have-significantly-less-utility-and-are-significantly-more-centralized"><em><u>This Is Worse Than The Dot Com Bubble</u></em></a> from a few months ago, GPUs are nothing like dark fiber. An incomplete data center will cost just as much to finish in 2030 as it will today, as will the GPUs cost just as much to run. The difference will be that once the AI bubble bursts, the customers of AI compute — <a href="https://x.com/arakharazian/status/2095204452609171555?ref=wheresyoured.at"><u>predominantly unprofitable, venture-backed startups</u></a> — won’t exist.&nbsp;</p><p>Right now, with more than half of NVIDIA GPUs yet to be turned into operational capacity, <em>every single new data center being built</em> is effectively a bet on whether <em>AI demand is <strong>larger</strong> in 2028 or 2029 than it is today, </em>because you’re going to be competing with all the <em>other </em>capacity coming online in the years preceding that have already broken ground.</p><p>Then there’s the problem of the upcoming flood of Blackwell GPUs, the vast majority of which have yet to be operationalized, meaning that anyone who bought them in 2025 is likely going to see them installed just as the first units of Vera Rubin come online, which will suppress prices even without there being significant available capacity, on top of the fact that <em>there’s going to be a huge flood of them coming online in the next few years.</em></p><p>Honestly, I think it’s kind of laughable we’re even <em>talking</em> about Vera Rubin at this point. When are we going to see it at scale? 2030? C’mon now.&nbsp;</p><h1 id="nvidia-should-issue-guidance-around-operational-ai-capacity-versus-sales-otherwise-it-is-actively-misleading-investors-and-customers-alike">NVIDIA Should Issue Guidance Around Operational AI Capacity Versus Sales, Otherwise It Is Actively Misleading Investors and Customers Alike</h1><p>For years we’ve heard stories about the “incredible demand” for NVIDIA’s GPUs, and to be clear, Jensen Huang’s money is very real, and it is, whether or not they’re going anywhere, actually selling GPUs.</p><p>There is, however, a massive difference between “we’re selling so many GPUs because people are immediately installing them and making money” and “we’re selling so many GPUs because our largest customers are buying so many of them because <a href="https://www.wheresyoured.at/dont-look-up/#:~:text=As%20I%20discussed%20in%20last%20week%E2%80%99s%20premium%2C%20hyperscalers%20started%20buying%20GPUs%20because%20their%20overall%20revenue%20growth%20had%20begun%20to%20slow%20over%20the%20course%20of%20a%20little%20over%20a%20decade%2C%20with%20everyone%20%E2%80%94%20NVIDIA%20included%20%E2%80%94%20hitting%20a%20wall%20in%202022%3A"><u>their revenues slowed in 2022 and they’ve run out of hypergrowth ideas</u></a>.”</p><p>Now, I get it, <em>it’s not really Jensen’s job to tell people <strong>why</strong> people are buying GPUs</em>, and I fully agree!&nbsp;</p><p>That being<em> said</em>, NVIDIA <em>does</em> have a fiduciary responsibility to disclose material events about the products it sells — and, for example, if millions of GPUs are not actually shipping to customers, or are shipping to warehouses, or are otherwise <em>not being sold with the immediate intent of installing them.&nbsp;</em></p><p>I want to be clear about something:<strong> there is absolutely no advantage to or reason for buying GPUs months or years in advance outside of the vendor (NVIDIA) playing hardball. </strong>Yet it appears that hyperscalers — which make up more than 50% of its revenue — are willing to do so, quarter after quarter, hoarding tens of billions of dollars to “secure supply” that is only constrained <em>because of the hyperscalers themselves.</em></p><p>While UBS’ Timothy Arcuri noted in March 2026 that customers were placing orders around <em>22 months in advance</em>, NVIDIA has sung a very different tune, with Jensen Huang saying that “<a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027?ref=wheresyoured.at"><u>tokens are profitable and compute is revenue</u></a>” as the vast majority of his sales generate neither tokens nor revenue because <em>the fucking data centers take so long to build.&nbsp;</em></p><p>I need to be more blunt here: <strong>the vast majority of companies that have bought GPUs have yet to turn them into meaningful revenue, if they’ve turned them on at all. Most of NVIDIA’s sales are sitting in warehouses, and that is a significant disclosure that NVIDIA should have already been forced to make.</strong></p><p>It wouldn’t be too dissimilar to the <a href="https://www.sec.gov/newsroom/press-releases/2022-79?ref=wheresyoured.at"><u>last time NVIDIA got in trouble with the SEC back in 2022</u></a>, when it failed to disclose that the revenue growth in its gaming segment was actually coming from cryptocurrency miners rather than gamers, which was considered “inadequate disclosure.”</p><p>While there’s a noted difference here — as NVIDIA’s customers are, ostensibly, buying their data center GPUs to put in a data center — the “demand” cycle for these chips, or really<em> any</em> AI chip, is entirely manufactured as a result of four or five large customers buying so many and Huang making statements about revenue generation that do not reflect reality.&nbsp;</p><p>Perhaps this doesn’t rise to the level of SEC action, but <strong>every single journalist and analyst should be asking Jensen Huang and every hyperscaler executive buying GPUs the following questions:</strong></p><p><strong>To NVIDIA:</strong></p><ul><li>How many Hopper GPUs are currently operational and generating revenue?</li><li>How many Blackwell GPUs are currently operational and generating revenue?</li><li>How long is it taking for data centers of over 100MW to be completed, by which I mean fully energized and generating revenue?</li><li>How many NVIDIA GPUs are currently in storage, awaiting power, or otherwise purchased but not yet in operation?</li><li>Roughly what percentage of NVIDIA GPUs that were sold in Fiscal Year 2025 and Fiscal Year 2026 are operational and generating revenue?</li></ul><p><strong>To hyperscaler CEOs:</strong></p><ul><li>How much <em>AI-specific </em>data center capacity do you have operational?</li><li>How many GPUs — by make and type — do you have <strong>operational, installed and generating revenue in data centers?</strong></li><li>How many GPUs — by make and type — do you have in storage, awaiting power, or otherwise purchased but not yet in operation?</li></ul><h1 id="nvidia%E2%80%99s-revenues-are-driven-by-speculative-sales-of-assets-that-take-years-to-make-money-and-everybody-conflating-demand-for-gpus-with-demand-for-ai-compute">NVIDIA’s Revenues Are Driven By Speculative Sales Of Assets That Take Years To Make Money, And Everybody Conflating Demand For GPUs With Demand For AI Compute</h1><p>I realize that I’m Mr. Bubble and everybody gets mad at me for poo-pooing our big, beautiful AI bubble, but I cannot express how serious this situation has become. Hundreds of billions of dollars of debt has been issued, <a href="https://www.wheresyoured.at/premium-the-haters-guide-to-the-memory-crisis/"><u>the price of every imaginable consumer electronic has been inflated</u></a>, and both most of our stock market and parts of our economy have become dependent on <em>the sales of GPUs</em>, most of which are going to a handful of companies that are, for the most part, <em>not fucking using them.</em></p><p>There’s also something profoundly sad about the entire thing.&nbsp;</p><p>So much money has been spent building and buying silicon for AI capacity that takes years to build, all as the AI industry tells us that <em>right now </em>there’s <em>insatiable demand</em> and that we’re <em>fools to question it.&nbsp;</em></p><p>One of the core reasons that people believe that AI isn’t a bubble is because of NVIDIA’s perpetual quarterly revenue growth, which is branded, once again, as <em>insatiable demand for AI compute</em>, when it’s actually <em>almost entirely-speculative purchases based on potential revenues, with said potential </em><a href="https://www.wheresyoured.at/the-ai-demand-bubble/"><em><u>mostly driven by the compute spend from OpenAI and Anthropic, two unprofitable and unsustainable AI labs</u></em></a><em>.&nbsp;</em></p><p>This is one of the reasons that Jensen Huang continues to funnel endless billions of dollars into circular financing — because <em>the sense of ever-expanding demand</em> <em>for GPUs</em> has become a proxy for <em>ever-expanding demand for AI compute,</em> even though <em>it takes years for the first part to become the second, if it ever does.</em></p><p>NVIDIA has now sold at least $200 billion dollars’ worth of GPUs — multiple gigawatts-worth — that have yet to be ingested by the market, and hyperscalers have, through their obfuscation of operational capacity and refusal to disclose AI revenues, helped create one of the largest speculative asset bubbles in history.</p><p>Everybody who participated in this obfuscation owns part of what comes next.&nbsp;</p><h1 id="there%E2%80%99s-190gw-of-capacity-in-planning-needing-roughly-162-trillion-to-292-trillion-of-annual-demand%E2%80%A6and-that%E2%80%99s-if-it-gets-built">There’s 190GW of Capacity In Planning, Needing Roughly $1.62 Trillion to $2.92 Trillion Of Annual Demand…And That’s If It Gets Built</h1><p><a href="https://www.wheresyoured.at/premium-ai-is-getting-way-too-expensive/#the-190gw-of-planned-ai-data-centers-need-roughly-162-trillion-to-292-trillion-in-annual-compute-demand:~:text=capacity%20than%20that.-,The%20190GW%20of%20Planned%20AI%20Data%20Centers%20Need%20Roughly%20%241.62%20Trillion%20to%20%242.92%20Trillion%20In%20Annual%20Compute%20Demand,-Per%20Sightline%20Climate"><u>As I estimated a few months ago</u></a>, Sightline Climate’s data has us at over 190GW of planned data center capacity, or, at 1.3 PUE and $12 million per megawatt, around $1.62 trillion in annual compute demand needed to saturate it.</p><p>Right now, <a href="https://www.wheresyoured.at/premium-how-much-money-does-ai-need/#there-is-at-best-around-22-billion-of-non-openaianthropic-compute-demand"><u>I estimate that there’s maybe $22 billion of demand outside of Anthropic and OpenAI</u></a>.&nbsp;</p><p>In other words, I believe we are now in an inevitable overbuild situation, one with no neat, tidy Dot-Com Bubble-style exit story. Demand for NVIDIA GPUs — and those from Broadcom, AMD and other semiconductor companies — is driven by speculative capital believing that the AI industry will become magnitudes larger than it is today, largely driven by the fact that everybody believes there’s far more demand for compute capacity than actually exists.</p><p>Everybody celebrating <a href="https://news.bloomberglaw.com/capital-markets/anthropic-plans-to-have-5gw-worth-of-compute-by-year-end-nyt?ref=wheresyoured.at"><u>Anthropic’s (entirely fictional) plans to have 5GW of capacity by the end of 2026</u></a> should know that this company is inspiring one the largest misallocation of capital in the history of capitalism. There is not 5GW of capacity for Anthropic to buy, nor will there be 10GW more for it to buy in 2027, and to suggest otherwise is to further perpetuate myths about how fast compute comes online and Anthropic’s ability to pay for it.</p><p>NVIDIA has created a remarkable illusion perpetuated by the media — that GPU sales are a direct measurement of the actual demand for AI compute, rather than a measurement of how a few companies are willing to invest in an idea two years in advance, <a href="https://www.wheresyoured.at/premium-the-haters-guide-to-circular-financing-part-one/"><u>using circular financing as a means of creating the sense that <em>you must buy these GPUs now</em></u></a><em>, or you’ll miss out on the future.</em></p><p>Capacity will, eventually, come online at a scale that the market for AI compute cannot support, and it won’t be obvious until it’s way, way too late. I fear that every single model around existing and future data center construction and AI compute demand is wrong, and that every assumption we have about the underlying economics of AI is corrupted by the belief that there’s far more operational capacity than there really is.</p><p>If we believe there’s gigawatts’ worth of AI compute coming online every year, then we in turn believe there’s gigawatts’ worth of demand.&nbsp;</p><p>If there’s a <em>gigawatt or two</em> coming online every year, that’s a completely different story.</p><p>At the very least, hyperscalers are going to be burdened with brutal depreciation charges or onerous write-offs for years to come, whether their capacity turns into revenue or not. CoreWeave, Nscale, Lambda and every other neocloud is set on the highway to Hell, with ballooning debt that can only be paid via contracts that are dependent on a few AI labs and a company so capricious that it renamed itself after the Metaverse, burned $77 billion, then <a href="https://www.businessinsider.com/metaverse-dead-obituary-facebook-mark-zuckerberg-tech-fad-ai-chatgpt-2023-5?ref=wheresyoured.at"><u>killed it two years later</u></a>.&nbsp;</p><p>I don’t even know how to write what I’m thinking without sounding alarmist…but I don’t see how 90%+ of NVIDIA’s sales ever end up generating a single dollar of revenue, and considering the amount of project financing-backed data center debt deals, there’s very little that exists to protect investors if AI compute demand never arrives. I don’t know how we don’t see tens of billions of dollars of write-downs and dead data center debt deals with every investor involved losing every penny, nor do I see how big tech avoids admitting that they wasted all their capex.</p><p>I think everybody who invests in these things ultimately loses, ranging from embarrassment and terrible earnings for hyperscalers to genuine destruction for anyone that trusted the pablum that “all useful compute will be used.” Until that happens, more and more money will be sunk into further theoretical capacity, making the eventual collapse all the more gruesome.</p><p>And in the end, what was any of this for? What did this achieve? What was the point of stacking up hundreds of billions of dollars of debt to buy hundreds of billions of dollars’ worth of AI chips years in the future?&nbsp;</p><p>What do you think happens when the first hyperscaler pulls out?</p><p>What do you think happens when the debt stops flowing?</p><p>I’ll give you one answer: everybody will realize that they conflated a great sales pitch with a thriving industry, and both the markets and the economy will suffer as a result.</p><p>None of this ever had anything to do with AI, and everybody who cheered Jensen Huang’s ascent in the belief it did is a mark.</p><p>What a fucking waste. I don’t enjoy finding this stuff out. I wish we’d have stopped doing this years ago.&nbsp;</p><p>Not that I think we will…but even if they bail out Anthropic, even if they bail out OpenAI, there is no way to magic up the trillions needed to justify the capex, or to prop up hyperscaler growth long term.&nbsp;</p><p>The longer this continues, the more promises are made, the more projects that are announced…the worse it’s going to be.&nbsp;</p><hr><p>If you liked this piece, you should subscribe to my premium newsletter. It’s<a href="https://edzitronswheresyouredatghostio.outpost.pub/public/promo-subscription/w1KX6aWthd?ref=wheresyoured.at"><u> $70 a year</u></a>,<a href="https://edzitronswheresyouredatghostio.outpost.pub/public/promo-subscription/pJMqFLQQw0?ref=wheresyoured.at"><u> $18 a quarter</u></a>, or<a href="https://edzitronswheresyouredatghostio.outpost.pub/public/promo-subscription/iT6Np52ZmU?ref=wheresyoured.at"><u> $7 a month</u></a>, and in return you get a weekly newsletter that’s usually anywhere from 10,000 to 18,000 words and provides vast, detailed analyses of the biggest events and companies in the AI bubble.</p><p>If you want to get in touch — and especially if you have any juicy information about Anthropic, OpenAI, or any other companies in the AI bubble — hit me up on Signal at ezitron.76. I’m also on IB on The Terminal.</p>
+        </article>
+
+            <div class="post-share content-width m-b-lg">
+  <span class="section-title sm">Share</span>
+  <div class="social-share ">
+    <a class="social-share__item twitter js-share" target="_blank"
+        href="https://twitter.com/share?text=Where're%20All%20The%20AI%20Chips%3F&amp;url=https://www.wheresyoured.at/wherere-all-the-ai-chips/"
+        title="Share on Twitter" aria-label="Share on Twitter">
+      <i class="icon icon-twitter">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+</i>    </a>
+    <a class="social-share__item facebook js-share" target="_blank"
+        href="https://www.facebook.com/sharer.php?u=https://www.wheresyoured.at/wherere-all-the-ai-chips/"
+        title="Share on Facebook" aria-label="Share on Facebook">
+      <i class="icon icon-facebook">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+</svg>
+
+
+
+</i>    </a>
+    <a class="social-share__item linkedin js-share" target="_blank"
+        href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.wheresyoured.at/wherere-all-the-ai-chips/&title=Where're%20All%20The%20AI%20Chips%3F&summary=Where're%20All%20The%20AI%20Chips%3F"
+        title="Share on Linkedin" aria-label="Share on Linkedin">
+      <i class="icon icon-linkedin">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+  <rect x="2" y="9" width="4" height="12"></rect>
+  <circle cx="4" cy="4" r="2"></circle>
+</svg>
+</i>    </a>
+    <a class="social-share__item mail"
+        href="mailto:?subject=Where're%20All%20The%20AI%20Chips%3F&body=https://www.wheresyoured.at/wherere-all-the-ai-chips/&nbsp;Where're%20All%20The%20AI%20Chips%3F"
+        title="Share by email" aria-label="Share by email">
+      <i class="icon icon-mail">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <rect x="3" y="5" width="18" height="14" rx="2" />
+  <polyline points="3 7 12 13 21 7" />
+</svg>
+</i>    </a>
+    <button class="copy-link copy js-copy-link" data-url="https://www.wheresyoured.at/wherere-all-the-ai-chips/"
+        title="Copy to clipboard" data-label="Copied!" aria-label="Copy to clipboard">
+      <i class="icon icon-copy">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copy" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <rect x="8" y="8" width="12" height="12" rx="2" />
+  <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2" />
+</svg>
+</i>    </button>
+  </div>
+</div>
+
+            
+            <div class="post-authors content-width m-t-lg">
+  <span class="section-title sm">About the author</span>
+      <div class="author-card author-ed-zitron wide m-b-lg">
+
+
+  <div class="author-card__content flex-1 flex flex-col text-acc">
+    <div class="author-card__profile flex flex-wrap items-center m-b-sm">
+      <h3 class="author-card__name fw-700 m-b-0">
+        <a href="https://www.wheresyoured.at/author/ed-zitron/">Ed Zitron</a>
+      </h3>
+      
+      <div class="author-card__social flex flex-1">
+      </div>
+    </div>
+    
+    
+    
+      <a class="author-card__count fw-500 text-09" href="https://www.wheresyoured.at/author/ed-zitron/">View all</a>
+  </div>
+</div>
+</div>
+             
+    <div class="post-comments content-width m-b-lg">
+      <div class="section-title sm">Comments</div>
+      <div class="comments bg-default radius flex flex-col p-lg Native" id="comments">
+            
+
+
+      </div>
+    </div>
+      </div>
+
+      <div class="col-xs-12 col-lg-3">
+        <aside class="sidebar">
+    <span class="section-title sm">Featured posts</span>
+    <div class="sidebar__section">
+<a class="sidebar-story" href="https://www.wheresyoured.at/exit-liquidity/">          <div class="sidebar-story__content">
+            <h3 class="sidebar-story__title">Exit Liquidity</h3>
+
+            <div class="sidebar-story__info">
+              <time datetime="2026-10-28" class="sidebar-story__date">
+                28 Oct 2026
+              </time>
+            </div>
+          </div>
+</a><a class="sidebar-story" href="https://www.wheresyoured.at/premium-the-haters-guide-to-blackstone/">          <div class="sidebar-story__content">
+            <h3 class="sidebar-story__title">Premium: The Hater&#x27;s Guide To Blackstone</h3>
+
+            <div class="sidebar-story__info">
+              <time datetime="2026-10-23" class="sidebar-story__date">
+                23 Oct 2026
+              </time>
+            </div>
+          </div>
+</a><a class="sidebar-story" href="https://www.wheresyoured.at/ai-had-better-work-out/">          <div class="sidebar-story__content">
+            <h3 class="sidebar-story__title">AI Had Better Work Out</h3>
+
+            <div class="sidebar-story__info">
+              <time datetime="2026-10-20" class="sidebar-story__date">
+                20 Oct 2026
+              </time>
+            </div>
+          </div>
+</a><a class="sidebar-story" href="https://www.wheresyoured.at/premium-venture-capital-is-killing-itself/">          <div class="sidebar-story__content">
+            <h3 class="sidebar-story__title">Premium: Venture Capital Is Killing Itself</h3>
+
+            <div class="sidebar-story__info">
+              <time datetime="2026-10-16" class="sidebar-story__date">
+                16 Oct 2026
+              </time>
+            </div>
+          </div>
+</a><a class="sidebar-story" href="https://www.wheresyoured.at/annualized-enron-rate/">          <div class="sidebar-story__content">
+            <h3 class="sidebar-story__title">Annualized Enron Rate</h3>
+
+            <div class="sidebar-story__info">
+              <time datetime="2026-10-13" class="sidebar-story__date">
+                13 Oct 2026
+              </time>
+            </div>
+          </div>
+</a>    </div>
+
+    <span class="section-title sm">Latest posts</span>
+    <div class="sidebar__section">   
+<a class="sidebar-story" href="https://www.wheresyoured.at/news-microsoft-disclosures-suggest-openai-sales-account-for-around-70-of-fy26-ai-revenue-more-than-7-of-fy26-revenue/">          <div class="sidebar-story__content">
+            <h3 class="sidebar-story__title">News: Microsoft Disclosures Suggest OpenAI Sales Account For Around 70% Of FY26 AI Revenue, More Than 7% of FY26 Revenue</h3>
+
+            <div class="sidebar-story__info">
+              <time datetime="2026-08-05" class="sidebar-story__date">
+                05 Aug 2026
+              </time>
+            </div>
+          </div>
+</a><a class="sidebar-story" href="https://www.wheresyoured.at/the-openai-bubble/">          <div class="sidebar-story__content">
+            <h3 class="sidebar-story__title">The OpenAI Bubble</h3>
+
+            <div class="sidebar-story__info">
+              <time datetime="2026-07-15" class="sidebar-story__date">
+                15 Jul 2026
+              </time>
+            </div>
+          </div>
+</a><a class="sidebar-story" href="https://www.wheresyoured.at/premium-the-haters-guide-to-the-memory-crisis/">          <div class="sidebar-story__content">
+            <h3 class="sidebar-story__title">Premium: The Hater&#x27;s Guide To The Memory Crisis</h3>
+
+            <div class="sidebar-story__info">
+              <time datetime="2026-07-10" class="sidebar-story__date">
+                10 Jul 2026
+              </time>
+            </div>
+          </div>
+</a>    </div>
+
+        <div class="sidebar__section is-sticky flex flex-cc">
+          <div class="sidebar__subscribe bg-acc">
+            <h4 class="text-acc fw-800">
+              Welcome to Where&#x27;s Your Ed At!
+            </h4>
+            <div class="m-b text-acc" id="sidebar-input-label">
+                Subscribe today. It&#x27;s free. Please. 
+            </div>
+            <form class="subscribe-form" 
+  data-members-form="subscribe" data-style="">
+  <input data-members-email class="" 
+    type="email" autocomplete="email" placeholder="Your email address" 
+    aria-labelledby="sidebar-input-label" required/> 
+  <button class="btn btn--brand" type="submit">
+    <span>Subscribe</span>
+  </button>
+  <div class="msg-success">Great! Check your inbox and click the link.</div>
+  <div class="msg-error">Sorry, something went wrong. Please try again.</div>
+</form>          </div>
+        </div>
+</aside>
+      </div>
+    </div>
+
+        </div>
+
+
+    </main>
+
+            <section class="container wrapper section section-cta is-rel flex flex-cc radius m-b-0 is-post" 
+      data-bg-accent="none">
+        <div class="section-cta__content flex flex-col flex-cc is-rel z-index-1 max-w-40">
+          <h2 class="section-cta__title">Welcome to Where&#x27;s Your Ed At!</h2>
+          <p id="cta-input-label" class="section-cta__description opacity-075">Subscribe today. It&#x27;s free. Please. </p>
+          
+          <form class="subscribe-form" 
+  data-members-form="signup" data-style="inline">
+  <input data-members-email class="bg-opaque" 
+    type="email" autocomplete="email" placeholder="Your email address" 
+    aria-labelledby="cta-input-label" required/> 
+  <button class="btn btn--brand btn--gradient uppercase" type="submit">
+    <span>Subscribe</span>
+  </button>
+  <div class="msg-success">Great! Check your inbox and click the link.</div>
+  <div class="msg-error">Sorry, something went wrong. Please try again.</div>
+</form>        </div>
+      </section>
+
+      <footer class="footer">
+  <div class="container wrapper">
+
+    <div class="footer__brand m-b-lg flex flex-wrap">
+        <img class="footer__logo lazyload"
+          src="https://storage.ghost.io/c/24/d8/24d8fcec-dfba-4f40-a467-823d2941ae46/content/images/size/w300/2024/01/wide-with-letters-1.jpeg"
+          alt="Ed Zitron&#x27;s Where&#x27;s Your Ed At"/>
+
+      <span class="flex-1"></span>
+
+      <div class="footer__social flex flex-cc">
+        
+  <a href="https://x.com/edzitron" class="twitter" aria-label="Twitter"><i class="icon icon-twitter icon--md">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+</i></a>
+
+<a href="https://www.wheresyoured.at/rss" class="rss" aria-label="RSS"><i class="icon icon-rss icon--md">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="5" cy="19" r="1" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <path d="M4 11a9 9 0 0 1 9 9" />
+</svg>
+
+
+
+</i></a>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+    <ul class="nav">
+    <li class="nav-home"><a href="https://www.wheresyoured.at/">Home</a></li>
+    <li class="nav-about"><a href="https://www.wheresyoured.at/about/">About</a></li>
+    <li class="nav-better-offline"><a href="http://linktr.ee/betteroffline">Better Offline</a></li>
+    <li class="nav-news"><a href="https://www.wheresyoured.at/tag/news/">News</a></li>
+</ul>
+
+
+      <ul class="nav">
+    <li class="nav-sign-up"><a href="#/portal/">Sign up</a></li>
+</ul>
+
+
+    <div class="footer__bottom">
+      <div class="footer__copy">
+        <span>&copy;2026&nbsp;<a href="https://www.wheresyoured.at">Ed Zitron&#x27;s Where&#x27;s Your Ed At</a>.</span>
+        <span>Published with&nbsp;<a href="https://ghost.org">Ghost</a>&nbsp;&&nbsp;<a href="https://brightthemes.com/themes/tuuli/">Tuuli</a>.</span>
+      </div>
+
+      <div class="color-scheme flex flex-cc radius-half">
+  <span class="color-scheme-symbol"></span>
+  <select class="color-scheme-select radius-half js-color-scheme-select" aria-label="Change color scheme">
+    <option value="system" >System</option>
+    <option value="light" selected>Light</option>
+    <option value="dark">Dark</option>
+    <option value="midnight">Midnight</option>
+    <option value="ivory">Ivory</option>
+    <option value="skyblue">Skyblue</option>
+  </select>
+  <i class="icon icon-select">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-select" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M17 8.517L12 3 7 8.517M7 15.48l5 5.517 5-5.517"></path>
+</svg>
+
+
+
+</i></div>    </div>
+
+  </div>
+</footer>
+
+    <dialog class="notification">
+  <i class="icon icon-success notification-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M9 12l2 2l4 -4" />
+</svg>
+
+
+
+</i>  <i class="icon icon-error notification-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-alert-octagon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M8.7 3h6.6c.3 0 .5 .1 .7 .3l4.7 4.7c.2 .2 .3 .4 .3 .7v6.6c0 .3 -.1 .5 -.3 .7l-4.7 4.7c-.2 .2 -.4 .3 -.7 .3h-6.6c-.3 0 -.5 -.1 -.7 -.3l-4.7 -4.7c-.2 -.2 -.3 -.4 -.3 -.7v-6.6c0 -.3 .1 -.5 .3 -.7l4.7 -4.7c.2 -.2 .4 -.3 .7 -.3z" />
+  <line x1="12" y1="8" x2="12" y2="12" />
+  <line x1="12" y1="16" x2="12.01" y2="16" />
+</svg>
+
+
+
+</i>  <i class="icon icon-warning notification-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-alert-triangle" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M12 9v2m0 4v.01" />
+  <path d="M5 19h14a2 2 0 0 0 1.84 -2.75l-7.1 -12.25a2 2 0 0 0 -3.5 0l-7.1 12.25a2 2 0 0 0 1.75 2.75" />
+</svg>
+
+
+
+</i>  <p class="notification-msg signup-success">Great! You’ve successfully signed up.</p> 
+  <p class="notification-msg signin-success">Welcome back! You&#x27;ve successfully signed in.</p> 
+  <p class="notification-msg subscribe-success">You&#x27;ve successfully subscribed to Ed Zitron&#x27;s Where&#x27;s Your Ed At.</p> 
+  <p class="notification-msg link-expired">Your link has expired.</p> 
+  <p class="notification-msg checkout-success">Success! Check your email for magic link to sign-in.</p> 
+  <p class="notification-msg billing-success">Success! Your billing info has been updated.</p> 
+  <p class="notification-msg billing-cancel">Your billing was not updated.</p> 
+  <button class="notification-close js-notification-close" aria-label="Close" onclick="closeNotification(event.currentTarget.parentNode);">
+    <i class="icon icon-x">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+</svg>
+</i>  </button>
+</dialog>
+
+      
+    
+
+    
+
+      <script>
+    document.addEventListener('readystatechange', function(event) {
+      if (document.readyState === "complete") {
+        // table of contents toggle
+        const tocToggleBtn = document.querySelector('.js-toc-toggle');
+        const postToc = document.querySelector('.js-post-toc');
+
+        // media query for TOC function
+        const mqSmall = window.matchMedia('(max-width: 767px)');
+        const mqLarge = window.matchMedia('(min-width: 768px)');
+
+        if (tocToggleBtn && postToc) {
+          // if device is large, show the TOC by default
+          if (mqLarge.matches) postToc.classList.add('is-active');
+
+          // open/close the TOC
+          tocToggleBtn.onclick = function(event) {
+            postToc.classList.toggle('is-active');
+          }
+        }
+
+        // get header height as threshold
+        const headerHeight = parseInt(getComputedStyle(document.documentElement)
+                        .getPropertyValue('--global-header-height'));
+        const headerStyle = document.querySelector('.js-header').getAttribute('data-header');
+        let headerOffset = headerStyle === 'normal' ? 20 : headerHeight + 20;
+
+        if (postToc) {
+          tocbot.init({
+            // Where to render the table of contents.
+            tocSelector: '.js-toc',
+            // Where to grab the headings to build the table of contents.
+            contentSelector: '.content',
+            // Which headings to grab inside of the contentSelector element.
+            headingSelector: 'h1, h2, h3, h4',
+            // Ignore some headings (like header card and toggle card)
+            ignoreSelector: '[class*="kg-"],[class*="content-cta"]',
+            // For headings inside relative or absolute positioned containers within content.
+            hasInnerContainers: false,
+            // smooth scroll
+            scrollSmooth: false,
+            // offset
+            headingsOffset: headerOffset,
+            // onclick event
+            onClick: function(e){ 
+              //e.preventDefault();
+              const href = this.getAttribute('href');
+              if (href) {
+                const el = document.querySelector(`#${CSS.escape(href.substring(1))}`);
+                let offset;
+                const bodyRect = document.body.getBoundingClientRect().top;
+                const elementRect = el.getBoundingClientRect().top;
+                const elementPosition = elementRect - bodyRect;
+                offset = headerOffset; 
+                themeGlobal.scrollPos = elementPosition;
+                const offsetPosition = elementPosition - offset;
+
+                window.scrollTo({
+                  top: offsetPosition,
+                  behavior: 'smooth'
+                });
+              }
+
+              // if on small screen close the TOC when clicking on item
+              if (mqSmall.matches) postToc.classList.remove('is-active');
+            }
+          });
+
+          document.querySelector('.js-toc .toc-list') ? postToc.classList.add('is-rendered') : null;
+        }
+      }
+    });
+  </script>
+
+  <script>
+    // Copy button
+    const copyBtn = document.querySelector('.js-copy-link');
+    if (copyBtn) {
+      copyBtn.onclick = function(event) {
+        copyToClipboard(event.currentTarget, event.currentTarget.getAttribute('data-url'));
+      }
+    }
+    
+    /** 
+    * Copy to clipboard
+    * @src - source element
+    * @str - string to copy
+    */ 
+    const copyToClipboard = function(src, str) {
+      const el = document.createElement('textarea');
+      el.value = str;
+      el.setAttribute('readonly', '');
+      el.style.position = 'absolute';
+      el.style.left = '-9999px';
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand('copy');
+      document.body.removeChild(el);
+
+      src.classList.add('has-tooltip');
+      src.setAttribute('data-label', 'Copied!');
+
+      src.onmouseleave = function() { 
+        src.classList.remove('has-tooltip');
+        setTimeout(function(){
+          src.setAttribute('data-label', '');
+        }, 500); 
+      }
+    };
+  </script>
+
+  <script>
+    // Give the parameter a variable name
+    const qsParams = new URLSearchParams(window.location.search);
+    const isAction = qsParams.has('action');
+    const isStripe = qsParams.has('stripe');
+    const success = qsParams.get('success');
+    const action = qsParams.get('action');
+    const stripe = qsParams.get('stripe');
+
+    if (qsParams && isAction) {
+      if (success === "true") {
+        switch (action) {
+          case 'subscribe':
+            openNotification('subscribe-success');
+            break;
+          case 'signup': 
+            openNotification('signup-success');
+            break;
+          case 'signin':
+            openNotification('signin-success');
+            break;
+          default:
+            break;
+        }
+      } else {
+        openNotification('link-expired');
+      }
+    }
+
+    if (qsParams && isStripe) {
+      switch (stripe) {
+        case 'success':
+          openNotification('checkout-success');
+          break;
+        case 'billing-update-success':
+          openNotification('billing-success');
+          break;
+        case 'billing-update-cancel':
+          openNotification('billing-cancel');
+          break;
+        default:
+          break;
+      }
+    }
+
+    /**
+    * Handle Notifications
+    */
+    function openNotification(type) {
+      const notification = document.querySelector('dialog.notification');
+      if (notification) { 
+        notification.setAttribute('data-msg-type', type);
+        notification.show();
+        setTimeout(function(){ closeNotification(notification); }, 3000);
+      }
+    }
+    
+    /**
+    * Clean URI
+    */
+    function clearURI() {
+      window.history.replaceState({}, '', `${window.location.pathname}`);
+    }
+
+    function closeNotification(notification) {
+      notification.close();
+      clearURI();
+      setTimeout(function(){ notification.removeAttribute('data-msg-type') }, 500);
+    }
+  </script>
+
+
+    <script>
+  const menu = document.querySelector('.header__menu')
+  const heroContent = document.querySelector('.hero__content')
+  if (menu && heroContent) {
+    heroContent.appendChild(menu)
+  }
+</script>
+<script>
+!function(w,d,id,ns,s){var c=w[ns]=w[ns]||{};if(c.ready||(c.q=[],c.ready=function(){c.q.push(arguments)}),!d.getElementById(id)){var e=d.createElement(s);e.id=id,e.defer=true,e.src="https://assets.context.ly/kit/6.latest/loader.js";var h=d.getElementsByTagName(s)[0];h.parentNode.insertBefore(e,h)}}(window,document,"ctx-loader","Contextly","script");
+</script>
+<script>
+Contextly.ready('widgets');
+</script>
+<script>
+  const OutpostPub = {
+    apiDomain: "https://edzitronswheresyouredatghostio.outpost.pub",
+    apiKey: "fe19efab-70d4-4add-a5aa-4a2197a237cb",
+    siteName: "Ed Zitron&#x27;s Where&#x27;s Your Ed At",
+    memberId: "",
+    memberEmail: "",
+        post: {
+          id: "6ab27b394c994e000187a7ce",
+          tags: [""],
+        }
+  }
+</script>
+<script defer src="https://assets.outpostpublishingcoop.com/assets/v2/js/outpost-pub.js"></script>
+  </body>
+</html>
