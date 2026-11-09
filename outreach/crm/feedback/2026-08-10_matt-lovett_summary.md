@@ -46,6 +46,7 @@ Positive, substantive conversation. Matt is not as engaged with what Dashbud is 
 - Prospecting strategy details
 - Additional advice from second call / WhatsApp segment
 - Need to capture from additional recordings when available
+- **Offers-and-audiences method** — Matt's approach of designing 3–5 offers and testing them against different target audiences is NOT in this transcript; it surfaced in later, undocumented conversations. The structure at `wiki/dashbud/offers/` (built 2026-11-05) rests on Arthur's recollection of it. Capture verbatim if a recording turns up.
 
 ## Action items
 - Reschedule follow-up call (this one got cut short on Lovett's end)
