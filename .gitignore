@@ -8,3 +8,6 @@ voice/*.m4a
 node_modules/
 __pycache__/
 *.pyc
+
+# Cached DataForSEO / scrape API responses — regenerable, noisy in diffs
+scripts/research/output/

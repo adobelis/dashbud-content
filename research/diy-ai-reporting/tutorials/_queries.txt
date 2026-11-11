@@ -1,0 +1,39 @@
+# Sampling frame for the tutorial corpus.
+# One query per line. Grouped by level of the "building it with AI" spectrum
+# (see ../README.md) so the corpus is stratified by approach rather than by
+# whatever the algorithm happens to favour this month.
+#
+# Keep this file as the record of HOW the corpus was found. Re-running it later
+# measures drift in what the market is being taught.
+
+# -- level 1-2: paste/upload into a chat, read the answer
+chatgpt data analysis tutorial
+analyze excel data with chatgpt
+upload spreadsheet to chatgpt analysis
+
+# -- level 3: hosted data-analysis features that run code on a file
+chatgpt advanced data analysis tutorial
+claude analyze csv data
+gemini analyze spreadsheet data
+
+# -- level 4: custom GPTs and saved prompts with instructions
+custom gpt for data analysis
+build a custom gpt for business reporting
+
+# -- level 5: API scripts, hand-written or AI-written
+openai api python data analysis tutorial
+automate reports with openai api
+
+# -- level 6: agent frameworks and automation tools
+n8n ai reporting automation
+make.com automate reporting ai
+
+# -- level 7: vibe-coded apps
+lovable build dashboard
+replit build data dashboard
+build internal tool with ai no code
+
+# -- cross-level: how the outcome itself is searched for
+build a dashboard with chatgpt
+ai business intelligence no code
+automate business reporting with ai
